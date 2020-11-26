@@ -1,1 +1,1 @@
-?commands;?help;?bilbo;?^;?rem;?titan;?serge;?sami;?raid;?musca;?timmy;?wishes;?wish-ethereal;?wish-glittering;?wish-emblem;?wish-shurochi;?wish-morgeth;?wish-vault;?wish-riven;?wish-hope;?wish-failsafe;?wish-drifter;?wish-party;?wish-effect;?wish-petra;?wish-eggs;
+?commands;?help;?bilbo;?^;?rem;?titan;?serge;?sami;?raid;?musca;?timmy;?wishes;?wish-ethereal;?wish-glittering;?wish-emblem;?wish-shurochi;?wish-morgeth;?wish-vault;?wish-riven;?wish-hope;?wish-failsafe;?wish-drifter;?wish-party;?wish-effect;?wish-petra;?wish-eggs;?explicatie-axxy;?manusi;
