@@ -174,11 +174,15 @@ function createCommand(commandText, commandExists, commandName) {
     }
 }
 function ListUsers(lista, mesaj){
-	lista.forEach(member => {
+var nume =	lista.filter(member => member.roles.cache.some(role => role.name === 'Candidat'))
+			.map(member=> member.user.username).join('\n');
+	/*lista.forEach(member => {
 		if (member.roles.cache.some(role => role.name === 'Candidat')){
 		console.log(member.user.username)
 		mesaj.channel.send(member.user.username)
-		}}); 
+		}}); */
+		console.log(nume)
+		mesaj.channel.send(nume)
 }
 // Log our bot in
 client.login(token);
