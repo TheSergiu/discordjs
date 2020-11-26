@@ -174,7 +174,7 @@ function createCommand(commandText, commandExists, commandName) {
     }
 }
 function ListUsers(lista, mesaj){
-var nume =	lista.filter(member => member.roles.cache.some(role => role.name === 'Candidat'))
+var nume =	lista.filter(member => member.roles.cache.some(role => (role.name === 'Candidat')&&(!role.name === 'Veteran')))
 			.map(member=> member.user.username).join('\n');
 	/*lista.forEach(member => {
 		if (member.roles.cache.some(role => role.name === 'Candidat')){
