@@ -4,7 +4,13 @@ const fs = require('fs');
 //const random = require("random-js")//(); // uses the nativeMath engine
 
 // Create an instance of a Discord client
+/*const intentii = new Intents([
+    Intents.NON_PRIVILEGED, // include all non-privileged intents, would be better to specify which ones you actually need
+    "GUILD_MEMBERS", // lets you request guild members (i.e. fixes the issue)
+]);*/
+// Create an instance of a Discord client
 const client = new Discord.Client();
+//const client = new Client({ ws: { intentii } });
 
 // The token of your bot - https://discordapp.com/developers/applications/me
 const token = 'Nzc5NDYxMTE4MDI3NzU5NjQ2.X7g3vA.yMcIPYHR9aVvcPAz576iApbvZj8';
@@ -14,6 +20,7 @@ const token = 'Nzc5NDYxMTE4MDI3NzU5NjQ2.X7g3vA.yMcIPYHR9aVvcPAz576iApbvZj8';
 client.on('ready', () => {
     console.log('I am ready!');
     // Remove new lines when starting the bot.
+	 
     fs.readFile('./commands/commands.txt', 'utf8', function (err, f) {
         f = f.replace(/(\r\n|\n|\r)/gm, "");
         fs.writeFile('./commands/commands.txt', f, "", function (err) {
@@ -61,7 +68,15 @@ client.on('message', message => {
 			message.channel.send('Nu ai rolul necesar, contacteaza un admin pentru rol!');
 		}
     }
+if(checkMessage[0] === '?lst'){
+	let list = message.guild.members.fetch()
+		.then((members)=>{
+		ListUsers(members);	
+		}
+	);
 
+
+}
     fs.readFile('./commands/commands.txt', 'utf8', function (err, f) {
         let com = f.toString().split(";");
         for (i = 0; i < com.length; i++) {
@@ -158,6 +173,11 @@ function createCommand(commandText, commandExists, commandName) {
         });
     }
 }
-
+function ListUsers(lista){
+	lista.forEach(member => {
+		if (member.roles.cache.some(role => role.name === 'Bot')){
+		console.log(member.user.username)
+		}}); 
+}
 // Log our bot in
 client.login(token);
