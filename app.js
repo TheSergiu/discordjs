@@ -175,7 +175,7 @@ function createCommand(commandText, commandExists, commandName) {
 }
 function ListUsers(lista){
 	lista.forEach(member => {
-		if (member.roles.cache.some(role => role.name === 'Bot')){
+		if (member.roles.cache.some(role => role.name === 'Candidat')){
 		console.log(member.user.username)
 		}}); 
 }
