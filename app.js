@@ -71,7 +71,7 @@ client.on('message', message => {
 if(checkMessage[0] === '?lst'){
 	let list = message.guild.members.fetch()
 		.then((members)=>{
-		ListUsers(members);	
+		ListUsers(members,message);	
 		}
 	);
 
@@ -173,11 +173,11 @@ function createCommand(commandText, commandExists, commandName) {
         });
     }
 }
-function ListUsers(lista){
+function ListUsers(lista, mesaj){
 	lista.forEach(member => {
 		if (member.roles.cache.some(role => role.name === 'Candidat')){
 		console.log(member.user.username)
-		message.channel.send(member.user.username)
+		mesaj.channel.send(member.user.username)
 		}}); 
 }
 // Log our bot in
