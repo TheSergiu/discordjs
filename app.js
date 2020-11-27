@@ -60,7 +60,7 @@ client.on('message', message => {
 		console.log(message.content);
 		console.log(message.channel.name);
 		const regexString = /LFG Post: \*\*([0-9]+)\*\* created/;
-		if(message.channel.name === 'lfg-requests'){//🔋bot-commands
+		if(message.channel.name === '🔋bot-commands'){//🔋bot-commands
 		console.log('canalul corect')
 		console.log(message.content);
 			if(message.content.match(regexString)!== null){ //LFG Post: 3487 created.
