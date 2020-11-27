@@ -33,17 +33,19 @@ client.on('ready', () => {
 
 // Create an event listener for messages
 client.on('messageUpdate', (oldMessage, newMessage) => {
-      		console.log('botul a modificat')
-        // trimitere notificare in canalul de general in momentul in care se organizeaza o activitate cu botul de LFG
-		const regexString = /LFG Post: ([0-9]+) created/;
-		if(newMessage.channel.name === '🔋bot-commands'){//🔋bot-commands
-		console.log('canalul modificat corect')
-			if(newMessage.content.match(regexString)!== null){ //LFG Post: 3487 created.
-			console.log('mesajul corect, scrie in general')
-				const canal = client.channels.cache.find(channel => channel.name === '📝general')
-				canal.send('@here S-a creat o noua organizare, verificati canalul #🎲organizari')
+		if (message.author.bot === true) {
+				console.log('botul a modificat')
+				// trimitere notificare in canalul de general in momentul in care se organizeaza o activitate cu botul de LFG
+				const regexString = /LFG Post: ([0-9]+) created/;
+				if(message.channel.name === '🔋bot-commands'){//🔋bot-commands
+				console.log('canalul mod corect')
+					if(message.content.match(regexString)!== null){ //LFG Post: 3487 created.
+					console.log('mesajul mod corect, scrie in general')
+						const canal = client.channels.cache.find(channel => channel.name === '📝general')
+						canal.send('@here S-a creat o noua organizare, verificati canalul #🎲organizari')
+					}
+				}
 			}
-		}
 }
 client.on('message', message => {
     if (message.author.bot === true) {
