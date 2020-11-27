@@ -13,7 +13,7 @@ const client = new Discord.Client();
 //const client = new Client({ ws: { intentii } });
 
 // The token of your bot - https://discordapp.com/developers/applications/me
-const token = 'Nzc5NDYxMTE4MDI3NzU5NjQ2.X7g3vA.yMcIPYHR9aVvcPAz576iApbvZj8';
+const token = 'Nzc5NDYxMTE4MDI3NzU5NjQ2.X7g3vA.yMcIPYHR9aVvcPAz576iApbvZj8';//bot d2ro
 //const token = 'NzgxNTk0MTE1MjEyODM2ODY1.X7_6Pg.KTL-01HHvJRANNy6x0nPix1Hg0I';
 // The ready event is vital, it means that your bot will only start reacting to information
 // from Discord _after_ ready is emitted
@@ -36,7 +36,7 @@ client.on('message', message => {
     if (message.author.bot === true) {
         // trimitere notificare in canalul de general in momentul in care se organizeaza o activitate cu botul de LFG
 		const regexString = /LFG Post: ([0-9]+) created/;
-		if(message.channel.name==='🔋bot-commands'){
+		if(message.channel.name === '🔋bot-commands'){//🔋bot-commands
 			if(message.content.match(regexString)!== null){ //LFG Post: 3487 created.
 				const canal = client.channels.cache.find(channel => channel.name === '📝general')
 				canal.send('@here S-a creat o noua organizare, verificati canalul #🎲organizari')
@@ -192,8 +192,11 @@ var nume = lista.filter(member => (
 		console.log(member.user.username)
 		mesaj.channel.send(member.user.username)
 		}}); */
-		console.log(nume)
-		mesaj.channel.send(nume)
+		if(nume !== ''){
+			console.log(nume)
+			mesaj.channel.send(nume)
+		}
+		//mesaj.channel.send('LFG Post: 6250 created.')
 }
 // Log our bot in
 client.login(token);
