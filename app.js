@@ -32,12 +32,16 @@ client.on('ready', () => {
 });
 
 // Create an event listener for messages
-client.on('messageUpdate', (oldMessage, newMessage) => {
+/*client.on('messageUpdate', (oldMessage, newMessage) => {
+	console.log('newMessage');
+	console.log(newMessage.content);
+	console.log('oldMessage');
+	console.log(oldMessage.content);
 		if (newMessage.author.bot === true) {
 				console.log('botul a modificat');
 				// trimitere notificare in canalul de general in momentul in care se organizeaza o activitate cu botul de LFG
 				const regexString = /LFG Post: ([0-9]+) created/;
-				if(newMessage.channel.name === '🔋bot-commands'){//🔋bot-commands
+				if(newMessage.channel.name === 'lfg-requests'){//🔋bot-commands
 				console.log('canalul mod corect');
 					if(newMessage.content.match(regexString)!== null){ //LFG Post: 3487 created.
 					console.log('mesajul mod corect, scrie in general');
@@ -46,16 +50,19 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
 					}
 				}
 			}
-});
+});*/
 
 
 client.on('message', message => {
     if (message.author.bot === true) {
 		console.log('botul a postat')
         // trimitere notificare in canalul de general in momentul in care se organizeaza o activitate cu botul de LFG
-		const regexString = /LFG Post: ([0-9]+) created/;
-		if(message.channel.name === '🔋bot-commands'){//🔋bot-commands
+		console.log(message.content);
+		console.log(message.channel.name);
+		const regexString = /LFG Post: \*\*([0-9]+)\*\* created/;
+		if(message.channel.name === 'lfg-requests'){//🔋bot-commands
 		console.log('canalul corect')
+		console.log(message.content);
 			if(message.content.match(regexString)!== null){ //LFG Post: 3487 created.
 			console.log('mesajul corect, scrie in general')
 				const canal = client.channels.cache.find(channel => channel.name === '📝general')
@@ -104,6 +111,7 @@ if(checkMessage[0] === '?lst'){
 
 
 }
+
 
     fs.readFile('./commands/commands.txt', 'utf8', function (err, f) {
         let com = f.toString().split(";");
