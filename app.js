@@ -62,12 +62,13 @@ client.on('message', message => {
 		const regexString = /LFG Post: \*\*([0-9]+)\*\* created/;
 		if(message.channel.name === '🔋bot-commands'){//🔋bot-commands
 		
-		const canalID = message.guild.channels.find(channel => channel.name === '🎲organizari');
+		
 		
 		console.log('canalul corect')
 		console.log(message.content);
 			if(message.content.match(regexString)!== null){ //LFG Post: 3487 created.
 			console.log('mesajul corect, scrie in general')
+				const canalID = message.guild.channels.cache.find(channel => channel.name === '🎲organizari');
 				const canal = client.channels.cache.find(channel => channel.name === '📝general')
 				canal.send('@here S-a creat o noua organizare, verificati canalul  <#$canalID.id>')
 			}
