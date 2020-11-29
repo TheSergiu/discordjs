@@ -65,9 +65,9 @@ client.on('message', message => {
 				const canalID = client.channels.cache.find(channel => channel.name === '🎲organizari');
 				console.log(canalID.id);
 				const rolID = message.guild.roles.cache.find(role => role.name === 'Destiny');
-				console.log(rolID);
+				console.log(rolID.id);
 				const canal = client.channels.cache.find(channel => channel.name === '📝general')
-				canal.send(" S-a creat o noua organizare, verificati canalul  <#"+canalID.id+'>')
+				canal.send("<#"+rolID.id+'>'+" S-a creat o noua organizare, verificati canalul  <#"+canalID.id+'>')
 			}
 		}
     }
