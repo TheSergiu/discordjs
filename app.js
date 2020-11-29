@@ -65,7 +65,7 @@ client.on('message', message => {
 				const canalID = client.channels.cache.find(channel => channel.name === '🎲organizari');
 				console.log(canalID.id);
 				const canal = client.channels.cache.find(channel => channel.name === '📝general')
-				canal.send("@here S-a creat o noua organizare, verificati canalul  <#"+canalID.id+'>')
+				canal.send("@Destiny S-a creat o noua organizare, verificati canalul  <#"+canalID.id+'>')
 			}
 		}
     }
