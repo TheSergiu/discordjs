@@ -10,11 +10,20 @@ if (!token) {
   throw new Error("DISCORD_TOKEN not set in env vars");
 }
 
-client.login(token).catch(console.error);
+;(async () => {
+  try {
+    await client.login(token);
 
-new Commands(client);
-new LfgNotify(client);
+    new Commands(client);
+    new LfgNotify(client);
 
-client.on('ready', () => {
-  console.log('Bot ready!');
-});
+    client.on('ready', () => {
+      console.log('Bot ready!');
+    });
+  }catch (e){
+    console.error('Fatal!:', e);
+
+    setTimeout(() => process.exit(1), 1000);
+  }
+})();
+

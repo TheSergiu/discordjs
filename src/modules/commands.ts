@@ -20,7 +20,8 @@ export class Commands {
   constructor(client: Client) {
     this.load();
     this.client = client;
-    this.client.on('message', this.dispatch)
+    this.client.on('message', this.dispatch);
+    client.user?.setActivity(withPrefix(HELP_COMMAND), {type: "PLAYING"}).catch(console.error);
   }
 
   save = () => {
