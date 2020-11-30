@@ -6,6 +6,9 @@ import {LfgNotify} from "./modules/lfgNotify";
 
 const client = new Discord.Client();
 const token = process.env.DISCORD_TOKEN;
+if (!token) {
+  throw new Error("DISCORD_TOKEN not set in env vars");
+}
 
 client.login(token).catch(console.error);
 
