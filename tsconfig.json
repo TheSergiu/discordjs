@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "outDir": "dist",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowJs": false,
+    "moduleResolution": "node",
+    "lib": [
+      "es6",
+      "es2017.object",
+      "dom",
+      "es2019.array"
+    ],
+    "experimentalDecorators": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

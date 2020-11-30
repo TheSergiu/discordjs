@@ -1,0 +1,4 @@
+{
+  "prefix": "?",
+  "command_editors": ["Admin", "Command_creator"]
+}
