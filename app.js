@@ -13,7 +13,7 @@ const client = new Discord.Client();
 //const client = new Client({ ws: { intentii } });
 
 // The token of your bot - https://discordapp.com/developers/applications/me
-const token = 'Nzc5NDYxMTE4MDI3NzU5NjQ2.X7g3vA.yMcIPYHR9aVvcPAz576iApbvZj8';//bot d2ro
+const token = process.env.DISCORD_TOKEN;
 //const token = 'NzgxNTk0MTE1MjEyODM2ODY1.X7_6Pg.KTL-01HHvJRANNy6x0nPix1Hg0I';
 // The ready event is vital, it means that your bot will only start reacting to information
 // from Discord _after_ ready is emitted
