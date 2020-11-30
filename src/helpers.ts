@@ -1,5 +1,5 @@
-export function splitOnFirst (s: string, split: string): [string, string|undefined] {
-  const [a, ...b] = s.split(split);
+export function splitOnFirst (s: string, delimiter: string): [string, string|undefined] {
+  const [a, ...b] = s.split(delimiter);
 
-  return [a, b ? b.join(split) : undefined];
+  return [a, b ? b.join(delimiter) : undefined];
 }

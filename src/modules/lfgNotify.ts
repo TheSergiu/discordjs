@@ -36,9 +36,9 @@ export class LfgNotify {
         console.log('Channel 📝general:', notifyChannel.id);
 
         notifyChannel
-          .send("<@&" + rolID.id + '>' + " S-a creat o noua organizare, verificati canalul  <#" + orgChannel.id + '>')
+          .send(`<@&${rolID.id}> S-a creat o noua organizare, verificati canalul <#${orgChannel.id}>`)
           .catch(console.error);
-        console.timeEnd("LFG Notify");
+        console.groupEnd();
       }
     }
   }
