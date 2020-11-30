@@ -8,7 +8,7 @@ export class LfgNotify {
     this.client.on('message', this.dispatch);
   }
 
-  dispatch = (message: Message) => {
+  dispatch = async (message: Message) => {
     if (message.channel.type !== 'text') return;
     if (!message.author.bot) return;
 
@@ -34,10 +34,13 @@ export class LfgNotify {
         ) as TextChannel;
 
         console.log('Channel 📝general:', notifyChannel.id);
-
-        notifyChannel
-          .send(`<@&${rolID.id}> S-a creat o noua organizare, verificati canalul <#${orgChannel.id}>`)
-          .catch(console.error);
+        try {
+          await notifyChannel
+            .send(`<@&${rolID.id}> S-a creat o noua organizare, verificati canalul <#${orgChannel.id}>`);
+          console.log('Posted lfg announcement for', message.content);
+        } catch (e) {
+          console.error(e);
+        }
         console.groupEnd();
       }
     }
