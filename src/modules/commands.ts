@@ -96,6 +96,7 @@ export class Commands {
 
     this.db[commandName] = commandText;
     this.save();
+    console.log(`${type.toUpperCase()}: ${message.author.username} | ${commandName} -> ${commandText}`);
     return message.channel.send(`Comanda \`${withPrefix(commandName)}\` a fost ${type === 'create' ? 'creata' : 'modificata'}!`);
   }
 
@@ -117,6 +118,7 @@ export class Commands {
 
     delete this.db[commandName];
     this.save();
+    console.log(`DEL: ${message.author.username} | ${commandName}`);
     return message.channel.send(`Comanda \`${withPrefix(commandName)}\` a fost stearsa!`);
   }
 
@@ -149,6 +151,7 @@ export class Commands {
 
     Object.keys(this.db).forEach(key => {
       if (withPrefix(key) === text) {
+        console.log(text, 'matched command', key);
         return message.channel.send(this.db[key]);
       }
     });
