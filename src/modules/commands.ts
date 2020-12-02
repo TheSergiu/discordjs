@@ -153,7 +153,13 @@ export class Commands {
     Object.keys(this.db).forEach(key => {
       if (withPrefix(key) === text) {
         console.log(text, 'matched command', key);
-        return message.channel.send(this.db[key]);
+        return message.channel.send({
+          content: this.db[key],
+          split: {
+            char: '\n',
+            maxLength: 1950
+          }
+        });
       }
     });
   }
