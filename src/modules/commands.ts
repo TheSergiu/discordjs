@@ -2,7 +2,7 @@ import * as path from 'path';
 import {readFileSync, writeFileSync} from "fs";
 import {Client, GuildMember, Message} from "discord.js";
 import {canEditCommands, settings, withPrefix} from "../settings";
-import {splitOnFirst} from "../helpers";
+import {maxCharPerMessage, sendMessage, splitOnFirst, text2codeBlock} from "../helpers";
 import * as pad from 'pad';
 
 const CREATE_COMMAND = 'create';
@@ -39,7 +39,7 @@ export class Commands {
     if (message.channel.type !== 'text') return;
     if (message.author.bot) return;
 
-    const { member } = message;
+    const {member} = message;
 
     if (!member) {
       return console.warn('no member for message', message);
@@ -123,7 +123,7 @@ export class Commands {
     return message.channel.send(`Comanda \`${withPrefix(commandName)}\` a fost stearsa!`);
   }
 
-  listCommands = (message: Message, member: GuildMember) => {
+  listCommands = async (message: Message, member: GuildMember) => {
     const adminCommands = canEditCommands(member) ? [
       '--------- Administrare ---------',
       `\`${withPrefix(CREATE_COMMAND)} nume-comanda | text comanda\` - creaza o comanda`,
@@ -135,16 +135,10 @@ export class Commands {
       ...adminCommands,
       `\`${withPrefix(HELP_COMMAND)}\` / \`${withPrefix(COMMANDS_COMMAND)}\` - vezi comenzi disponibile`,
       '---------- Comenzi existente -----------',
-      ...Object.keys(this.db).map(x => `\`${pad(withPrefix(x), 20, ' ')}\` -> \`${this.db[x]}\``)
-    ].join('\n');
+      ...Object.keys(this.db).map(x => `\`${pad(withPrefix(x), 20, ' ')}\` -> ${text2codeBlock(this.db[x])}`)
+    ];
 
-    message.channel.send({
-      content: commands,
-      split: {
-        char: '\n',
-        maxLength: 1950
-      }
-    });
+    await sendMessage(commands, message.channel);
   }
 
   sendMessageIfCommand = (message: Message) => {
