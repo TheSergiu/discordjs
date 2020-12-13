@@ -8,9 +8,9 @@ export function splitOnFirst(s: string, delimiter: string): [string, string | un
 
 export function text2codeBlock(s: string): string {
   if (s.indexOf('`') === -1) {
-    if(s.indexOf('\n')!==-1){
+    if (s.indexOf('\n') !== -1) {
       return `\`\`\`${s}\`\`\``;
-    }else {
+    } else {
       return `\`${s}\``;
     }
   }
