@@ -1,4 +1,4 @@
-import {DMChannel, NewsChannel, TextChannel} from "discord.js";
+import {DMChannel, Message, NewsChannel, Snowflake, TextChannel, User} from "discord.js";
 
 export function splitOnFirst(s: string, delimiter: string): [string, string | undefined] {
   const [a, ...b] = s.split(delimiter);
@@ -64,4 +64,27 @@ export async function sendMessage(s: string | string[], channel: TextChannel | D
       }
     });
   }
+}
+
+export async function removeReactionFromMessageByUser(message: Message, userOrID: User | Snowflake, emojiFilter?: { name?: string, id?: Snowflake }) {
+  const userId = typeof userOrID === "string" ? userOrID : userOrID.id;
+
+  const userReactions = message.reactions.cache.filter(reaction => reaction.users.cache.has(userId));
+
+  await Promise.all([...userReactions.values()].map(async (reaction) => {
+      if (emojiFilter) {
+        if (emojiFilter.name && emojiFilter.name !== reaction.emoji.name) {
+          return;
+        }
+        if (emojiFilter.id && emojiFilter.id !== reaction.emoji.id) {
+          return;
+        }
+      }
+      await reaction.users.remove(userId);
+    })
+  )
+}
+
+export function emoji2react (emojiName: string): string{
+  return encodeURIComponent(`:${emojiName}:`)
 }

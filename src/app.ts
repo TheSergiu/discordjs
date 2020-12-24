@@ -4,8 +4,14 @@ import * as Discord from 'discord.js'
 import {Commands} from "./modules/commands";
 import {LfgNotify} from "./modules/lfgNotify";
 import {Message, MessageEmbed, TextChannel} from "discord.js";
+import {removeReactionFromMessageByUser} from "./helpers";
+import {SimpleReactionManager} from "./helpers/ReactionManager";
+import {emit} from "cluster";
+import {LFG} from "./modules/LFG";
 
-const client = new Discord.Client();
+const client = new Discord.Client({
+  partials: ['USER','GUILD_MEMBER']
+});
 const token = process.env.DISCORD_TOKEN;
 if (!token) {
   throw new Error("DISCORD_TOKEN not set in env vars");
@@ -17,6 +23,7 @@ if (!token) {
 
     new Commands(client);
     new LfgNotify(client);
+    new LFG(client);
 
     client.on('ready', () => {
       console.log('Bot ready!');
@@ -61,7 +68,7 @@ if (!token) {
       embed.addFields([
         {
           name: 'Descriere',
-          value: `Icing gummies tart. Chocolate gummies fruitcake caramels toffee sugar plum toffee. Liquorice sweet roll croissant. Caramels macaroon brownie chocolate bar marshmallow donut. Tiramisu donut marshmallow cookie. Croissant jelly beans lemon drops toffee. Lollipop gummi bears cake cake carrot cake. Bear claw halvah marzipan. Cake sesame snaps fruitcake. Fruitcake croissant jujubes bear claw. Dessert brownie danish sugar plum pie powder cupcake. Marshmallow cupcake candy canes pastry lemon drops pudding donut jelly icing. Gummies wafer topping pie cupcake gingerbread donut. Sugar plum lollipop chocolate bar donut dragée chupa chups marzipan gingerbread donut.`,
+          value: `<:regional_indicator_d:791682671449210900> Icing gummies tart. Chocolate gummies fruitcake caramels toffee sugar plum toffee. Liquorice sweet roll croissant. Caramels macaroon brownie chocolate bar marshmallow donut. Tiramisu donut marshmallow cookie. Croissant jelly beans lemon drops toffee. Lollipop gummi bears cake cake carrot cake. Bear claw halvah marzipan. Cake sesame snaps fruitcake. Fruitcake croissant jujubes bear claw. Dessert brownie danish sugar plum pie powder cupcake. Marshmallow cupcake candy canes pastry lemon drops pudding donut jelly icing. Gummies wafer topping pie cupcake gingerbread donut. Sugar plum lollipop chocolate bar donut dragée chupa chups marzipan gingerbread donut.`,
         },
       ])
 
@@ -73,26 +80,20 @@ if (!token) {
 
       embed.setTitle("ORIGINAL")
 
+
+      client.emojis.cache.map(emoji => {
+        console.log(emoji.name, emoji.toString())
+      });
+
       const message: Message = await channel.send({
         embed
       });
+
       await channel.messages.fetch(message.id);
 
       await message.react(encodeURIComponent('👍'));
 
-      client.on('messageReactionAdd', mr => {
-        console.log(mr.emoji);
-        console.log(mr.count);
-      });
-
-
-      setInterval(() => {
-        const collector = message.createReactionCollector(() => true, {time: 5000 })
-        collector.on('end', (collected, reason) => {
-          console.log(collected.array(), reason);
-        });
-      }, 5000)
-
+      new SimpleReactionManager(message);
 
       const messageID = message.id;
 
