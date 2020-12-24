@@ -12,7 +12,7 @@ export class LfgNotify {
     if (message.channel.type !== 'text') return;
     if (!message.author.bot) return;
 
-    if (message.channel.name === '🔋bot-commands') {
+    if (message.channel.name === '🚨lfg-events🚨') {
 
       //LFG Post: 3487 created.
       if (/LFG Post: \*\*([0-9]+)\*\* created/i.test(message.content)) {
@@ -21,19 +21,19 @@ export class LfgNotify {
 
         const orgChannel = this.client.channels.cache.find(channel =>
           channel.type === 'text' &&
-          (channel as TextChannel).name === '🎲organizari'
+          (channel as TextChannel).name === '🚨lfg-events🚨'
         );
-        console.log('Channel 🎲organizari:', orgChannel.id);
+        console.log('Channel 🚨lfg-events🚨:', orgChannel.id);
 
-        const rolID = message.guild.roles.cache.find(role => role.name === 'Destiny');
+        const rolID = message.guild.roles.cache.find(role => role.name === '🔰Destiny 2');
         console.log('Will notify "Destiny":', rolID.id);
 
         const notifyChannel: TextChannel = this.client.channels.cache.find(channel =>
           channel.type === 'text' &&
-          (channel as TextChannel).name === '📝general'
+          (channel as TextChannel).name === '💬chat-lfg💬'
         ) as TextChannel;
 
-        console.log('Channel 📝general:', notifyChannel.id);
+        console.log('Channel 💬chat-lfg💬:', notifyChannel.id);
         try {
           await notifyChannel
             .send(`<@&${rolID.id}> S-a creat o noua organizare, verificati canalul <#${orgChannel.id}>`);

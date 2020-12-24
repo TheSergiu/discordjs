@@ -1,4 +1,4 @@
 {
   "prefix": "?",
-  "command_editors": ["Admin", "Command_creator"]
+  "command_editors": ["Admin", "Bot_manager",👑Guardian]
 }
