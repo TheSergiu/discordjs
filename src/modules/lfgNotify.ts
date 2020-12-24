@@ -12,7 +12,7 @@ export class LfgNotify {
     if (message.channel.type !== 'text') return;
     if (!message.author.bot) return;
 
-    if (message.channel.name === '📝lfg_create📝') {
+    if (message.channel.ID === '791657468274540594') {
 
       //LFG Post: 3487 created.
       if (/LFG Post: \*\*([0-9]+)\*\* created/i.test(message.content)) {
