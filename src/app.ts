@@ -10,25 +10,40 @@ import {emit} from "cluster";
 import {LFG} from "./modules/LFG";
 
 const client = new Discord.Client({
-  partials: ['USER','GUILD_MEMBER']
+  partials: ['USER', 'GUILD_MEMBER']
 });
 const token = process.env.DISCORD_TOKEN;
 if (!token) {
   throw new Error("DISCORD_TOKEN not set in env vars");
 }
 
+console.log('Starting bot...')
 ;(async () => {
-  try {
-    await client.login(token);
 
+  client.on('ready', () => {
+    console.log(
+      `Bot has started, with 
+  ${client.users.cache.size} users, in 
+  ${client.channels.cache.size} channels of 
+  ${client.guilds.cache.size} guilds.`
+    );
+  });
+
+  try {
+
+    console.log('Starting modules...');
     new Commands(client);
     new LfgNotify(client);
     new LFG(client);
 
-    client.on('ready', () => {
-      console.log('Bot ready!');
-    });
+    console.log('Logging in to discord...');
+    await client.login(token);
 
+    if (!client.readyAt) {
+      console.log('Waiting on client to be ready...');
+    }
+
+    return;
     client.channels.fetch('782729652526776380').then(async (channel: TextChannel) => {
 
       const embed = new MessageEmbed();
@@ -107,15 +122,6 @@ if (!token) {
 
       }, 3000);
     })
-
-    client.on('message', args => {
-      if (args.content === '!id') {
-        args.channel.send({
-          content: args.channel.id
-        })
-      }
-    })
-
 
   } catch (e) {
     console.error('Fatal!:', e);

@@ -1,8 +1,11 @@
-import {Client,  Message, Snowflake, TextChannel, User} from "discord.js";
+import {Client, Message, MessageEmbed, MessageReaction, Snowflake, TextChannel, User} from "discord.js";
 import {EMOJIS, EMPTY_SPACE, timeFormatRegex} from "../helpers/constants";
-import {OneReactionWaiter} from "../helpers/ReactionManager";
+import {MessageReactionManager, OneReactionWaiter} from "../helpers/ReactionManager";
 import {UserResponseManager} from "../helpers/UserResponseManager";
 import moment = require("moment-timezone");
+import * as  assert from "assert";
+import {repeatArray, userID2Text} from "../helpers";
+import {start} from "repl";
 
 export enum LFGActivity {
   'dsc' = "Deep Stone Crypt",
@@ -12,27 +15,51 @@ export enum LFGActivity {
 
 export class LFG {
   private readonly client: Client
+  private readonly instances = new Map<string, LFGMessageManager>()
 
   usersInProgress: Set<Snowflake> = new Set;
 
   constructor(client: Client) {
     this.client = client;
     this.client.on('message', this.dispatch);
+    this.client.once('ready', this.load)
   }
 
   private billboardChannelID = '787699897838993479'
 
-  private entries: {
-    [id: string]: {
-      messageID: string,
-      participants: string[]
-      alternatives: string[],
+  load = async () => {
+    // todo load entries from file
 
-      dueDate: number
-      activity: LFGActivity
-      desc?: string
+    const entries: { [id: string]: LFGManagerData } = {
+      '123': {
+        // messageID: '795687823956770866',
+        id: '123',
+        creator: {
+          id: '437651646940708865',
+          username: 'stefangab95'
+        },
+        participants: repeatArray([{
+          id: '437651646940708865',
+          username: 'stefangab95'
+        }], 10),
+        alternatives: repeatArray([{
+          id: '437651646940708865',
+          username: 'stefangab95'
+        }], 3),
+        inexperienced: [],
+        activity: LFGActivity.dsc,
+        desc: 'test123',
+        dueDate: 1609773817124 + 3600 * 1000,
+      }
+    };
+
+    const channel = await this.client.channels.fetch(this.billboardChannelID) as TextChannel;
+
+    for (const key in entries) {
+      this.instances.set(key, new LFGMessageManager(channel, entries[key]));
     }
-  } = {}
+  }
+
 
   dispatch = async (message: Message) => {
     if (message.channel.type !== 'text') return;
@@ -156,5 +183,235 @@ ${EMOJIS.L.text} Last Wish`
     await channel.send(`Event ${id} created by <@${user.id}>!`);
 
     return {time, id, desc, raid: {isDSC, isGarden, isLastWish}};
+  }
+}
+
+type LFGManagerData = {
+  id: string,
+  messageID?: Snowflake
+  creator: { username: string, id: Snowflake }
+  participants: { username: string, id: Snowflake }[]
+  alternatives: { username: string, id: Snowflake }[]
+  inexperienced: { username: string, id: Snowflake }[]
+
+  dueDate: number,
+  activity: LFGActivity,
+  desc?: string
+}
+
+const LFGAssets: {
+  [id in LFGActivity]: {
+    color: string,
+    name: string,
+    icon: string,
+    thumbnail: string
+  }
+} = {
+  [LFGActivity.lw]: {
+    name: "Last Wish",
+    color: '9400b5',
+    icon: "https://cdn.discordapp.com/attachments/610559032943444132/787730695161118730/raid.png",
+    thumbnail: 'https://cdn.discordapp.com/attachments/782729652526776380/787734420446642226/last-wish-2.png'
+  },
+
+  [LFGActivity.garden]: {
+    name: 'Garden Of Salvation',
+    color: 'fab75f',
+    icon: "https://cdn.discordapp.com/attachments/610559032943444132/787730695161118730/raid.png",
+    thumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/795679452687237190/garden.jpg'
+  },
+
+  [LFGActivity.dsc]: {
+    name: "Deep Stone Crypt",
+    color: '4287f5',
+    icon: "https://cdn.discordapp.com/attachments/610559032943444132/787730695161118730/raid.png",
+    thumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/795679459305848892/dsc.jpg'
+  },
+}
+
+export class LFGMessageManager {
+  private readonly channel: TextChannel;
+  private readonly client: Client;
+  private data: LFGManagerData;
+  private message: Message;
+  private reactionManager: MessageReactionManager;
+
+  private inexperiencedString = `${EMOJIS.baby_bottle.text}`
+
+  constructor(channel: TextChannel, data: LFGManagerData) {
+    this.channel = channel;
+    this.client = channel.client;
+    this.data = data;
+
+    this.init().catch(console.error);
+  }
+
+  async init() {
+    if (!this.data.messageID) {
+      this.message = await this.channel.send({embed: {title: 'Pending LFG...'}});
+
+      await Promise.all([
+        this.message.react(encodeURIComponent(EMOJIS.white_check_mark.unicode)),
+        this.message.react(encodeURIComponent(EMOJIS.new.unicode)),
+        this.message.react(encodeURIComponent(EMOJIS.x.unicode)),
+        this.message.react(encodeURIComponent(EMOJIS.question.unicode)),
+      ]);
+    } else {
+      this.message = await this.channel.messages.fetch(this.data.messageID);
+    }
+
+    this.reactionManager = new MessageReactionManager(this.message);
+    this.reactionManager.on('reaction', this.reactionDispatch);
+    await this.paintMessage();
+  }
+
+  get participants() {
+    return this.data.participants.slice(0, 6);
+  }
+
+  get alternatives() {
+    return [...this.data.participants.slice(6), ...this.data.alternatives].slice(0, 5);
+  }
+
+  private reactionDispatch = async (reaction: MessageReaction, user: User, message: Message) => {
+    if (
+      // if enroll in participants
+      reaction.emoji.name === EMOJIS.white_check_mark.unicode
+    ) {
+      this.addParticipant(user);
+    }
+    if (
+      // if enroll in alternatives
+      reaction.emoji.name === EMOJIS.question.unicode
+    ) {
+      this.addAlternative(user);
+    }
+
+    if (reaction.emoji.name === EMOJIS.new.unicode) {
+      if (this.alreadyEnrolled(user.id)) {
+        this.toggleInexperienced(user);
+      } else {
+        this.toggleInexperienced(user, true);
+        this.addParticipant(user);
+      }
+    }
+
+    if (reaction.emoji.name === EMOJIS.x.unicode) {
+      this.toggleInexperienced(user, false);
+      this.removeParticipant(user.id);
+    }
+
+
+    await this.paintMessage();
+  }
+
+  private addParticipant(user: User) {
+    if (
+      // not already in participants
+      !this.data.participants.find(x => x.id === user.id)
+    ) {
+      // remove from any other list
+      this.removeParticipant(user.id);
+      // add it
+      this.data.participants.push({username: user.username, id: user.id});
+    }
+  }
+
+  private addAlternative(user: User) {
+    if (
+      // and not already in alternatives
+      !this.data.alternatives.find(x => x.id === user.id)
+    ) {
+      // remove from any other list
+      this.removeParticipant(user.id);
+      // add it
+      this.data.alternatives.push({username: user.username, id: user.id});
+    }
+  }
+
+  private toggleInexperienced(user: User, bool?: boolean) {
+    const exists = !!this.data.inexperienced.find(x => x.id === user.id);
+
+    if (typeof bool !== "boolean") {
+      bool = !exists;
+    }
+
+    if (!bool) {
+      this.data.inexperienced = this.data.inexperienced.filter(x => x.id !== user.id);
+    } else {
+      if (!exists) {
+        this.data.inexperienced.push({id: user.id, username: user.username});
+      }
+    }
+  }
+
+  private removeParticipant(id: Snowflake) {
+    this.data.participants = this.data.participants.filter(x => x.id !== id);
+    this.data.alternatives = this.data.alternatives.filter(x => x.id !== id);
+  }
+
+  alreadyEnrolled(id: Snowflake) {
+    return (
+      !!this.data.participants.find(x => x.id === id) ||
+      !!this.data.alternatives.find(x => x.id === id)
+    )
+  }
+
+  isInexperienced(id: Snowflake) {
+    return !!this.data.inexperienced.find(x => x.id === id);
+  }
+
+  private paintMessage = async () => {
+    assert(this.message, 'no message found');
+
+    const assets = LFGAssets[this.data.activity];
+    assert(assets);
+
+    const startMoment = moment(this.data.dueDate).tz('EET');
+
+    const embed = new MessageEmbed();
+    embed.setColor(assets.color);
+    embed.setTimestamp(this.data.dueDate);
+    embed.setFooter(
+      `Creat de ${this.data.creator.username}`,
+      'https://cdn.discordapp.com/attachments/610559032943444132/787730695161118730/raid.png'
+    );
+    embed.setAuthor(assets.name, assets.icon);
+    embed.setImage(assets.thumbnail);
+    embed.addFields([
+      {
+        "name": "Info",
+        "value": this.data.desc || '-',
+        "inline": true
+      },
+      {
+        "name": "ID",
+        "value": this.data.id,
+        "inline": true
+      },
+      {"name": EMPTY_SPACE, "value": EMPTY_SPACE},
+      {
+        "name": "Participanti",
+        "value": this.participants.map(({
+                                          username,
+                                          id
+                                        }) => `${username} ${this.isInexperienced(id) ? this.inexperiencedString : ''}`).join('\n') || '-',
+        "inline": true
+      },
+      {
+        "name": "Rezerve",
+        "value": this.alternatives.map(({
+                                          username,
+                                          id
+                                        }) => `${username} ${this.isInexperienced(id) ? this.inexperiencedString : ''}`).join('\n') || '-',
+        "inline": true
+      },
+      {
+        "name": "Start",
+        "value": startMoment.format("DD/MM/YYYY") + '\n' + startMoment.format('HH:mm')
+      }
+    ]);
+
+    await this.message.edit({embed});
   }
 }

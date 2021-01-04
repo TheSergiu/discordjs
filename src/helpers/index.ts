@@ -1,4 +1,6 @@
-import {DMChannel, Message, NewsChannel, Snowflake, TextChannel, User} from "discord.js";
+import {DMChannel, EmojiResolvable, Message, NewsChannel, Snowflake, TextChannel, User} from "discord.js";
+import {EMOJIS} from "./constants";
+import {strict} from "assert";
 
 export function splitOnFirst(s: string, delimiter: string): [string, string | undefined] {
   const [a, ...b] = s.split(delimiter);
@@ -85,6 +87,41 @@ export async function removeReactionFromMessageByUser(message: Message, userOrID
   )
 }
 
-export function emoji2react (emojiName: string): string{
+
+export async function userReacted(message: Message, userOrID: User | Snowflake, emojiFilter: { name?: string, id?: Snowflake }) {
+  const userId = typeof userOrID === "string" ? userOrID : userOrID.id;
+
+  const userReactions = message.reactions.cache.filter(reaction => (
+    reaction.users.cache.has(userId) &&
+    (
+      reaction.emoji.name === emojiFilter.name ||
+      reaction.emoji.id === emojiFilter.id
+    )
+  ));
+
+  return userReactions.size > 0;
+}
+
+export async function ensureReaction(message: Message, user: User, react: EmojiResolvable) {
+  if (await userReacted(message, user, {name: typeof react === "string" ? react : react.name})) {
+    return;
+  }
+  await message.react(typeof react === "string" ? encodeURIComponent(react) : react);
+}
+
+
+export function emoji2react(emojiName: string): string {
   return encodeURIComponent(`:${emojiName}:`)
+}
+
+export const userID2Text = (userID: Snowflake): string => {
+  return `<@${userID}>`;
+}
+
+export function repeatArray<T>(arr: T[], times: number): T[] {
+  let out = arr;
+  for (let i = 1; i < times; i++) {
+    out = out.concat(arr);
+  }
+  return out;
 }

@@ -17,7 +17,47 @@ export const EMOJIS = {
     name: 'regional_indicator_l',
     text: '<:regional_indicator_l:791682736578363403>',
     unicode: '🇱'
-  }
+  },
+  'white_check_mark': {
+    name: 'white_check_mark',
+    text: '<:white_check_mark:795679733462859836>',
+    unicode: '✅'
+  },
+  'x': {
+    name: 'x',
+    text: '<:x:795679733462859836>',
+    unicode: '❌'
+  },
+  'question': {
+    name: 'question',
+    text: '<:question:795679733462859836>',
+    unicode: '❓'
+  },
+  'thumbsup': {
+    name: 'thumbsup',
+    text: '<:thumbsup:795679733462859836>',
+    unicode: '👍'
+  },
+  'ballot_box_with_check': {
+    name: 'ballot_box_with_check',
+    text: '<:ballot_box_with_check:795679733462859836>',
+    unicode: '☑'
+  },
+  'new': {
+    name: 'new',
+    text: '<:new:795693091952263168>',
+    unicode: '🆕'
+  },
+  'baby': {
+    name: 'baby',
+    text: '<:baby:795693611827462194>',
+    unicode: '👶'
+  },
+  'baby_bottle': {
+    name: 'baby_bottle',
+    text: '<:baby_bottle:795693365819342869>',
+    unicode: '🍼'
+  },
 }
 
 export const timeFormatRegex = /(\d{1,2}):(\d{2}) *(?:(\d{1,2})\/(\d{1,2}))?/i;
