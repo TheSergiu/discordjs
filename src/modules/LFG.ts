@@ -6,6 +6,8 @@ import moment = require("moment-timezone");
 import * as  assert from "assert";
 import {repeatArray, userID2Text} from "../helpers";
 import {start} from "repl";
+import {existsSync, readFileSync, writeFileSync} from "fs";
+import * as path from 'path';
 
 export enum LFGActivity {
   'dsc' = "Deep Stone Crypt",
@@ -13,50 +15,44 @@ export enum LFGActivity {
   'lw' = 'Last Wish'
 }
 
+const LFGFile = path.join(process.cwd(), 'db', 'lfg.json');
+
 export class LFG {
   private readonly client: Client
-  private readonly instances = new Map<string, LFGMessageManager>()
+  private readonly instances = new Map<string, LFGMessageManager>();
+  private readonly entries: { [id: string]: LFGManagerData } = {};
 
   usersInProgress: Set<Snowflake> = new Set;
 
   constructor(client: Client) {
     this.client = client;
+
+    this.entries = existsSync(LFGFile) ? JSON.parse(readFileSync(LFGFile).toString()) : {};
+
     this.client.on('message', this.dispatch);
-    this.client.once('ready', this.load)
+    this.client.once('ready', this.init)
   }
 
   private billboardChannelID = '787699897838993479'
 
-  load = async () => {
-    // todo load entries from file
+  save = () => {
+    writeFileSync(LFGFile, JSON.stringify(this.entries, null, 2));
+  }
 
-    const entries: { [id: string]: LFGManagerData } = {
-      '123': {
-        // messageID: '795687823956770866',
-        id: '123',
-        creator: {
-          id: '437651646940708865',
-          username: 'stefangab95'
-        },
-        participants: repeatArray([{
-          id: '437651646940708865',
-          username: 'stefangab95'
-        }], 10),
-        alternatives: repeatArray([{
-          id: '437651646940708865',
-          username: 'stefangab95'
-        }], 3),
-        inexperienced: [],
-        activity: LFGActivity.dsc,
-        desc: 'test123',
-        dueDate: 1609773817124 + 3600 * 1000,
-      }
-    };
+  saveEntry = (entryID: string, entry: LFGManagerData | null) => {
+    this.entries[entryID] = entry;
+    if (!entry) {
+      // todo remove scheduled messages
+      delete this.entries[entryID];
+    }
+    this.save();
+  }
 
+  init = async () => {
     const channel = await this.client.channels.fetch(this.billboardChannelID) as TextChannel;
 
-    for (const key in entries) {
-      this.instances.set(key, new LFGMessageManager(channel, entries[key]));
+    for (const key in this.entries) {
+      this.instances.set(key, new LFGMessageManager(channel, this.entries[key], this.saveEntry.bind(this, key)));
     }
   }
 
@@ -69,7 +65,6 @@ export class LFG {
     if (content.indexOf('/raid') !== 0) return;
 
     if (this.usersInProgress.has(author.id)) return;
-
 
     try {
       this.usersInProgress.add(author.id);
@@ -232,37 +227,62 @@ const LFGAssets: {
 export class LFGMessageManager {
   private readonly channel: TextChannel;
   private readonly client: Client;
-  private data: LFGManagerData;
+  private readonly data: LFGManagerData;
+  private readonly saveDelegate: (e: LFGManagerData) => void;
+
   private message: Message;
   private reactionManager: MessageReactionManager;
 
   private inexperiencedString = `${EMOJIS.baby_bottle.text}`
 
-  constructor(channel: TextChannel, data: LFGManagerData) {
+  constructor(channel: TextChannel, data: LFGManagerData, saveDelegate: (e: LFGManagerData) => void) {
     this.channel = channel;
     this.client = channel.client;
     this.data = data;
 
+    this.saveDelegate = saveDelegate;
     this.init().catch(console.error);
   }
 
-  async init() {
-    if (!this.data.messageID) {
-      this.message = await this.channel.send({embed: {title: 'Pending LFG...'}});
+  dispose = () => {
+    console.log(`Disposed LFG ${this.data.id}`)
+    this.reactionManager?.dispose();
+  }
 
+  async init() {
+    const isNewMessage = !this.data.messageID;
+    if (isNewMessage) {
+      this.message = await this.channel.send({embed: {title: 'Pending LFG...'}});
+    } else {
+      try {
+        this.message = await this.channel.messages.fetch(this.data.messageID);
+      } catch (e) {
+        this.saveDelegate(null);
+        throw e;
+      }
+    }
+    this.data.messageID = this.message.id;
+    this.client.on('messageDelete', args => {
+      if (args.id === this.data.messageID) {
+        console.log(`Deleted LFG message for entry ${this.data.id}`)
+        this.saveDelegate(null);
+        this.dispose();
+      }
+    })
+
+    await this.paintMessage();
+
+    if (isNewMessage) {
       await Promise.all([
         this.message.react(encodeURIComponent(EMOJIS.white_check_mark.unicode)),
         this.message.react(encodeURIComponent(EMOJIS.new.unicode)),
         this.message.react(encodeURIComponent(EMOJIS.x.unicode)),
         this.message.react(encodeURIComponent(EMOJIS.question.unicode)),
       ]);
-    } else {
-      this.message = await this.channel.messages.fetch(this.data.messageID);
     }
 
     this.reactionManager = new MessageReactionManager(this.message);
     this.reactionManager.on('reaction', this.reactionDispatch);
-    await this.paintMessage();
   }
 
   get participants() {
@@ -301,8 +321,8 @@ export class LFGMessageManager {
       this.removeParticipant(user.id);
     }
 
-
     await this.paintMessage();
+    this.saveDelegate(this.data);
   }
 
   private addParticipant(user: User) {
@@ -413,5 +433,7 @@ export class LFGMessageManager {
     ]);
 
     await this.message.edit({embed});
+
+    this.saveDelegate(this.data);
   }
 }
