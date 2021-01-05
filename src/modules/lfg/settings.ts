@@ -1,8 +1,17 @@
 import {LFGActivity} from "./types";
 import * as path from "path";
 
-export const LFGFile = path.join(process.cwd(), 'db', 'lfg.json');
-export const LFG_CREATE_TIMEOUT = 30 * 1000;
+export namespace LFGSettings {
+
+  export const LFGFile = path.join(process.cwd(), 'db', 'lfg.json');
+  export const LFG_CREATE_TIMEOUT = 30 * 1000;
+
+  export const BILLBOARD_CHANNEL_ID = '787699897838993479';
+
+  export const CHANNEL_TO_NOTIFY_ID = '610559032943444132';
+  export const ROLE_TO_NOTIFY_ID = '782730784099401749';
+
+}
 
 export const LFGAssets: {
   [id in LFGActivity]: {

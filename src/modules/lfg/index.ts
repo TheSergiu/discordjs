@@ -6,8 +6,11 @@ import {channelID2Text, PromiseTimeoutError, timeoutPromise, userID2Text} from "
 import {existsSync, readFileSync, writeFileSync} from "fs";
 import {LFGMessageManager} from "./message-manager";
 import {LFGActivity, LFGManagerData} from "./types";
-import {LFG_CREATE_TIMEOUT, LFGFile} from "./settings";
+import {LFGSettings} from "./settings";
 import moment = require("moment-timezone");
+import LFGFile = LFGSettings.LFGFile;
+import BILLBOARD_CHANNEL_ID = LFGSettings.BILLBOARD_CHANNEL_ID;
+import LFG_CREATE_TIMEOUT = LFGSettings.LFG_CREATE_TIMEOUT;
 
 export class LFGModule {
   private readonly client: Client
@@ -28,8 +31,6 @@ export class LFGModule {
     this.client.once('ready', this.init)
   }
 
-  private billboardChannelID = '787699897838993479'
-
   save = () => {
     writeFileSync(LFGFile, JSON.stringify(this.entries, null, 2));
   }
@@ -44,7 +45,7 @@ export class LFGModule {
   }
 
   init = async () => {
-    this.billboardChannel = await this.client.channels.fetch(this.billboardChannelID) as TextChannel;
+    this.billboardChannel = await this.client.channels.fetch(BILLBOARD_CHANNEL_ID) as TextChannel;
 
     for (const key in this.entries) {
       this.instances.set(key, new LFGMessageManager(this.billboardChannel, this.entries[key], this.saveEntry.bind(this, key)));
@@ -212,7 +213,7 @@ ${EMOJIS.L.text} Last Wish`
       }
       console.log(desc);
 
-      await channel.send(`Evenimentul ${id} a fost creat pe ${channelID2Text(this.billboardChannelID)} de catre ${userID2Text(user.id)}!`);
+      await channel.send(`Evenimentul ${id} a fost creat pe ${channelID2Text(BILLBOARD_CHANNEL_ID)} de catre ${userID2Text(user.id)}!`);
 
       let activity: LFGActivity;
       if (isDSC) activity = LFGActivity.dsc;

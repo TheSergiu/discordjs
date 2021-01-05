@@ -1,6 +1,4 @@
 import {DMChannel, EmojiResolvable, Message, NewsChannel, Snowflake, TextChannel, User} from "discord.js";
-import {EMOJIS} from "./constants";
-import {strict, throws} from "assert";
 
 export function splitOnFirst(s: string, delimiter: string): [string, string | undefined] {
   const [a, ...b] = s.split(delimiter);
@@ -117,8 +115,15 @@ export function emoji2react(emojiName: string): string {
 export const userID2Text = (userID: Snowflake): string => {
   return `<@${userID}>`;
 }
-export const channelID2Text= (channelID: Snowflake) : string => {
+export const channelID2Text = (channelID: Snowflake): string => {
   return `<#${channelID}>`;
+}
+export const roleID2Text = (roleID: Snowflake): string => {
+  return `<@&${roleID}>`;
+}
+
+export const message2link = (message: Message): string => {
+  return `https://discord.com/channels/${message.guild.id}/${message.channel.id}/${message.id}`
 }
 
 export function repeatArray<T>(arr: T[], times: number): T[] {

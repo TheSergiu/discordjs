@@ -3,8 +3,11 @@ import {MessageReactionManager} from "../../helpers/ReactionManager";
 import {EMOJIS, EMPTY_SPACE} from "../../helpers/constants";
 import * as assert from "assert";
 import {LFGManagerData} from "./types";
-import {LFGAssets} from "./settings";
+import {LFGAssets, LFGSettings} from "./settings";
+import {roleID2Text, userID2Text} from "../../helpers";
+import {ScheduleTask} from "../../helpers/scheduler";
 import moment = require("moment-timezone");
+import ROLE_TO_NOTIFY_ID = LFGSettings.ROLE_TO_NOTIFY_ID;
 
 export class LFGMessageManager {
   private readonly channel: TextChannel;
@@ -12,10 +15,14 @@ export class LFGMessageManager {
   private readonly data: LFGManagerData;
   private readonly saveDelegate: (e: LFGManagerData) => void;
 
+  private notifyChannel: TextChannel;
+
   private message: Message;
   private reactionManager: MessageReactionManager;
 
   private inexperiencedString = `${EMOJIS.baby_bottle.text}`
+
+  private scheduledJobs: ScheduleTask[] = [];
 
   constructor(channel: TextChannel, data: LFGManagerData, saveDelegate: (e: LFGManagerData) => void) {
     this.channel = channel;
@@ -29,12 +36,19 @@ export class LFGMessageManager {
   dispose = () => {
     console.log(`Disposed LFG ${this.data.id}`)
     this.reactionManager?.dispose();
+
+    for (const job of this.scheduledJobs) {
+      job.cancel();
+    }
   }
 
-  async init() {
+  init = async () => {
     const isNewMessage = !this.data.messageID;
     if (isNewMessage) {
-      this.message = await this.channel.send({embed: {title: 'Pending LFG...'}});
+      this.message = await this.channel.send({
+        embed: {title: `Organizare noua de ${LFGAssets[this.data.activity].name}`},
+        content: `${roleID2Text(ROLE_TO_NOTIFY_ID)} - ${LFGAssets[this.data.activity].name}`
+      });
     } else {
       try {
         this.message = await this.channel.messages.fetch(this.data.messageID);
@@ -54,6 +68,10 @@ export class LFGMessageManager {
 
     await this.paintMessage();
 
+    // repaint after 10 seconds
+    // sometimes the first paint fails???
+    setTimeout(this.paintMessage, 10 * 1000);
+
     if (isNewMessage) {
       await Promise.all([
         this.message.react(encodeURIComponent(EMOJIS.white_check_mark.unicode)),
@@ -65,6 +83,61 @@ export class LFGMessageManager {
 
     this.reactionManager = new MessageReactionManager(this.message);
     this.reactionManager.on('reaction', this.reactionDispatch);
+
+    this.notifyChannel = await this.client.channels.fetch(LFGSettings.CHANNEL_TO_NOTIFY_ID) as TextChannel;
+
+    const timeLeft = this.data.dueDate - Date.now();
+
+    if (timeLeft > 0) {
+      if (timeLeft > 60 * 60 * 1000) {
+        this.scheduledJobs.push(new ScheduleTask(this.data.dueDate - 60 * 60 * 1000, this.notify))
+      }
+
+      if (timeLeft < 60 * 60 * 1000 && timeLeft > 10 * 60 * 1000) {
+        this.scheduledJobs.push(new ScheduleTask(Date.now() + 1000, this.notify));
+      }
+
+      if (timeLeft > 10 * 60 * 1000) {
+        this.scheduledJobs.push(new ScheduleTask(this.data.dueDate - 10 * 60 * 1000, this.notify));
+      }
+
+      if (timeLeft < 10 * 60 * 1000 && timeLeft > 5 * 60 * 1000) {
+        this.scheduledJobs.push(new ScheduleTask(Date.now() + 1000, this.notify));
+      }
+
+      this.scheduledJobs.push(new ScheduleTask(this.data.dueDate, this.finalizeAndMakeReadonly));
+    } else {
+      await this.finalizeAndMakeReadonly();
+    }
+
+  }
+
+  notify = async () => {
+    const timeLeft = moment(this.data.dueDate, undefined, 'ro').tz('EET');
+    const diff = moment(this.data.dueDate - Date.now()).tz('UTC');
+    const singular = (
+      (diff.dayOfYear() - 1 === 1) ||
+      (diff.dayOfYear() - 1 === 0 && diff.hours() === 1) ||
+      (diff.dayOfYear() - 1 === 0 && diff.hours() === 0 && diff.minutes() === 1)
+    );
+
+    const timeLeftString = timeLeft.fromNow(true);
+
+    await this.notifyChannel.send(
+      `\
+${singular ? 'A' : 'Au'} mai ramas ${timeLeftString} pana la organizarea de ${LFGAssets[this.data.activity].name} [${this.data.id}]
+Participanti: ${this.data.participants.map(x => userID2Text(x.id)).join(', ') || '-'}
+Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
+`
+    );
+  }
+
+  finalizeAndMakeReadonly = async () => {
+    console.log(`Finalizing LFG ${this.data.id}`)
+    this.saveDelegate(null);
+    await this.message.reactions.removeAll();
+    this.dispose();
+    console.log(`Finalized LFG ${this.data.id}`)
   }
 
   get participants() {
