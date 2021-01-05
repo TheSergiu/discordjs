@@ -1,6 +1,6 @@
 import {DMChannel, EmojiResolvable, Message, NewsChannel, Snowflake, TextChannel, User} from "discord.js";
 import {EMOJIS} from "./constants";
-import {strict} from "assert";
+import {strict, throws} from "assert";
 
 export function splitOnFirst(s: string, delimiter: string): [string, string | undefined] {
   const [a, ...b] = s.split(delimiter);
@@ -117,6 +117,9 @@ export function emoji2react(emojiName: string): string {
 export const userID2Text = (userID: Snowflake): string => {
   return `<@${userID}>`;
 }
+export const channelID2Text= (channelID: Snowflake) : string => {
+  return `<#${channelID}>`;
+}
 
 export function repeatArray<T>(arr: T[], times: number): T[] {
   let out = arr;
@@ -125,3 +128,21 @@ export function repeatArray<T>(arr: T[], times: number): T[] {
   }
   return out;
 }
+
+export function sleep(ms: number) {
+  return new Promise(res => setTimeout(res, ms));
+}
+
+export class PromiseTimeoutError extends Error {
+  name: 'PromiseTimeoutError'
+}
+
+export function timeoutPromise<T>(p: Promise<T>, ms: number): Promise<T> {
+  return Promise.race([
+    p,
+    sleep(ms).then(() => {
+      throw new PromiseTimeoutError();
+    })
+  ])
+}
+

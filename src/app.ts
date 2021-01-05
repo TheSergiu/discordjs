@@ -1,13 +1,11 @@
 import 'source-map-support/register';
 
 import * as Discord from 'discord.js'
+import {Message, MessageEmbed, TextChannel} from 'discord.js'
 import {Commands} from "./modules/commands";
 import {LfgNotify} from "./modules/lfgNotify";
-import {Message, MessageEmbed, TextChannel} from "discord.js";
-import {removeReactionFromMessageByUser} from "./helpers";
 import {SimpleReactionManager} from "./helpers/ReactionManager";
-import {emit} from "cluster";
-import {LFG} from "./modules/LFG";
+import {LFGModule} from "./modules/lfg";
 
 const client = new Discord.Client({
   partials: ['USER', 'GUILD_MEMBER']
@@ -34,7 +32,7 @@ console.log('Starting bot...')
     console.log('Starting modules...');
     new Commands(client);
     new LfgNotify(client);
-    new LFG(client);
+    new LFGModule(client);
 
     console.log('Logging in to discord...');
     await client.login(token);
