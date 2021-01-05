@@ -2,7 +2,7 @@ import {Client, Message, Snowflake, TextChannel, User} from "discord.js";
 import {EMOJIS, EMPTY_SPACE, timeFormatRegex} from "../../helpers/constants";
 import {OneReactionWaiter} from "../../helpers/ReactionManager";
 import {UserResponseManager} from "../../helpers/UserResponseManager";
-import {channelID2Text, PromiseTimeoutError, timeoutPromise, userID2Text} from "../../helpers";
+import {channelID2Text, PromiseTimeoutError, sleep, timeoutPromise, userID2Text} from "../../helpers";
 import {existsSync, readFileSync, writeFileSync} from "fs";
 import {LFGMessageManager} from "./message-manager";
 import {LFGActivity, LFGManagerData} from "./types";
@@ -38,7 +38,6 @@ export class LFGModule {
   saveEntry = (entryID: string, entry: LFGManagerData | null) => {
     this.entries[entryID] = entry;
     if (!entry) {
-      // todo remove scheduled messages
       delete this.entries[entryID];
     }
     this.save();
@@ -53,8 +52,18 @@ export class LFGModule {
   }
 
   findAvailableID = () => {
+
+    for (let i = 0; i < 100; i++) {
+      const id = (Math.random() * 1000).toFixed(0).padStart(4, '0');
+
+      if (!this.idsInProgress.has(id) && !this.entries[id]) {
+        this.idsInProgress.add(id);
+        return id;
+      }
+    }
+
     for (let i = 1; i < 9999; i++) {
-      const id = i.toString();
+      const id = i.toString().padStart(4, '0');
 
       if (!this.idsInProgress.has(id) && !this.entries[id]) {
         this.idsInProgress.add(id);
@@ -184,6 +193,14 @@ ${EMOJIS.L.text} Last Wish`
           ] = timeFormatRegex.exec(content);
 
           time = moment(`${h}:${m} ${D}/${M}`, 'HH:mm DD/MM EET').tz('EET').toDate();
+
+          if (time.getTime() < Date.now() - 60 * 1000) {
+            channel.send('Nu poti crea o organizare in trecut').then(async (m) => {
+              await sleep(5000);
+              return m.delete();
+            }).catch(console.error);
+            time = null;
+          }
         }
 
         if (content === 'now' || content === 'acum') {
@@ -226,7 +243,7 @@ ${EMOJIS.L.text} Last Wish`
 
       if (e instanceof PromiseTimeoutError) {
         console.log(`LFG Event ${id} has timed out`);
-        await channel.send(`Crearea evenimentului ${id} de catre <@${user.id}> a expirat!`);
+        await channel.send(`Crearea evenimentului [${id}] de catre <@${user.id}> a expirat!`);
       }
       throw e;
 

@@ -13,7 +13,7 @@ export class LFGMessageManager {
   private readonly channel: TextChannel;
   private readonly client: Client;
   private readonly data: LFGManagerData;
-  private readonly saveDelegate: (e: LFGManagerData) => void;
+  private saveDelegate: (e: LFGManagerData) => void;
 
   private notifyChannel: TextChannel;
 
@@ -23,6 +23,8 @@ export class LFGMessageManager {
   private inexperiencedString = `${EMOJIS.baby_bottle.text}`
 
   private scheduledJobs: ScheduleTask[] = [];
+
+  private disposed = false;
 
   constructor(channel: TextChannel, data: LFGManagerData, saveDelegate: (e: LFGManagerData) => void) {
     this.channel = channel;
@@ -40,6 +42,8 @@ export class LFGMessageManager {
     for (const job of this.scheduledJobs) {
       job.cancel();
     }
+    this.disposed = true;
+    this.saveDelegate = () => console.warn(`Tried to save data for LFG ${this.data.id} after it's disposal`);
   }
 
   init = async () => {
@@ -237,6 +241,8 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
   }
 
   private paintMessage = async () => {
+    if (this.disposed) return;
+
     assert(this.message, 'no message found');
 
     const assets = LFGAssets[this.data.activity];
@@ -282,7 +288,7 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
         "inline": true
       },
       {
-        "name": "Start",
+        "name": "Start [Ora RO]",
         "value": startMoment.format("DD/MM/YYYY") + '\n' + startMoment.format('HH:mm')
       }
     ]);
