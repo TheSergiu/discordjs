@@ -98,7 +98,7 @@ export class LFGMessageManager {
       }
 
       if (timeLeft > 10 * 60 * 1000) {
-        this.scheduledJobs.push(new ScheduleTask(this.data.dueDate - 10 * 60 * 1000, this.notify));
+        this.scheduledJobs.push(new ScheduleTask(this.data.dueDate - 10 * 60 * 1000 - 1000, this.notify));
       }
 
       if (timeLeft < 10 * 60 * 1000 && timeLeft > 5 * 60 * 1000) {
