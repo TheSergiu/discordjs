@@ -178,11 +178,15 @@ ${EMOJIS.L.text} Last Wish`
       await question.reactions.removeAll();
       await question.edit({
         embed: {
-          title: 'Alege ora si data',
+          title: 'Scrie ora si data',
           fields: [
             {
               name: 'Format',
-              value: 'hh:mm DD/MM sau `now` / `acum`'
+              value: `\
+HH:mm DD/MM sau \`now\` / \`acum\`
+
+Exemplu: ${moment().tz('EET').format('HH:mm DD/MM')} sau ${moment().tz('EET').format('HH:mm')}
+Ora trebuie sa fie in format de 24h`
             },
             {
               name: 'Ora RO curenta (EET)',
