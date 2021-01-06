@@ -39,6 +39,7 @@ export class LFGModule {
     this.entries[entryID] = entry;
     if (!entry) {
       delete this.entries[entryID];
+      this.instances.delete(entryID);
     }
     this.save();
   }
@@ -83,37 +84,55 @@ export class LFGModule {
 
     if (this.usersInProgress.has(author.id)) return;
 
-    const myID = this.findAvailableID();
-    this.usersInProgress.add(author.id);
+    if (/^\/raid\s*(?:del|delete)\s*(\d{1,4})$/i.test(content.trim())) {
+      let [_, id] = /^\/raid\s*(?:del|delete)\s*(\d{1,4})$/i.exec(content.trim());
 
-    try {
-      const data = await this.lfgRaidLifeCycle(channel, author, myID);
+      id = id.padStart(4, '0');
+      const instance = this.instances.get(id);
+      if (!instance) {
+        return await channel.send(`Organizarea [${id}] a expirat sau nu exista`);
+      }
+      if (instance.owner.id !== author.id) {
+        return await channel.send(`Organizarea [${id}] nu a fost creata de tine`);
+      }
+      await instance.finalizeAndMakeReadonly(true);
+      return await channel.send(`Organizarea [${id}] a fost stearsa`);
+    }
 
-      this.entries[myID] = {
-        id: myID,
-        inexperienced: [],
-        alternatives: [],
-        participants: [{username: author.username, id: author.id}],
-        dueDate: data.time.getTime(),
-        desc: data.desc,
-        creator: {username: author.username, id: author.id},
-        activity: data.activity
-      };
-      this.instances.set(
-        myID,
-        new LFGMessageManager(
-          this.billboardChannel,
-          this.entries[myID],
-          this.saveEntry.bind(this, myID)
-        )
-      );
-      this.save();
+    if (/^\/raid\s*$/gi.test(content)) {
 
-    } catch (e) {
-      console.error(e);
-    } finally {
-      this.idsInProgress.delete(myID);
-      this.usersInProgress.delete(author.id);
+      const myID = this.findAvailableID();
+      this.usersInProgress.add(author.id);
+
+      try {
+        const data = await this.lfgRaidLifeCycle(channel, author, myID);
+
+        this.entries[myID] = {
+          id: myID,
+          inexperienced: [],
+          alternatives: [],
+          participants: [{username: author.username, id: author.id}],
+          dueDate: data.time.getTime(),
+          desc: data.desc,
+          creator: {username: author.username, id: author.id},
+          activity: data.activity
+        };
+        this.instances.set(
+          myID,
+          new LFGMessageManager(
+            this.billboardChannel,
+            this.entries[myID],
+            this.saveEntry.bind(this, myID)
+          )
+        );
+        this.save();
+
+      } catch (e) {
+        console.error(e);
+      } finally {
+        this.idsInProgress.delete(myID);
+        this.usersInProgress.delete(author.id);
+      }
     }
   }
 
@@ -154,7 +173,7 @@ ${EMOJIS.L.text} Last Wish`
       const isGarden = chooseRaidResponse.reaction.emoji.name === EMOJIS.G.unicode;
       const isLastWish = chooseRaidResponse.reaction.emoji.name === EMOJIS.L.unicode;
 
-      console.log({isDSC, isGarden, isLastWish});
+      console.log('LFG', id, 'activity', {isDSC, isGarden, isLastWish});
 
       await question.reactions.removeAll();
       await question.edit({
@@ -180,7 +199,7 @@ ${EMOJIS.L.text} Last Wish`
       while (!time) {
         const resp = await textResponseWaiter.waitResponseAndDeleteMessage(LFG_CREATE_TIMEOUT);
 
-        console.log(resp.content);
+        console.log('LFG', id, 'time/date', 'input', resp.content);
         const content = resp.content.toString().toLowerCase().trim();
 
         if (timeFormatRegex.test(content)) {
@@ -204,11 +223,11 @@ ${EMOJIS.L.text} Last Wish`
         }
 
         if (content === 'now' || content === 'acum') {
-          time = new Date();
+          time = new Date(Date.now() + 10 * 60 * 1000);
         }
       }
 
-      console.log(time);
+      console.log('LFG', id, 'time/date', 'settled', time);
 
       await question.edit({
         embed: {
@@ -228,7 +247,8 @@ ${EMOJIS.L.text} Last Wish`
       if (desc.toLowerCase() === 'none' || desc.toLowerCase() === 'nimic') {
         desc = null;
       }
-      console.log(desc);
+
+      console.log('LFG', id, 'desc:', desc);
 
       await channel.send(`Evenimentul ${id} a fost creat pe ${channelID2Text(BILLBOARD_CHANNEL_ID)} de catre ${userID2Text(user.id)}!`);
 

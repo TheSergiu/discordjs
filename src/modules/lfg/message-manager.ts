@@ -37,6 +37,8 @@ export class LFGMessageManager {
   }
 
   dispose = () => {
+    if(this.disposed) return console.warn(`LFG Instance ${this.data.id} already disposed`);
+
     console.log(`Disposed LFG ${this.data.id}`)
     this.reactionManager?.dispose();
 
@@ -147,13 +149,20 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
     );
   }
 
-  finalizeAndMakeReadonly = async () => {
+  finalizeAndMakeReadonly = async (deleteMessage = false) => {
     console.log(`Finalizing LFG ${this.data.id}`);
     this.saveDelegate(null);
     await this.message.reactions.removeAll();
     this.dispose();
     await this.paintMessage();
+    if (deleteMessage) {
+      await this.message.delete();
+    }
     console.log(`Finalized LFG ${this.data.id}`);
+  }
+
+  get owner() {
+    return this.data.creator;
   }
 
   get isExpired() {
