@@ -25,7 +25,7 @@ export const LFGAssets: {
   [LFGActivity.lw]: {
     name: "Last Wish",
     color: '9400b5',
-    icon: "https://cdn.discordapp.com/attachments/610559032943444132/787730695161118730/raid.png",
+    icon: "https://cdn.discordapp.com/attachments/782729652526776380/787692092339126322/raid.png",
     thumbnail: 'https://cdn.discordapp.com/attachments/782729652526776380/787734420446642226/last-wish-2.png',
     expiredThumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/796334747109556224/unknown.png'
   },
@@ -33,7 +33,7 @@ export const LFGAssets: {
   [LFGActivity.garden]: {
     name: 'Garden Of Salvation',
     color: 'fab75f',
-    icon: "https://cdn.discordapp.com/attachments/610559032943444132/787730695161118730/raid.png",
+    icon: "https://cdn.discordapp.com/attachments/782729652526776380/787692092339126322/raid.png",
     thumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/795679452687237190/garden.jpg',
     expiredThumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/796334990018347049/unknown.png',
   },
@@ -41,7 +41,7 @@ export const LFGAssets: {
   [LFGActivity.dsc]: {
     name: "Deep Stone Crypt",
     color: '4287f5',
-    icon: "https://cdn.discordapp.com/attachments/610559032943444132/787730695161118730/raid.png",
+    icon: "https://cdn.discordapp.com/attachments/782729652526776380/787692092339126322/raid.png",
     thumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/795679459305848892/dsc.jpg',
     expiredThumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/796335167513165834/unknown.png'
   },
