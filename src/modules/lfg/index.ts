@@ -211,7 +211,7 @@ ${EMOJIS.L.text} Last Wish`
             M = moment().tz('EET').format('MM')
           ] = timeFormatRegex.exec(content);
 
-          time = moment(`${h}:${m} ${D}/${M}`, 'HH:mm DD/MM EET').tz('EET').toDate();
+          time = moment(`${h}:${m} ${D}/${M}`, 'HH:mm DD/MM EET').tz('EET', true).toDate();
 
           if (time.getTime() < Date.now() - 60 * 1000) {
             channel.send('Nu poti crea o organizare in trecut').then(async (m) => {
