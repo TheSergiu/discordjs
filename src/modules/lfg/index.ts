@@ -54,7 +54,7 @@ export class LFGModule {
   findAvailableID = () => {
 
     for (let i = 0; i < 100; i++) {
-      const id = (Math.random() * 1000).toFixed(0).padStart(4, '0');
+      const id = (Math.random() * 10000).toFixed(0).padStart(4, '0');
 
       if (!this.idsInProgress.has(id) && !this.entries[id]) {
         this.idsInProgress.add(id);

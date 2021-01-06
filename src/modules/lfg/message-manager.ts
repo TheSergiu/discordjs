@@ -7,6 +7,7 @@ import {LFGAssets, LFGSettings} from "./settings";
 import {roleID2Text, userID2Text} from "../../helpers";
 import {ScheduleTask} from "../../helpers/scheduler";
 import moment = require("moment-timezone");
+import Color = require("color");
 import ROLE_TO_NOTIFY_ID = LFGSettings.ROLE_TO_NOTIFY_ID;
 
 export class LFGMessageManager {
@@ -119,13 +120,23 @@ export class LFGMessageManager {
   notify = async () => {
     const timeLeft = moment(this.data.dueDate, undefined, 'ro').tz('EET');
     const diff = moment(this.data.dueDate - Date.now()).tz('UTC');
-    const singular = (
+    let singular = (
       (diff.dayOfYear() - 1 === 1) ||
       (diff.dayOfYear() - 1 === 0 && diff.hours() === 1) ||
       (diff.dayOfYear() - 1 === 0 && diff.hours() === 0 && diff.minutes() === 1)
     );
 
     const timeLeftString = timeLeft.fromNow(true);
+
+    if (!singular && (timeLeftString === 'o oră' || timeLeftString === 'o ora')) {
+      console.warn('failed to set singular properly', {
+        dayOfYear: diff.dayOfYear(),
+        hours: diff.hours(),
+        minutes: diff.minutes(),
+        diff: this.data.dueDate - Date.now()
+      });
+      singular = true;
+    }
 
     await this.notifyChannel.send(
       `\
@@ -137,11 +148,16 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
   }
 
   finalizeAndMakeReadonly = async () => {
-    console.log(`Finalizing LFG ${this.data.id}`)
+    console.log(`Finalizing LFG ${this.data.id}`);
     this.saveDelegate(null);
     await this.message.reactions.removeAll();
     this.dispose();
-    console.log(`Finalized LFG ${this.data.id}`)
+    await this.paintMessage();
+    console.log(`Finalized LFG ${this.data.id}`);
+  }
+
+  get isExpired() {
+    return this.data.dueDate < Date.now();
   }
 
   get participants() {
@@ -251,14 +267,14 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
     const startMoment = moment(this.data.dueDate).tz('EET');
 
     const embed = new MessageEmbed();
-    embed.setColor(assets.color);
+    embed.setColor(this.isExpired ? Color('#' + assets.color).desaturate(0.7).hex().substr(1) : assets.color);
     embed.setTimestamp(this.data.dueDate);
     embed.setFooter(
       `Creat de ${this.data.creator.username}`,
       'https://cdn.discordapp.com/attachments/610559032943444132/787730695161118730/raid.png'
     );
     embed.setAuthor(assets.name, assets.icon);
-    embed.setImage(assets.thumbnail);
+    embed.setImage(this.isExpired ? assets.expiredThumbnail : assets.thumbnail);
     embed.addFields([
       {
         "name": "Info",
