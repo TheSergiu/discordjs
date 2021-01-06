@@ -184,6 +184,7 @@ ${EMOJIS.L.text} Last Wish`
               name: 'Format',
               value: `\
 HH:mm DD/MM sau \`now\` / \`acum\`
+
 Exemplu: ${moment().tz('EET').format('HH:mm DD/MM')} sau ${moment().tz('EET').format('HH:mm')}
 Ora trebuie sa fie in format de 24h`
             },
