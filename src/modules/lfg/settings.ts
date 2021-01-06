@@ -6,10 +6,10 @@ export namespace LFGSettings {
   export const LFGFile = path.join(process.cwd(), 'db', 'lfg.json');
   export const LFG_CREATE_TIMEOUT = 60 * 1000;
 
-  export const BILLBOARD_CHANNEL_ID = '787699897838993479';
+  export const BILLBOARD_CHANNEL_ID = '778978593278787654';
 
-  export const CHANNEL_TO_NOTIFY_ID = '610559032943444132';
-  export const ROLE_TO_NOTIFY_ID = '782730784099401749';
+  export const CHANNEL_TO_NOTIFY_ID = '752207983139618890';
+  export const ROLE_TO_NOTIFY_ID = '779375402816634952';
 
 }
 
