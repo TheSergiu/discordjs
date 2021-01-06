@@ -296,7 +296,7 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
     embed.setTimestamp(this.data.dueDate);
     embed.setFooter(
       `Creat de ${this.data.creator.username}`,
-      'https://cdn.discordapp.com/attachments/610559032943444132/787730695161118730/raid.png'
+      LFGAssets[this.data.activity].icon
     );
     embed.setAuthor(assets.name, assets.icon);
     embed.setImage(this.isExpired ? assets.expiredThumbnail : assets.thumbnail);
