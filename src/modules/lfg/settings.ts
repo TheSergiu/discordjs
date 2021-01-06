@@ -4,7 +4,7 @@ import * as path from "path";
 export namespace LFGSettings {
 
   export const LFGFile = path.join(process.cwd(), 'db', 'lfg.json');
-  export const LFG_CREATE_TIMEOUT = 60 * 1000;
+  export const LFG_CREATE_TIMEOUT = 3 * 60 * 1000;
 
   export const BILLBOARD_CHANNEL_ID = '778978593278787654';
 
