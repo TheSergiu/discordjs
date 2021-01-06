@@ -140,6 +140,8 @@ export class LFGMessageManager {
       singular = true;
     }
 
+    console.log('LFG', this.data.id, 'notifying', timeLeftString);
+
     await this.notifyChannel.send(
       `\
 ${singular ? 'A' : 'Au'} mai ramas ${timeLeftString} pana la organizarea de ${LFGAssets[this.data.activity].name} [${this.data.id}]
@@ -153,8 +155,9 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
     console.log(`Finalizing LFG ${this.data.id}`);
     this.saveDelegate(null);
     await this.message.reactions.removeAll();
-    this.dispose();
     await this.paintMessage();
+
+    this.dispose();
     if (deleteMessage) {
       await this.message.delete();
     }
