@@ -54,7 +54,7 @@ export class LFGMessageManager {
     if (isNewMessage) {
       this.message = await this.channel.send({
         embed: {title: `Organizare noua de ${LFGAssets[this.data.activity].name}`},
-        content: `${roleID2Text(ROLE_TO_NOTIFY_ID)} - ${LFGAssets[this.data.activity].name}`
+        content: `${roleID2Text(ROLE_TO_NOTIFY_ID)} - Organizare noua de ${LFGAssets[this.data.activity].name}`
       });
     } else {
       try {
