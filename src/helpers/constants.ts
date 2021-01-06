@@ -58,6 +58,12 @@ export const EMOJIS = {
     text: '<:baby_bottle:795693365819342869>',
     unicode: '🍼'
   },
+  'crown': {
+    name: 'crown',
+    text: '<:crown:796365790907465748>',
+    unicode: '👑'
+  }
+
 }
 
 export const timeFormatRegex = /(\d{1,2}):(\d{2}) *(?:(\d{1,2})\/(\d{1,2}))?/i;

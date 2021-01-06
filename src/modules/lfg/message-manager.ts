@@ -21,7 +21,8 @@ export class LFGMessageManager {
   private message: Message;
   private reactionManager: MessageReactionManager;
 
-  private inexperiencedString = `${EMOJIS.baby_bottle.text}`
+  private inexperiencedString = `${EMOJIS.baby_bottle.text}`;
+  private authorString = `${EMOJIS.crown.text}`;
 
   private scheduledJobs: ScheduleTask[] = [];
 
@@ -37,7 +38,7 @@ export class LFGMessageManager {
   }
 
   dispose = () => {
-    if(this.disposed) return console.warn(`LFG Instance ${this.data.id} already disposed`);
+    if (this.disposed) return console.warn(`LFG Instance ${this.data.id} already disposed`);
 
     console.log(`Disposed LFG ${this.data.id}`)
     this.reactionManager?.dispose();
@@ -268,6 +269,18 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
     return !!this.data.inexperienced.find(x => x.id === id);
   }
 
+  userNameEmojiExtensions(id: Snowflake) {
+    const ext: string[] = [];
+    if (this.isInexperienced(id)) {
+      ext.push(this.inexperiencedString)
+    }
+    if (this.owner.id === id) {
+      ext.push(this.authorString);
+    }
+
+    return ext.join(' ');
+  }
+
   private paintMessage = async () => {
     if (this.disposed) return;
 
@@ -304,7 +317,7 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
         "value": this.participants.map(({
                                           username,
                                           id
-                                        }) => `${username} ${this.isInexperienced(id) ? this.inexperiencedString : ''}`).join('\n') || '-',
+                                        }) => `${username} ${this.userNameEmojiExtensions(id)}`).join('\n') || '-',
         "inline": true
       },
       {
@@ -312,7 +325,7 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
         "value": this.alternatives.map(({
                                           username,
                                           id
-                                        }) => `${username} ${this.isInexperienced(id) ? this.inexperiencedString : ''}`).join('\n') || '-',
+                                        }) => `${username} ${this.userNameEmojiExtensions(id)}`).join('\n') || '-',
         "inline": true
       },
       {
