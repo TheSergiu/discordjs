@@ -153,10 +153,10 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
 
   finalizeAndMakeReadonly = async (deleteMessage = false) => {
     console.log(`Finalizing LFG ${this.data.id}`);
-    this.saveDelegate(null);
     await this.message.reactions.removeAll();
     await this.paintMessage();
 
+    this.saveDelegate(null);
     this.dispose();
     if (deleteMessage) {
       await this.message.delete();
