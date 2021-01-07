@@ -26,10 +26,6 @@
         "id": "267029021118693376"
       },
       {
-        "username": "The_Sergiu",
-        "id": "264069820633448448"
-      },
-      {
         "username": "HADES",
         "id": "148134291790888961"
       },
@@ -46,36 +42,5 @@
     },
     "activity": "Garden of Salvation",
     "messageID": "796366899314425876"
-  },
-  "0015": {
-    "id": "0015",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "AxXxY",
-        "id": "268303925839396866"
-      },
-      {
-        "username": "Bisqit",
-        "id": "385887700567326721"
-      },
-      {
-        "username": "ShaGGy",
-        "id": "268658816583729168"
-      },
-      {
-        "username": "BRVarmaga",
-        "id": "328987031252369409"
-      }
-    ],
-    "dueDate": 1610042400000,
-    "desc": "Full acr run + triumph cu sparrow",
-    "creator": {
-      "username": "AxXxY",
-      "id": "268303925839396866"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "796502007480320052"
   }
 }
