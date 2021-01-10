@@ -1,1 +1,21 @@
-{}
+{
+  "1226": {
+    "id": "1226",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "The_Sergiu",
+        "id": "264069820633448448"
+      }
+    ],
+    "dueDate": 1610301600000,
+    "desc": "Poate sa joineze cine vrea.",
+    "creator": {
+      "username": "The_Sergiu",
+      "id": "264069820633448448"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "797820745522610206"
+  }
+}
