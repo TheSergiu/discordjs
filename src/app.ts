@@ -1,10 +1,8 @@
 import 'source-map-support/register';
 
 import * as Discord from 'discord.js'
-import {Message, MessageEmbed, TextChannel} from 'discord.js'
 import {Commands} from "./modules/commands";
 import {LfgNotify} from "./modules/lfgNotify";
-import {SimpleReactionManager} from "./helpers/ReactionManager";
 import {LFGModule} from "./modules/lfg";
 
 const client = new Discord.Client({
@@ -40,6 +38,9 @@ console.log('Starting bot...')
     if (!client.readyAt) {
       console.log('Waiting on client to be ready...');
     }
+
+    process.on('unhandledRejection', console.error);
+    process.on('uncaughtException', console.error);
 
   } catch (e) {
     console.error('Fatal!:', e);

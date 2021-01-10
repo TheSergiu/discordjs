@@ -16,7 +16,7 @@ export class UserResponseManager {
       let dispatched = false;
 
       const dispatch = (msg: Message) => {
-        if (msg.member.user.id !== this.user.id) return;
+        if (msg.member?.user?.id !== this.user.id) return;
         if (msg.channel.id !== this.channel.id) return;
 
         dispatched = true;
