@@ -1,18 +1,8 @@
 {
-  "3386": {
-    "id": "3386",
-    "inexperienced": [
-      {
-        "id": "290933070842822666",
-        "username": "AlexanCosmin"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "Boxsize",
-        "id": "518515091671613471"
-      }
-    ],
+  "2602": {
+    "id": "2602",
+    "inexperienced": [],
+    "alternatives": [],
     "participants": [
       {
         "username": "Hireoxx",
@@ -27,82 +17,25 @@
         "id": "190518110749589506"
       },
       {
-        "username": "ElPuerco",
-        "id": "568938879886032916"
-      },
-      {
-        "username": "AlexanCosmin",
-        "id": "290933070842822666"
+        "username": "Gogu",
+        "id": "244152992075350027"
       },
       {
         "username": "scarface",
         "id": "465632944812195900"
       },
       {
-        "username": "Gogu",
-        "id": "244152992075350027"
+        "username": "ElPuerco",
+        "id": "568938879886032916"
       }
     ],
-    "dueDate": 1610731800000,
-    "desc": "PETRA'S RUN!!!",
+    "dueDate": 1610802000000,
+    "desc": "Petra's Run part II !!!!!",
     "creator": {
       "username": "Hireoxx",
       "id": "547156027360149514"
     },
     "activity": "Last Wish",
-    "messageID": "799377379666821160"
-  },
-  "4099": {
-    "id": "4099",
-    "inexperienced": [
-      {
-        "id": "218419488364691458",
-        "username": "Timon"
-      },
-      {
-        "id": "265934692946018304",
-        "username": "JustinNotBieber"
-      },
-      {
-        "id": "330792128902856704",
-        "username": "Bonesmasha"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "Pumba",
-        "id": "190518110749589506"
-      },
-      {
-        "username": "Gogu",
-        "id": "244152992075350027"
-      },
-      {
-        "username": "Timon",
-        "id": "218419488364691458"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Covidiu",
-        "id": "393341505206484992"
-      },
-      {
-        "username": "JustinNotBieber",
-        "id": "265934692946018304"
-      },
-      {
-        "username": "Bonesmasha",
-        "id": "330792128902856704"
-      }
-    ],
-    "dueDate": 1610731800000,
-    "desc": "normal, sau daca aveti arme incercam si divinity",
-    "creator": {
-      "username": "Covidiu",
-      "id": "393341505206484992"
-    },
-    "activity": "Garden of Salvation",
-    "messageID": "799351749563383851"
+    "messageID": "799765436430417930"
   }
 }
