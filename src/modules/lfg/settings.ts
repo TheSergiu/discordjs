@@ -1,10 +1,12 @@
 import {LFGActivity} from "./types";
 import * as path from "path";
+import {hour, hours, minute, minutes} from "../../helpers/units";
 
 export namespace LFGSettings {
 
   export const LFGFile = path.join(process.cwd(), 'db', 'lfg.json');
-  export const LFG_CREATE_TIMEOUT = 3 * 60 * 1000;
+  export const LFG_CREATE_TIMEOUT = 3 * minutes;
+  export const LFG_DELETE_MESSAGE_AFTER = 2 * hours;
 
   export const BILLBOARD_CHANNEL_ID = '778978593278787654';
 
