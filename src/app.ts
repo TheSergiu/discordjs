@@ -4,14 +4,8 @@ import * as Discord from 'discord.js'
 import {Commands} from "./modules/commands";
 import {LfgNotify} from "./modules/lfgNotify";
 import {LFGModule} from "./modules/lfg";
+import {client, loginClient} from "./helpers/client";
 
-const client = new Discord.Client({
-  partials: ['USER', 'GUILD_MEMBER']
-});
-const token = process.env.DISCORD_TOKEN;
-if (!token) {
-  throw new Error("DISCORD_TOKEN not set in env vars");
-}
 
 console.log('Starting bot...')
 ;(async () => {
@@ -33,7 +27,7 @@ console.log('Starting bot...')
     new LFGModule(client);
 
     console.log('Logging in to discord...');
-    await client.login(token);
+    await loginClient();
 
     if (!client.readyAt) {
       console.log('Waiting on client to be ready...');
