@@ -2,7 +2,7 @@ import {Client, Message, Snowflake, TextChannel, User} from "discord.js";
 import {EMOJIS, EMPTY_SPACE, timeFormatRegex} from "../../helpers/constants";
 import {OneReactionWaiter} from "../../helpers/ReactionManager";
 import {UserResponseManager} from "../../helpers/UserResponseManager";
-import {channelID2Text, PromiseTimeoutError, sleep, timeoutPromise, userID2Text} from "../../helpers";
+import {channelID2Text, isDateValid, PromiseTimeoutError, sleep, timeoutPromise, userID2Text} from "../../helpers";
 import {existsSync, readFileSync, writeFileSync} from "fs";
 import {LFGMessageManager} from "./message-manager";
 import {LFGActivity, LFGManagerData} from "./types";
@@ -217,8 +217,16 @@ Ora trebuie sa fie in format de 24h`
 
           time = moment(`${h}:${m} ${D}/${M}`, 'HH:mm DD/MM EET').tz('EET', true).toDate();
 
-          if (time.getTime() < Date.now() - 60 * 1000) {
-            channel.send('Nu poti crea o organizare in trecut').then(async (m) => {
+          if(time && !isDateValid(time)) {
+            channel.send(`Data "${content}" nu este corecta.`).then(async (m) => {
+              await sleep(5000);
+              return m.delete();
+            }).catch(console.error);
+            time = null;
+          }
+
+          if (time && time.getTime() < Date.now() - 60 * 1000) {
+            channel.send('Nu poti crea o organizare in trecut.').then(async (m) => {
               await sleep(5000);
               return m.delete();
             }).catch(console.error);
