@@ -2,7 +2,16 @@
   "6094": {
     "id": "6094",
     "inexperienced": [],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "Mariusnpr (Reflex76)",
+        "id": "547828588104122369"
+      },
+      {
+        "username": "Pumba",
+        "id": "190518110749589506"
+      }
+    ],
     "participants": [
       {
         "username": "Hireoxx",
@@ -38,58 +47,6 @@
     "activity": "Deep Stone Crypt",
     "messageID": "800828369976688680"
   },
-  "6541": {
-    "id": "6541",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "K3ntXD(The Drunken)",
-        "id": "614544813530021920"
-      },
-      {
-        "username": "JustinNotBieber",
-        "id": "265934692946018304"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Hireoxx",
-        "id": "547156027360149514"
-      },
-      {
-        "username": "Raul ( Flyingaxe)",
-        "id": "447762349466583043"
-      },
-      {
-        "username": "HyperBadger",
-        "id": "419525410578235394"
-      },
-      {
-        "username": "Covidiu",
-        "id": "393341505206484992"
-      },
-      {
-        "username": "Gogu",
-        "id": "244152992075350027"
-      },
-      {
-        "username": "Pumba",
-        "id": "190518110749589506"
-      },
-      {
-        "username": "SpataTime",
-        "id": "334632160424361984"
-      }
-    ],
-    "dueDate": 1611086400000,
-    "desc": "Divinity run. No Baby players",
-    "creator": {
-      "username": "Hireoxx",
-      "id": "547156027360149514"
-    },
-    "activity": "Garden of Salvation",
-    "messageID": "800684162272985140"
-  },
   "8236": {
     "id": "8236",
     "inexperienced": [
@@ -102,6 +59,10 @@
       {
         "username": "K3ntXD(The Drunken)",
         "id": "614544813530021920"
+      },
+      {
+        "username": "JustinNotBieber",
+        "id": "265934692946018304"
       }
     ],
     "participants": [
