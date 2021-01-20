@@ -1,4 +1,48 @@
 {
+  "6080": {
+    "id": "6080",
+    "inexperienced": [
+      {
+        "id": "290933070842822666",
+        "username": "AlexanCosmin"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Hireoxx",
+        "id": "547156027360149514"
+      },
+      {
+        "username": "Gogu",
+        "id": "244152992075350027"
+      },
+      {
+        "username": "AlexanCosmin",
+        "id": "290933070842822666"
+      },
+      {
+        "username": "HyperBadger",
+        "id": "419525410578235394"
+      },
+      {
+        "username": "JustinNotBieber",
+        "id": "265934692946018304"
+      },
+      {
+        "username": "scarface",
+        "id": "465632944812195900"
+      }
+    ],
+    "dueDate": 1611424800000,
+    "desc": "Maraton Raid-uri DSC, GOS, LW maxim 1 incepator",
+    "creator": {
+      "username": "Hireoxx",
+      "id": "547156027360149514"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "801294571211456522"
+  },
   "6094": {
     "id": "6094",
     "inexperienced": [],
@@ -10,6 +54,10 @@
       {
         "username": "Pumba",
         "id": "190518110749589506"
+      },
+      {
+        "username": "Darkmaze",
+        "id": "368677546432266242"
       }
     ],
     "participants": [
@@ -59,10 +107,6 @@
       {
         "username": "K3ntXD(The Drunken)",
         "id": "614544813530021920"
-      },
-      {
-        "username": "JustinNotBieber",
-        "id": "265934692946018304"
       }
     ],
     "participants": [
