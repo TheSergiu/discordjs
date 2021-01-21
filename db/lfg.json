@@ -7,7 +7,16 @@
         "username": "AlexanCosmin"
       }
     ],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "Psycho Muffin",
+        "id": "704816801661583522"
+      },
+      {
+        "username": "Covidiu",
+        "id": "393341505206484992"
+      }
+    ],
     "participants": [
       {
         "username": "Hireoxx",
@@ -32,6 +41,10 @@
       {
         "username": "scarface",
         "id": "465632944812195900"
+      },
+      {
+        "username": "ycm zis 20",
+        "id": "683039263616794670"
       }
     ],
     "dueDate": 1611424800000,
@@ -58,6 +71,10 @@
       {
         "username": "Darkmaze",
         "id": "368677546432266242"
+      },
+      {
+        "username": "Psycho Muffin",
+        "id": "704816801661583522"
       }
     ],
     "participants": [
@@ -78,12 +95,16 @@
         "id": "265934692946018304"
       },
       {
-        "username": "Covidiu",
-        "id": "393341505206484992"
-      },
-      {
         "username": "Christronius2500",
         "id": "536239671219453973"
+      },
+      {
+        "username": "ycm zis 20",
+        "id": "683039263616794670"
+      },
+      {
+        "username": "Covidiu",
+        "id": "393341505206484992"
       }
     ],
     "dueDate": 1611338400000,
@@ -123,16 +144,16 @@
         "id": "330792128902856704"
       },
       {
-        "username": "Vanghelie",
-        "id": "513067295057379339"
-      },
-      {
         "username": "Testyment",
         "id": "492731788079267840"
       },
       {
         "username": "Boxsize",
         "id": "518515091671613471"
+      },
+      {
+        "username": "ycm zis 20",
+        "id": "683039263616794670"
       }
     ],
     "dueDate": 1611424800000,
