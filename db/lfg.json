@@ -5,9 +5,18 @@
       {
         "id": "317660139047878667",
         "username": "BlackWitcher"
+      },
+      {
+        "id": "579686628147331072",
+        "username": "unqnelu"
       }
     ],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "ElPuerco",
+        "id": "568938879886032916"
+      }
+    ],
     "participants": [
       {
         "username": "Enki",
@@ -20,6 +29,10 @@
       {
         "username": "✠ CptBlood67™",
         "id": "339820263057260554"
+      },
+      {
+        "username": "unqnelu",
+        "id": "579686628147331072"
       }
     ],
     "dueDate": 1612728600000,
