@@ -1,1 +1,55 @@
-{}
+{
+  "4962": {
+    "id": "4962",
+    "inexperienced": [
+      {
+        "id": "290933070842822666",
+        "username": "AlexanCosmin"
+      },
+      {
+        "id": "615140917849882635",
+        "username": "Greu™"
+      },
+      {
+        "id": "594254266248593408",
+        "username": "ranger987(Florin)"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "Pumba",
+        "id": "190518110749589506"
+      },
+      {
+        "username": "ElPuerco",
+        "id": "568938879886032916"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Psycho Muffin",
+        "id": "704816801661583522"
+      },
+      {
+        "username": "AlexanCosmin",
+        "id": "290933070842822666"
+      },
+      {
+        "username": "Greu™",
+        "id": "615140917849882635"
+      },
+      {
+        "username": "ranger987(Florin)",
+        "id": "594254266248593408"
+      }
+    ],
+    "dueDate": 1613316600000,
+    "desc": "Learning session pt. incepatori",
+    "creator": {
+      "username": "Psycho Muffin",
+      "id": "704816801661583522"
+    },
+    "activity": "Last Wish",
+    "messageID": "810267485915447296"
+  }
+}
