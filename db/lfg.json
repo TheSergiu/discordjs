@@ -1,40 +1,4 @@
 {
-  "7188": {
-    "id": "7188",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "ElPuerco",
-        "id": "568938879886032916"
-      },
-      {
-        "username": "Psycho Muffin",
-        "id": "704816801661583522"
-      }
-    ],
-    "participants": [
-      {
-        "username": "CptBlood67™",
-        "id": "339820263057260554"
-      },
-      {
-        "username": "crysis",
-        "id": "577081350713114674"
-      },
-      {
-        "username": "Codrea",
-        "id": "649289543626915895"
-      }
-    ],
-    "dueDate": 1613583000000,
-    "desc": "normal run, fresh raid",
-    "creator": {
-      "username": "CptBlood67™",
-      "id": "339820263057260554"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "811114637823049758"
-  },
   "9350": {
     "id": "9350",
     "inexperienced": [
