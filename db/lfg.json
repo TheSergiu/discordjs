@@ -19,6 +19,10 @@
       {
         "username": "JustinNotBieber",
         "id": "265934692946018304"
+      },
+      {
+        "username": "Psycho Muffin",
+        "id": "704816801661583522"
       }
     ],
     "dueDate": 1614452400000,
@@ -30,50 +34,138 @@
     "activity": "Deep Stone Crypt",
     "messageID": "814455731960283166"
   },
-  "0345": {
-    "id": "0345",
+  "6930": {
+    "id": "6930",
     "inexperienced": [],
-    "alternatives": [],
-    "participants": [
+    "alternatives": [
       {
-        "username": "Beniamin",
-        "id": "176219200648511488"
-      },
-      {
-        "username": "Hireoxx",
-        "id": "547156027360149514"
+        "username": "Enki",
+        "id": "261887010082521089"
       }
     ],
-    "dueDate": 1614355200000,
-    "desc": "de preferat cineva care stie, sunt incepator cu raidul, poate facem divinity run sau triumphs daca se vrea",
+    "participants": [
+      {
+        "username": "HyperBadger",
+        "id": "419525410578235394"
+      },
+      {
+        "username": "Pumba",
+        "id": "190518110749589506"
+      }
+    ],
+    "dueDate": 1614454200000,
+    "desc": "Triumph run: Clan night (clanul lui enki), Control group (preferabil warlocks), daca mai are nevoie lumea de altceva, eventual si challange",
     "creator": {
-      "username": "Beniamin",
-      "id": "176219200648511488"
+      "username": "HyperBadger",
+      "id": "419525410578235394"
     },
-    "activity": "Garden of Salvation",
-    "messageID": "814607384848498738"
+    "activity": "Deep Stone Crypt",
+    "messageID": "814971630811873361"
   },
-  "0382": {
-    "id": "0382",
+  "8557": {
+    "id": "8557",
     "inexperienced": [],
     "alternatives": [],
     "participants": [
+      {
+        "username": "Codrea",
+        "id": "649289543626915895"
+      },
+      {
+        "username": "yenson",
+        "id": "443441680591486986"
+      },
+      {
+        "username": "Ra's al Ghul(K3ntXD)",
+        "id": "614544813530021920"
+      },
+      {
+        "username": "crysis",
+        "id": "577081350713114674"
+      }
+    ],
+    "dueDate": 1614448800000,
+    "desc": "pineacle run/ fresh raid",
+    "creator": {
+      "username": "Codrea",
+      "id": "649289543626915895"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "814960328487206912"
+  },
+  "9630": {
+    "id": "9630",
+    "inexperienced": [],
+    "alternatives": [
+      {
+        "username": "Dreamcatcher",
+        "id": "530470877016621067"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Darkus230",
+        "id": "711213207750180924"
+      },
+      {
+        "username": "yenson",
+        "id": "443441680591486986"
+      }
+    ],
+    "dueDate": 1614524400000,
+    "desc": "Raids day<:BladeDancer:760852478509711371>",
+    "creator": {
+      "username": "Darkus230",
+      "id": "711213207750180924"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "814970661571133450"
+  },
+  "9894": {
+    "id": "9894",
+    "inexperienced": [],
+    "alternatives": [
       {
         "username": "AlexanCosmin",
         "id": "290933070842822666"
       },
       {
-        "username": "Hireoxx",
-        "id": "547156027360149514"
+        "username": "Dreamcatcher",
+        "id": "530470877016621067"
       }
     ],
-    "dueDate": 1614367800000,
-    "desc": "pinnacle baby😫",
+    "participants": [
+      {
+        "username": "Darkus230",
+        "id": "711213207750180924"
+      }
+    ],
+    "dueDate": 1614531600000,
+    "desc": "Raids day <:BladeDancer:760852478509711371>",
     "creator": {
-      "username": "AlexanCosmin",
-      "id": "290933070842822666"
+      "username": "Darkus230",
+      "id": "711213207750180924"
     },
-    "activity": "Deep Stone Crypt",
-    "messageID": "814608196374102036"
+    "activity": "Last Wish",
+    "messageID": "814970947060760586"
+  },
+  "0247": {
+    "id": "0247",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Darkus230",
+        "id": "711213207750180924"
+      }
+    ],
+    "dueDate": 1614538800000,
+    "desc": "Cp la boss",
+    "creator": {
+      "username": "Darkus230",
+      "id": "711213207750180924"
+    },
+    "activity": "Garden of Salvation",
+    "messageID": "814971175960313896"
   }
 }
