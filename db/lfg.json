@@ -17,28 +17,5 @@
     },
     "activity": "Last Wish",
     "messageID": "805836972253904966"
-  },
-  "7747": {
-    "id": "7747",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "AlenMujanovic",
-        "id": "659107796272414770"
-      },
-      {
-        "username": "Felendros",
-        "id": "755885065300606999"
-      }
-    ],
-    "dueDate": 1614711600000,
-    "desc": null,
-    "creator": {
-      "username": "AlenMujanovic",
-      "id": "659107796272414770"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "816077577273868368"
   }
 }
