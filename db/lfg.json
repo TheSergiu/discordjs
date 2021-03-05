@@ -1,1 +1,105 @@
-{}
+{
+  "4846": {
+    "id": "4846",
+    "inexperienced": [
+      {
+        "id": "474959869175136266",
+        "username": "Invict7uS(Remus)"
+      },
+      {
+        "id": "594254266248593408",
+        "username": "ranger987(Florin)"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Psycho Muffin",
+        "id": "704816801661583522"
+      },
+      {
+        "username": "Boxsize",
+        "id": "518515091671613471"
+      },
+      {
+        "username": "Wally",
+        "id": "250652143214657537"
+      },
+      {
+        "username": "Invict7uS(Remus)",
+        "id": "474959869175136266"
+      },
+      {
+        "username": "ElPuerco",
+        "id": "568938879886032916"
+      },
+      {
+        "username": "ranger987(Florin)",
+        "id": "594254266248593408"
+      }
+    ],
+    "dueDate": 1615046400000,
+    "desc": "DSC Learning session pt. incepatori",
+    "creator": {
+      "username": "Psycho Muffin",
+      "id": "704816801661583522"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "817415628561448981"
+  },
+  "6787": {
+    "id": "6787",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Beniamin",
+        "id": "176219200648511488"
+      },
+      {
+        "username": "Pumba",
+        "id": "190518110749589506"
+      },
+      {
+        "username": "HyperBadger",
+        "id": "419525410578235394"
+      }
+    ],
+    "dueDate": 1615032000000,
+    "desc": "divinity run daca se poate",
+    "creator": {
+      "username": "Beniamin",
+      "id": "176219200648511488"
+    },
+    "activity": "Garden of Salvation",
+    "messageID": "817517100972376116"
+  },
+  "6930": {
+    "id": "6930",
+    "inexperienced": [],
+    "alternatives": [
+      {
+        "username": "AlexanCosmin",
+        "id": "290933070842822666"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Codrea",
+        "id": "649289543626915895"
+      },
+      {
+        "username": "StefanCelMare92",
+        "id": "405896004735598592"
+      }
+    ],
+    "dueDate": 1615143600000,
+    "desc": "Pineacle Run/ Triumph - all TITAN class",
+    "creator": {
+      "username": "Codrea",
+      "id": "649289543626915895"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "817494948378312704"
+  }
+}
