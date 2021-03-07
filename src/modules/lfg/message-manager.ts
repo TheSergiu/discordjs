@@ -149,8 +149,8 @@ export class LFGMessageManager {
     await this.notifyChannel.send(
       `\
 ${singular ? 'A' : 'Au'} mai ramas ${timeLeftString} pana la organizarea de ${LFGAssets[this.data.activity].name} [${this.data.id}]
-Participanti: ${this.data.participants.map(x => userID2Text(x.id)).join(', ') || '-'}
-Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
+Participanti: ${this.participants.map(x => userID2Text(x.id)).join(', ') || '-'}
+Rezerve: ${this.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
 `
     );
   }
@@ -183,7 +183,7 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
   }
 
   get alternatives() {
-    return [...this.data.participants.slice(6), ...this.data.alternatives].slice(0, 5);
+    return [...this.data.participants.slice(6), ...this.data.alternatives];
   }
 
   private reactionDispatch = async (reaction: MessageReaction, user: User, message: Message) => {
