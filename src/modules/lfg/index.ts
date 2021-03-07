@@ -99,13 +99,49 @@ export class LFGModule {
       return await channel.send(`Organizarea [${id}] a fost stearsa`);
     }
 
+    if (/^\/raid\s*(?:edit|update)\s*(\d{1,4})$/i.test(content.trim())) {
+      let [_, id] = /^\/raid\s*(?:edit|update)\s*(\d{1,4})$/i.exec(content.trim());
+
+      id = id.padStart(4, '0');
+      const instance = this.instances.get(id);
+      if (!instance) {
+        return await channel.send(`Organizarea [${id}] a expirat sau nu exista`);
+      }
+      if (instance.owner.id !== author.id) {
+        return await channel.send(`Organizarea [${id}] nu a fost creata de tine`);
+      }
+
+      const existingEntry = this.entries[id];
+      const data = await this.lfgRaidLifeCycle(channel, author, id, 'update', {
+        date: existingEntry.dueDate,
+        desc: existingEntry.desc,
+        activity: existingEntry.activity
+      });
+
+      await instance.dispose();
+
+      existingEntry.dueDate = data.time.getTime();
+      existingEntry.desc = data.desc;
+      existingEntry.activity = data.activity;
+
+      this.instances.set(
+        id,
+        new LFGMessageManager(
+          this.billboardChannel,
+          this.entries[id],
+          this.saveEntry.bind(this, id)
+        )
+      );
+      this.save();
+    }
+
     if (/^\/raid\s*$/gi.test(content)) {
 
       const myID = this.findAvailableID();
       this.usersInProgress.add(author.id);
 
       try {
-        const data = await this.lfgRaidLifeCycle(channel, author, myID);
+        const data = await this.lfgRaidLifeCycle(channel, author, myID, 'create', {});
 
         this.entries[myID] = {
           id: myID,
@@ -136,7 +172,7 @@ export class LFGModule {
     }
   }
 
-  private lfgRaidLifeCycle = async (channel: TextChannel, user: User, id: string) => {
+  private lfgRaidLifeCycle = async (channel: TextChannel, user: User, id: string, type: 'create' | 'update', hints: { date?: number, desc?: string, activity?: LFGActivity }) => {
     const footer = {text: `\n\nID ${id} by ${user.username}`};
 
     let question: Message;
@@ -153,6 +189,10 @@ ${EMOJIS.D.text} Deep Stone Crypt
 ${EMOJIS.G.text} Garden of Salvation
 ${EMOJIS.L.text} Last Wish`
             },
+
+            ...(hints.activity ? [
+              {name: 'Alegerea curenta', value: hints.activity}
+            ] : [])
           ],
           footer
         }
@@ -191,7 +231,11 @@ Ora trebuie sa fie in format de 24h`
             {
               name: 'Ora RO curenta (EET)',
               value: moment().tz('EET').format('HH:mm DD/MM')
-            }
+            },
+            ...(hints.date ? [{
+              name: 'Ora setata anterior (EET)',
+              value: moment(hints.date).tz('EET').format('HH:mm DD/MM')
+            }] : []),
           ],
           footer
         }
@@ -217,7 +261,7 @@ Ora trebuie sa fie in format de 24h`
 
           time = moment(`${h}:${m} ${D}/${M}`, 'HH:mm DD/MM EET').tz('EET', true).toDate();
 
-          if(time && !isDateValid(time)) {
+          if (time && !isDateValid(time)) {
             channel.send(`Data "${content}" nu este corecta.`).then(async (m) => {
               await sleep(5000);
               return m.delete();
@@ -249,6 +293,10 @@ Ora trebuie sa fie in format de 24h`
               name: EMPTY_SPACE,
               value: 'Adauga informatii extra despre activitate sau scrie `none` / `nimic`'
             },
+            ...(hints.desc ? [{
+              name: 'Descrierea precedenta',
+              value: hints.desc
+            }] : [])
           ],
           footer
         }
@@ -262,7 +310,11 @@ Ora trebuie sa fie in format de 24h`
 
       console.log('LFG', id, 'desc:', desc);
 
-      await channel.send(`Evenimentul ${id} a fost creat pe ${channelID2Text(BILLBOARD_CHANNEL_ID)} de catre ${userID2Text(user.id)}!`);
+      if (type === 'create') {
+        await channel.send(`Evenimentul ${id} a fost creat pe ${channelID2Text(BILLBOARD_CHANNEL_ID)} de catre ${userID2Text(user.id)}!`);
+      } else {
+        await channel.send(`Evenimentul ${id} a fost actualizat de catre ${userID2Text(user.id)}!`);
+      }
 
       let activity: LFGActivity;
       if (isDSC) activity = LFGActivity.dsc;
@@ -275,7 +327,11 @@ Ora trebuie sa fie in format de 24h`
 
       if (e instanceof PromiseTimeoutError) {
         console.log(`LFG Event ${id} has timed out`);
-        await channel.send(`Crearea evenimentului [${id}] de catre <@${user.id}> a expirat!`);
+        if (type === 'create') {
+          await channel.send(`Crearea evenimentului [${id}] de catre <@${user.id}> a expirat!`);
+        } else {
+          await channel.send(`Actualizarea evenimentului [${id}] de catre <@${user.id}> a expirat!`);
+        }
       }
       throw e;
 
