@@ -6,9 +6,12 @@ import {LFGManagerData} from "./types";
 import {LFGAssets, LFGSettings} from "./settings";
 import {roleID2Text, userID2Text} from "../../helpers";
 import {ScheduleTask} from "../../helpers/scheduler";
+import {CleanUp} from "../../helpers/cleanup";
 import moment = require("moment-timezone");
 import Color = require("color");
 import ROLE_TO_NOTIFY_ID = LFGSettings.ROLE_TO_NOTIFY_ID;
+import scheduleMessageDeletion = CleanUp.scheduleMessageDeletion;
+import LFG_DELETE_MESSAGE_AFTER = LFGSettings.LFG_DELETE_MESSAGE_AFTER;
 
 export class LFGMessageManager {
   private readonly channel: TextChannel;
@@ -146,21 +149,23 @@ export class LFGMessageManager {
     await this.notifyChannel.send(
       `\
 ${singular ? 'A' : 'Au'} mai ramas ${timeLeftString} pana la organizarea de ${LFGAssets[this.data.activity].name} [${this.data.id}]
-Participanti: ${this.data.participants.map(x => userID2Text(x.id)).join(', ') || '-'}
-Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
+Participanti: ${this.participants.map(x => userID2Text(x.id)).join(', ') || '-'}
+Rezerve: ${this.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
 `
     );
   }
 
-  finalizeAndMakeReadonly = async (deleteMessage = false) => {
+  finalizeAndMakeReadonly = async (immediatelyDeleteMessage = false) => {
     console.log(`Finalizing LFG ${this.data.id}`);
     await this.message.reactions.removeAll();
     await this.paintMessage();
 
     this.saveDelegate(null);
     this.dispose();
-    if (deleteMessage) {
+    if (immediatelyDeleteMessage) {
       await this.message.delete();
+    } else {
+      scheduleMessageDeletion(this.message.id, this.message.channel.id, Date.now() + LFG_DELETE_MESSAGE_AFTER);
     }
     console.log(`Finalized LFG ${this.data.id}`);
   }
@@ -178,7 +183,7 @@ Rezerve: ${this.data.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
   }
 
   get alternatives() {
-    return [...this.data.participants.slice(6), ...this.data.alternatives].slice(0, 5);
+    return [...this.data.participants.slice(6), ...this.data.alternatives];
   }
 
   private reactionDispatch = async (reaction: MessageReaction, user: User, message: Message) => {
