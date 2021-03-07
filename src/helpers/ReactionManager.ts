@@ -1,7 +1,7 @@
 import {Message, MessageReaction, ReactionCollector, ReactionManager, Snowflake, TextChannel, User} from "discord.js";
-import {getClient} from "./client";
 import {removeReactionFromMessageByUser} from "./index";
 import {EventEmitter} from "events";
+import {client} from "./client";
 
 export interface MessageReactionManager extends EventEmitter {
   on(event: 'reaction', listener: (reaction: MessageReaction, user: User, message: Message) => void): this;
@@ -25,8 +25,6 @@ export class MessageReactionManager extends EventEmitter {
   }
 
   static async messageFromID(channelID: Snowflake, messageID: Snowflake) {
-    const client = await getClient();
-
     const channel: TextChannel = await client.channels.fetch(channelID) as TextChannel;
     return await channel.messages.fetch(messageID);
   }

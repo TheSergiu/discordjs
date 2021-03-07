@@ -151,3 +151,6 @@ export function timeoutPromise<T>(p: Promise<T>, ms: number): Promise<T> {
   ])
 }
 
+export function isDateValid(date: Date){
+  return !isNaN(date.getDate())
+}
