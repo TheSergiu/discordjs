@@ -7,15 +7,57 @@ import {existsSync, readFileSync, writeFileSync} from "fs";
 import {LFGMessageManager} from "./message-manager";
 import {LFGActivity, LFGManagerData} from "./types";
 import {LFGSettings} from "./settings";
+import {CmdHelper, CommandType, DiscordInteraction} from "../../helpers/cmd-helper";
 import moment = require("moment-timezone");
-import LFGFile = LFGSettings.LFGFile;
+import assert = require("assert");
 import BILLBOARD_CHANNEL_ID = LFGSettings.BILLBOARD_CHANNEL_ID;
 import LFG_CREATE_TIMEOUT = LFGSettings.LFG_CREATE_TIMEOUT;
+import LFGFile = LFGSettings.LFGFile;
 
 export class LFGModule {
   private readonly client: Client
   private readonly instances = new Map<string, LFGMessageManager>();
   private readonly entries: { [id: string]: LFGManagerData } = {};
+
+  private readonly raidCreateCommand = new CmdHelper({
+    type: CommandType.SUB_COMMAND_GROUP,
+    name: `raid`,
+    description: 'Organizare raiduri',
+    options: [
+      {
+        name: 'create',
+        description: 'Crează o organizare',
+        type: CommandType.SUB_COMMAND,
+        required: false
+      },
+      {
+        name: 'edit',
+        description: 'Editează o organizare',
+        type: CommandType.SUB_COMMAND,
+        required: false,
+
+        options: [{
+          type: CommandType.STRING,
+          name: 'id',
+          description: 'ID-ul raidului',
+          required: true
+        }]
+      },
+      {
+        name: 'delete',
+        description: 'Șterge o organizare',
+        type: CommandType.SUB_COMMAND,
+        required: false,
+
+        options: [{
+          type: CommandType.STRING,
+          name: 'id',
+          description: 'ID-ul raidului',
+          required: true
+        }]
+      },
+    ]
+  });
 
   private billboardChannel: TextChannel;
 
@@ -29,6 +71,8 @@ export class LFGModule {
 
     this.client.on('message', this.dispatch);
     this.client.once('ready', this.init)
+
+    this.raidCreateCommand.on('command', this.dispatchOnInteraction);
   }
 
   save = () => {
@@ -50,6 +94,10 @@ export class LFGModule {
     for (const key in this.entries) {
       this.instances.set(key, new LFGMessageManager(this.billboardChannel, this.entries[key], this.saveEntry.bind(this, key)));
     }
+
+    await this.raidCreateCommand.ensure()
+    this.raidCreateCommand.start()
+
   }
 
   findAvailableID = () => {
@@ -72,6 +120,129 @@ export class LFGModule {
       }
     }
     throw new Error('Cannot generate more IDs')
+  }
+
+
+  dispatchOnInteraction = async (interaction: DiscordInteraction) => {
+
+    assert(interaction.data.options.length === 1);
+    const subcommand = interaction.data.options[0];
+
+    // const guild = await this.client.guilds.fetch(interaction.guild_id);
+    const channel: TextChannel = await this.client.channels.fetch(interaction.channel_id) as TextChannel;
+    const user = await this.client.users.fetch(interaction.member.user.id);
+
+
+    if (subcommand.name === 'create') {
+      await this.raidCreateCommand.respond(interaction, {
+        content: 'Se crează o organizare nouă'
+      });
+
+      const myID = this.findAvailableID();
+      this.usersInProgress.add(user.id);
+
+      try {
+        const data = await this.lfgRaidLifeCycle(channel, user, myID, 'create', {});
+
+        this.entries[myID] = {
+          id: myID,
+          inexperienced: [],
+          alternatives: [],
+          participants: [{username: user.username, id: user.id}],
+          dueDate: data.time.getTime(),
+          desc: data.desc,
+          creator: {username: user.username, id: user.id},
+          activity: data.activity
+        };
+        this.instances.set(
+          myID,
+          new LFGMessageManager(
+            this.billboardChannel,
+            this.entries[myID],
+            this.saveEntry.bind(this, myID)
+          )
+        );
+        this.save();
+
+      } catch (e) {
+        console.error(e);
+      } finally {
+        this.idsInProgress.delete(myID);
+        this.usersInProgress.delete(user.id);
+      }
+    }
+
+    if (subcommand.name === 'edit') {
+      assert(subcommand.options.length === 1);
+      const option = subcommand.options[0];
+      assert(option.name === 'id');
+      let id = option.value;
+
+      id = id.padStart(4, '0');
+      const instance = this.instances.get(id);
+      if (!instance) {
+        return await this.raidCreateCommand.respond(interaction, {
+          content: `Organizarea [${id}] a expirat sau nu exista`
+        });
+      }
+      if (instance.owner.id !== user.id) {
+        return await this.raidCreateCommand.respond(interaction, {
+          content: `Organizarea [${id}] nu a fost creata de tine`
+        });
+      }
+      await this.raidCreateCommand.respond(interaction, {
+        content: `Se editează organizarea [${id}]`
+      });
+
+      const existingEntry = this.entries[id];
+      const data = await this.lfgRaidLifeCycle(channel, user, id, 'update', {
+        date: existingEntry.dueDate,
+        desc: existingEntry.desc,
+        activity: existingEntry.activity
+      });
+
+      await instance.dispose();
+
+      existingEntry.dueDate = data.time.getTime();
+      existingEntry.desc = data.desc;
+      existingEntry.activity = data.activity;
+
+      this.instances.set(
+        id,
+        new LFGMessageManager(
+          this.billboardChannel,
+          this.entries[id],
+          this.saveEntry.bind(this, id)
+        )
+      );
+      this.save();
+    }
+
+    if (subcommand.name === 'delete') {
+      assert(subcommand.options.length === 1);
+      const option = subcommand.options[0];
+      assert(option.name === 'id');
+      let id = option.value;
+
+      id = id.padStart(4, '0');
+      const instance = this.instances.get(id);
+      if (!instance) {
+        return await this.raidCreateCommand.respond(interaction, {
+          content: `Organizarea [${id}] a expirat sau nu exista`
+        });
+      }
+      if (instance.owner.id !== user.id) {
+        return await this.raidCreateCommand.respond(interaction, {
+          content: `Organizarea [${id}] nu a fost creata de tine`
+        });
+      }
+      await instance.finalizeAndMakeReadonly(true);
+      return await this.raidCreateCommand.respond(interaction, {
+        content: `Organizarea [${id}] a fost stearsa`
+      });
+    }
+
+
   }
 
 
@@ -135,7 +306,7 @@ export class LFGModule {
       this.save();
     }
 
-    if (/^\/raid\s*$/gi.test(content)) {
+    if (/^\/raid\s*(create)?$/gi.test(content)) {
 
       const myID = this.findAvailableID();
       this.usersInProgress.add(author.id);

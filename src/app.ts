@@ -1,11 +1,9 @@
 import 'source-map-support/register';
 
-import * as Discord from 'discord.js'
 import {Commands} from "./modules/commands";
 import {LfgNotify} from "./modules/lfgNotify";
 import {LFGModule} from "./modules/lfg";
 import {client, loginClient} from "./helpers/client";
-
 
 console.log('Starting bot...')
 ;(async () => {
