@@ -4,7 +4,8 @@ import {Snowflake} from "discord.js";
 export enum LFGActivity {
   'dsc' = "Deep Stone Crypt",
   'garden' = 'Garden of Salvation',
-  'lw' = 'Last Wish'
+  'lw' = 'Last Wish',
+  'all' = 'Sesiune Raiduri'
 }
 
 export type LFGManagerData = {
