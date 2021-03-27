@@ -83,16 +83,11 @@ export interface CmdHelper extends EventEmitter {
 export class CmdHelper extends EventEmitter {
 
   readonly command: CommandCreateType;
-
-  readonly replayFn: (i: DiscordInteraction) => { content?: string, embeds?: MessageEmbed[] }
-
   private commandID: Snowflake | null = null;
 
-  constructor(command: CommandCreateType, replyFn: CmdHelper['replayFn']) {
+  constructor(command: CommandCreateType) {
     super();
-
     this.command = command;
-    this.replayFn = replyFn;
   }
 
   ensure = async () => {
@@ -120,15 +115,16 @@ export class CmdHelper extends EventEmitter {
     }
 
     client.ws.on('INTERACTION_CREATE' as any, async (interaction: DiscordInteraction) => {
-
-      const r = await (client as any).api.interactions(interaction.id, interaction.token).callback.post({
-        data: {
-          type: 4,
-          data: this.replayFn(interaction)
-        }
-      });
-
       this.emit('command', interaction);
+    });
+  }
+
+  respond = async (interaction: DiscordInteraction, response: { content?: string, embeds?: MessageEmbed[] }) => {
+    await (client as any).api.interactions(interaction.id, interaction.token).callback.post({
+      data: {
+        type: 4,
+        data: response
+      }
     });
   }
 
