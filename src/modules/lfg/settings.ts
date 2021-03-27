@@ -47,4 +47,13 @@ export const LFGAssets: {
     thumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/795679459305848892/dsc.jpg',
     expiredThumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/796335167513165834/unknown.png'
   },
+
+  [LFGActivity.all]: {
+    name: "Sesiune Raiduri",
+    color: 'eb4034',
+    icon: "https://cdn.discordapp.com/attachments/782729652526776380/787692092339126322/raid.png",
+    thumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/825479143231324210/sesiune_raid.jpg',
+    expiredThumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/825479317127430224/unknown.png'
+  },
+
 }
