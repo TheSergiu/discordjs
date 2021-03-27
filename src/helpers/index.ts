@@ -151,6 +151,10 @@ export function timeoutPromise<T>(p: Promise<T>, ms: number): Promise<T> {
   ])
 }
 
-export function isDateValid(date: Date){
+export function isDateValid(date: Date) {
   return !isNaN(date.getDate())
+}
+
+export function keys<T extends object>(obj: T): (keyof T)[] {
+  return Object.keys(obj) as (keyof T)[];
 }
