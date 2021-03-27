@@ -358,7 +358,8 @@ export class LFGModule {
               value: `\
 ${EMOJIS.D.text} Deep Stone Crypt
 ${EMOJIS.G.text} Garden of Salvation
-${EMOJIS.L.text} Last Wish`
+${EMOJIS.L.text} Last Wish
+${EMOJIS.S.text} Sesiune Raiduri`
             },
 
             ...(hints.activity ? [
@@ -373,6 +374,7 @@ ${EMOJIS.L.text} Last Wish`
         question.react(encodeURIComponent(EMOJIS.D.unicode)),
         question.react(encodeURIComponent(EMOJIS.G.unicode)),
         question.react(encodeURIComponent(EMOJIS.L.unicode)),
+        question.react(encodeURIComponent(EMOJIS.S.unicode)),
       ]);
 
       const chooseRaidResponse = await timeoutPromise(
@@ -383,8 +385,9 @@ ${EMOJIS.L.text} Last Wish`
       const isDSC = chooseRaidResponse.reaction.emoji.name === EMOJIS.D.unicode;
       const isGarden = chooseRaidResponse.reaction.emoji.name === EMOJIS.G.unicode;
       const isLastWish = chooseRaidResponse.reaction.emoji.name === EMOJIS.L.unicode;
+      const isSession = chooseRaidResponse.reaction.emoji.name === EMOJIS.S.unicode;
 
-      console.log('LFG', id, 'activity', {isDSC, isGarden, isLastWish});
+      console.log('LFG', id, 'activity', {isDSC, isGarden, isLastWish, isSession});
 
       await question.reactions.removeAll();
       await question.edit({
@@ -491,6 +494,7 @@ Ora trebuie sa fie in format de 24h`
       if (isDSC) activity = LFGActivity.dsc;
       if (isGarden) activity = LFGActivity.garden;
       if (isLastWish) activity = LFGActivity.lw;
+      if (isSession) activity = LFGActivity.all;
 
       return {time, id, desc, activity};
 
