@@ -2,7 +2,7 @@ import {Client, Message, MessageEmbed, MessageReaction, Snowflake, TextChannel, 
 import {MessageReactionManager} from "../../helpers/ReactionManager";
 import {EMOJIS, EMPTY_SPACE} from "../../helpers/constants";
 import * as assert from "assert";
-import {LFGManagerData} from "./types";
+import {LFGActivity, LFGManagerData} from "./types";
 import {LFGAssets, LFGSettings} from "./settings";
 import {roleID2Text, userID2Text} from "../../helpers";
 import {ScheduleTask} from "../../helpers/scheduler";
@@ -86,7 +86,9 @@ export class LFGMessageManager {
     if (isNewMessage) {
       await Promise.all([
         this.message.react(encodeURIComponent(EMOJIS.white_check_mark.unicode)),
-        this.message.react(encodeURIComponent(EMOJIS.new.unicode)),
+        this.data.activity !== LFGActivity.all ?
+          this.message.react(encodeURIComponent(EMOJIS.new.unicode))
+          : null,
         this.message.react(encodeURIComponent(EMOJIS.x.unicode)),
         this.message.react(encodeURIComponent(EMOJIS.question.unicode)),
       ]);

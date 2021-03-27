@@ -18,6 +18,11 @@ export const EMOJIS = {
     text: '<:regional_indicator_l:791682736578363403>',
     unicode: '🇱'
   },
+  S: {
+    name: 'regional_indicator_s',
+    text: '<:regional_indicator_s:825478422499295283>',
+    unicode: '🇸'
+  },
   'white_check_mark': {
     name: 'white_check_mark',
     text: '<:white_check_mark:795679733462859836>',
