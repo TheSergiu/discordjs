@@ -1,1 +1,34 @@
-{}
+{
+  "1296": {
+    "id": "1296",
+    "inexperienced": [
+      {
+        "id": "410110931578912781",
+        "username": "Ionut Dinu"
+      },
+      {
+        "id": "489214493503520778",
+        "username": "Matei Andrei"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Ionut Dinu",
+        "id": "410110931578912781"
+      },
+      {
+        "username": "Matei Andrei",
+        "id": "489214493503520778"
+      }
+    ],
+    "dueDate": 1618059600000,
+    "desc": "2 incepatori, cautam grup pentru raid",
+    "creator": {
+      "username": "Ionut Dinu",
+      "id": "410110931578912781"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "829443147469029458"
+  }
+}
