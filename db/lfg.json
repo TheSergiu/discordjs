@@ -1,1 +1,34 @@
-{}
+{
+  "3781": {
+    "id": "3781",
+    "inexperienced": [
+      {
+        "id": "410110931578912781",
+        "username": "Ionut Dinu"
+      },
+      {
+        "id": "489214493503520778",
+        "username": "Matei Andrei"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Ionut Dinu",
+        "id": "410110931578912781"
+      },
+      {
+        "username": "Matei Andrei",
+        "id": "489214493503520778"
+      }
+    ],
+    "dueDate": 1618596000000,
+    "desc": "raidul de vineri seara.",
+    "creator": {
+      "username": "Ionut Dinu",
+      "id": "410110931578912781"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "832279626403283045"
+  }
+}
