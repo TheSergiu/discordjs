@@ -1,1 +1,33 @@
-{}
+{
+  "3688": {
+    "id": "3688",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Heidiud",
+        "id": "326691963925430273"
+      },
+      {
+        "username": "Marian✞",
+        "id": "278668830736384001"
+      },
+      {
+        "username": "skar",
+        "id": "371928897102544896"
+      },
+      {
+        "username": "ranger987(Florin)",
+        "id": "594254266248593408"
+      }
+    ],
+    "dueDate": 1620752400000,
+    "desc": "Fast Raid",
+    "creator": {
+      "username": "Heidiud",
+      "id": "326691963925430273"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "841397413507891271"
+  }
+}
