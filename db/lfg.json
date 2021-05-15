@@ -1,1 +1,30 @@
-{}
+{
+  "1877": {
+    "id": "1877",
+    "inexperienced": [],
+    "alternatives": [
+      {
+        "username": "Rabia",
+        "id": "181365970093211657"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Mentalist",
+        "id": "656205662057136167"
+      },
+      {
+        "username": "DavidTR",
+        "id": "694081106726748201"
+      }
+    ],
+    "dueDate": 1621180800000,
+    "desc": "just for fun",
+    "creator": {
+      "username": "Mentalist",
+      "id": "656205662057136167"
+    },
+    "activity": "Sesiune Raiduri",
+    "messageID": "843197961416212500"
+  }
+}
