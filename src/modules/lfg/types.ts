@@ -5,6 +5,7 @@ export enum LFGActivity {
   'dsc' = "Deep Stone Crypt",
   'garden' = 'Garden of Salvation',
   'lw' = 'Last Wish',
+  'vog' = 'Vault Of Glass',
   'all' = 'Sesiune Raiduri'
 }
 
