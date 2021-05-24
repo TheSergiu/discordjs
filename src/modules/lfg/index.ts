@@ -2,11 +2,19 @@ import {Client, Message, Snowflake, TextChannel, User} from "discord.js";
 import {EMOJIS, EMPTY_SPACE, timeFormatRegex} from "../../helpers/constants";
 import {OneReactionWaiter} from "../../helpers/ReactionManager";
 import {UserResponseManager} from "../../helpers/UserResponseManager";
-import {channelID2Text, isDateValid, PromiseTimeoutError, sleep, timeoutPromise, userID2Text} from "../../helpers";
+import {
+  channelID2Text,
+  isDateValid,
+  keys, mapObj,
+  PromiseTimeoutError,
+  sleep,
+  timeoutPromise,
+  userID2Text, values
+} from "../../helpers";
 import {existsSync, readFileSync, writeFileSync} from "fs";
 import {LFGMessageManager} from "./message-manager";
 import {LFGActivity, LFGManagerData} from "./types";
-import {LFGSettings} from "./settings";
+import {LFGEmojis, LFGSettings} from "./settings";
 import {CmdHelper, CommandType, DiscordInteraction} from "../../helpers/cmd-helper";
 import moment = require("moment-timezone");
 import assert = require("assert");
@@ -148,10 +156,10 @@ export class LFGModule {
           id: myID,
           inexperienced: [],
           alternatives: [],
-          participants: [{username: user.username, id: user.id}],
+          participants: [{ username: user.username, id: user.id }],
           dueDate: data.time.getTime(),
           desc: data.desc,
-          creator: {username: user.username, id: user.id},
+          creator: { username: user.username, id: user.id },
           activity: data.activity
         };
         this.instances.set(
@@ -250,7 +258,7 @@ export class LFGModule {
     if (message.channel.type !== 'text') return;
     if (message.author.bot) return;
 
-    const {content, author, channel} = message;
+    const { content, author, channel } = message;
     if (content.indexOf('/raid') !== 0) return;
 
     if (this.usersInProgress.has(author.id)) return;
@@ -318,10 +326,10 @@ export class LFGModule {
           id: myID,
           inexperienced: [],
           alternatives: [],
-          participants: [{username: author.username, id: author.id}],
+          participants: [{ username: author.username, id: author.id }],
           dueDate: data.time.getTime(),
           desc: data.desc,
-          creator: {username: author.username, id: author.id},
+          creator: { username: author.username, id: author.id },
           activity: data.activity
         };
         this.instances.set(
@@ -344,7 +352,7 @@ export class LFGModule {
   }
 
   private lfgRaidLifeCycle = async (channel: TextChannel, user: User, id: string, type: 'create' | 'update', hints: { date?: number, desc?: string, activity?: LFGActivity }) => {
-    const footer = {text: `\n\nID ${id} by ${user.username}`};
+    const footer = { text: `\n\nID ${id} by ${user.username}` };
 
     let question: Message;
 
@@ -355,39 +363,30 @@ export class LFGModule {
           fields: [
             {
               name: EMPTY_SPACE,
-              value: `\
-${EMOJIS.D.text} Deep Stone Crypt
-${EMOJIS.G.text} Garden of Salvation
-${EMOJIS.L.text} Last Wish
-${EMOJIS.S.text} Sesiune Raiduri`
+              value: mapObj(LFGEmojis).map(([act, emoji]) => `${emoji.text} ${act}`).join(`\n`)
             },
 
             ...(hints.activity ? [
-              {name: 'Alegerea curenta', value: hints.activity}
+              { name: 'Alegerea curenta', value: hints.activity }
             ] : [])
           ],
           footer
         }
       });
 
-      await Promise.all([
-        question.react(encodeURIComponent(EMOJIS.D.unicode)),
-        question.react(encodeURIComponent(EMOJIS.G.unicode)),
-        question.react(encodeURIComponent(EMOJIS.L.unicode)),
-        question.react(encodeURIComponent(EMOJIS.S.unicode)),
-      ]);
+      await Promise.all(
+        values(LFGEmojis)
+          .map(x => question.react(encodeURIComponent(x.unicode)))
+      );
 
       const chooseRaidResponse = await timeoutPromise(
         new OneReactionWaiter(question, user).waitReactionAndDispose(),
         LFG_CREATE_TIMEOUT
       );
 
-      const isDSC = chooseRaidResponse.reaction.emoji.name === EMOJIS.D.unicode;
-      const isGarden = chooseRaidResponse.reaction.emoji.name === EMOJIS.G.unicode;
-      const isLastWish = chooseRaidResponse.reaction.emoji.name === EMOJIS.L.unicode;
-      const isSession = chooseRaidResponse.reaction.emoji.name === EMOJIS.S.unicode;
-
-      console.log('LFG', id, 'activity', {isDSC, isGarden, isLastWish, isSession});
+      const activity: LFGActivity = keys(LFGEmojis).find(key => LFGEmojis[key].unicode === chooseRaidResponse.reaction.emoji.name)
+      assert(activity, 'cannot find activity for emoji ' + chooseRaidResponse.reaction.emoji.name);
+      console.log('LFG', id, 'activity', activity);
 
       await question.reactions.removeAll();
       await question.edit({
@@ -490,13 +489,7 @@ Ora trebuie sa fie in format de 24h`
         await channel.send(`Evenimentul ${id} a fost actualizat de catre ${userID2Text(user.id)}!`);
       }
 
-      let activity: LFGActivity;
-      if (isDSC) activity = LFGActivity.dsc;
-      if (isGarden) activity = LFGActivity.garden;
-      if (isLastWish) activity = LFGActivity.lw;
-      if (isSession) activity = LFGActivity.all;
-
-      return {time, id, desc, activity};
+      return { time, id, desc, activity };
 
     } catch (e) {
 

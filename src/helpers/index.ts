@@ -101,7 +101,7 @@ export async function userReacted(message: Message, userOrID: User | Snowflake, 
 }
 
 export async function ensureReaction(message: Message, user: User, react: EmojiResolvable) {
-  if (await userReacted(message, user, {name: typeof react === "string" ? react : react.name})) {
+  if (await userReacted(message, user, { name: typeof react === "string" ? react : react.name })) {
     return;
   }
   await message.react(typeof react === "string" ? encodeURIComponent(react) : react);
@@ -157,4 +157,12 @@ export function isDateValid(date: Date) {
 
 export function keys<T extends object>(obj: T): (keyof T)[] {
   return Object.keys(obj) as (keyof T)[];
+}
+
+export function values<T extends object>(obj: T): T[keyof T][] {
+  return keys(obj).map(k => obj[k]);
+}
+
+export function mapObj<T extends object, K extends keyof T>(obj: T) {
+  return (keys(obj) as K[]).map(k => [k, obj[k] as T[typeof k]] as const);
 }
