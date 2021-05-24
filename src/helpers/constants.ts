@@ -31,7 +31,7 @@ export const EMOJIS = assertObjectRecordIntegrity<EmojiData>()({
   },
   V: {
     name: 'regional_indicator_v',
-    text: '<:regional_indicator_s:846395351119691788>',
+    text: '<:regional_indicator_v:846395351119691788>',
     unicode: '🇻'
   },
   'white_check_mark': {
