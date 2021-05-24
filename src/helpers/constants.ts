@@ -1,8 +1,14 @@
-import {Emoji} from "discord.js";
+import {assertObjectRecordIntegrity} from "./types";
 
 export const EMPTY_SPACE = '\u200b';
 
-export const EMOJIS = {
+export type EmojiData = {
+  name: string,
+  text: string,
+  unicode?: string
+}
+
+export const EMOJIS = assertObjectRecordIntegrity<EmojiData>()({
   D: {
     name: 'regional_indicator_d',
     text: '<:regional_indicator_d:791692525152239657>',
@@ -22,6 +28,11 @@ export const EMOJIS = {
     name: 'regional_indicator_s',
     text: '<:regional_indicator_s:825478422499295283>',
     unicode: '🇸'
+  },
+  V: {
+    name: 'regional_indicator_v',
+    text: '<:regional_indicator_s:846395351119691788>',
+    unicode: '🇻'
   },
   'white_check_mark': {
     name: 'white_check_mark',
@@ -69,6 +80,6 @@ export const EMOJIS = {
     unicode: '👑'
   }
 
-}
+});
 
 export const timeFormatRegex = /(\d{1,2}):(\d{2}) *(?:(\d{1,2})\/(\d{1,2}))?/i;
