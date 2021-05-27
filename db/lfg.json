@@ -59,36 +59,5 @@
     },
     "activity": "Vault Of Glass",
     "messageID": "846313495439081496"
-  },
-  "5182": {
-    "id": "5182",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Hireoxx",
-        "id": "547156027360149514"
-      },
-      {
-        "username": "Heidiud",
-        "id": "326691963925430273"
-      },
-      {
-        "username": "Darkus230",
-        "id": "711213207750180924"
-      },
-      {
-        "username": "skar",
-        "id": "371928897102544896"
-      }
-    ],
-    "dueDate": 1622116800000,
-    "desc": "Here we go ! Fără începători!!!!!!",
-    "creator": {
-      "username": "Hireoxx",
-      "id": "547156027360149514"
-    },
-    "activity": "Sesiune Raiduri",
-    "messageID": "847039049943875605"
   }
 }
