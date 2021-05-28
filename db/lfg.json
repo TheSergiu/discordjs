@@ -1,63 +1,42 @@
 {
-  "1577": {
-    "id": "1577",
-    "inexperienced": [
-      {
-        "id": "694081106726748201",
-        "username": "DavidTR"
-      }
-    ],
+  "7132": {
+    "id": "7132",
+    "inexperienced": [],
     "alternatives": [
       {
-        "username": "ranger987(Florin)",
-        "id": "594254266248593408"
+        "username": "skar",
+        "id": "371928897102544896"
       },
       {
-        "username": "Rabia",
-        "id": "181365970093211657"
-      },
-      {
-        "username": "Psycho Muffin",
-        "id": "704816801661583522"
-      },
-      {
-        "username": "JustinNotBieber",
-        "id": "265934692946018304"
+        "username": "CptBlood67",
+        "id": "339820263057260554"
       }
     ],
     "participants": [
       {
-        "username": "Pumba",
-        "id": "190518110749589506"
+        "username": "Mariusnpr (Reflex76)",
+        "id": "547828588104122369"
       },
       {
-        "username": "Marian✞",
-        "id": "278668830736384001"
+        "username": "Bidan",
+        "id": "491182585439846400"
       },
       {
-        "username": "Emyl",
-        "id": "212966366729207808"
+        "username": "Tavi71",
+        "id": "399282381892354048"
       },
       {
         "username": "DavidTR",
         "id": "694081106726748201"
-      },
-      {
-        "username": "RolexBite",
-        "id": "397743753772793856"
-      },
-      {
-        "username": "Rayford",
-        "id": "203154701330415616"
       }
     ],
-    "dueDate": 1622221200000,
-    "desc": "Vault of Glass",
+    "dueDate": 1622307600000,
+    "desc": "Raid cu incepatori (0 clears). Adunam shard-uri, luam chest-uri secrete.",
     "creator": {
-      "username": "Pumba",
-      "id": "190518110749589506"
+      "username": "Mariusnpr (Reflex76)",
+      "id": "547828588104122369"
     },
     "activity": "Vault Of Glass",
-    "messageID": "846313495439081496"
+    "messageID": "847676381990223912"
   }
 }
