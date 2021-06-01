@@ -1,1 +1,78 @@
-{}
+{
+  "2720": {
+    "id": "2720",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "RexCry07",
+        "id": "463780834114273281"
+      }
+    ],
+    "dueDate": 1622649600000,
+    "desc": "As prefera 2-3 incepatori, pot sa ii invat eu raidu si macar 2 care l-au mai facut",
+    "creator": {
+      "username": "RexCry07",
+      "id": "463780834114273281"
+    },
+    "activity": "Vault Of Glass",
+    "messageID": "849397834767007794"
+  },
+  "2827": {
+    "id": "2827",
+    "inexperienced": [
+      {
+        "id": "317660139047878667",
+        "username": "BlackWitcher"
+      },
+      {
+        "id": "395296194273869838",
+        "username": "ダリウス"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "Ra's Al Ghul (K3ntXD)",
+        "id": "614544813530021920"
+      },
+      {
+        "username": "Rabia",
+        "id": "181365970093211657"
+      },
+      {
+        "username": "RexCry07",
+        "id": "463780834114273281"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Enki",
+        "id": "261887010082521089"
+      },
+      {
+        "username": "BlackWitcher",
+        "id": "317660139047878667"
+      },
+      {
+        "username": "ダリウス",
+        "id": "395296194273869838"
+      },
+      {
+        "username": "Emyl",
+        "id": "212966366729207808"
+      },
+      {
+        "username": "Psycho Muffin",
+        "id": "704816801661583522"
+      }
+    ],
+    "dueDate": 1622919600000,
+    "desc": "Maxim doi începători",
+    "creator": {
+      "username": "Enki",
+      "id": "261887010082521089"
+    },
+    "activity": "Vault Of Glass",
+    "messageID": "849175571929890856"
+  }
+}
