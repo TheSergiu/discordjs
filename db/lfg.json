@@ -2,7 +2,12 @@
   "9976": {
     "id": "9976",
     "inexperienced": [],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "SH1PP1",
+        "id": "272797020841050113"
+      }
+    ],
     "participants": [
       {
         "username": "Andrescu12",
