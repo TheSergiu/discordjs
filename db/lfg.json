@@ -1,184 +1,38 @@
 {
-  "1464": {
-    "id": "1464",
-    "inexperienced": [
-      {
-        "id": "339820263057260554",
-        "username": "CptBlood67"
-      }
-    ],
+  "5022": {
+    "id": "5022",
+    "inexperienced": [],
     "alternatives": [
       {
-        "username": "skar",
-        "id": "371928897102544896"
-      },
-      {
-        "username": "ranger987(Florin)",
-        "id": "594254266248593408"
+        "username": "Haures",
+        "id": "391337571139190786"
       }
     ],
     "participants": [
       {
-        "username": "Psycho Muffin",
-        "id": "704816801661583522"
+        "username": "Testyment",
+        "id": "492731788079267840"
       },
       {
-        "username": "Boxsize",
-        "id": "518515091671613471"
+        "username": "EvilPrime",
+        "id": "244442588638085121"
       },
-      {
-        "username": "Heidiud",
-        "id": "326691963925430273"
-      },
-      {
-        "username": "CptBlood67",
-        "id": "339820263057260554"
-      },
-      {
-        "username": "mackanacke(CtrlAltDel)",
-        "id": "693800177873584159"
-      },
-      {
-        "username": "yenson",
-        "id": "443441680591486986"
-      }
-    ],
-    "dueDate": 1622905200000,
-    "desc": "Pt. triumful de clan, doar pt. cei cu Karpathian_Horsemen (!!!cu underscore!!!!), ora e pusa aproximativ, putem sa ne intelegem sa schimbam",
-    "creator": {
-      "username": "Psycho Muffin",
-      "id": "704816801661583522"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "850037720163811388"
-  },
-  "2827": {
-    "id": "2827",
-    "inexperienced": [
-      {
-        "id": "317660139047878667",
-        "username": "BlackWitcher"
-      },
-      {
-        "id": "395296194273869838",
-        "username": "ダリウス"
-      }
-    ],
-    "alternatives": [
       {
         "username": "Ra's Al Ghul (K3ntXD)",
         "id": "614544813530021920"
-      },
-      {
-        "username": "Rabia",
-        "id": "181365970093211657"
-      },
-      {
-        "username": "RexCry07",
-        "id": "463780834114273281"
-      },
-      {
-        "username": "dani12ro",
-        "id": "341640137962291200"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Enki",
-        "id": "261887010082521089"
-      },
-      {
-        "username": "BlackWitcher",
-        "id": "317660139047878667"
-      },
-      {
-        "username": "ダリウス",
-        "id": "395296194273869838"
       },
       {
         "username": "Emyl",
         "id": "212966366729207808"
-      },
-      {
-        "username": "Psycho Muffin",
-        "id": "704816801661583522"
-      },
-      {
-        "username": "Anonys",
-        "id": "406605764736712704"
       }
     ],
-    "dueDate": 1622919600000,
-    "desc": "Maxim doi începători",
+    "dueDate": 1622998800000,
+    "desc": "doar boss \nfacem de 2 ori daca se poate:)",
     "creator": {
-      "username": "Enki",
-      "id": "261887010082521089"
+      "username": "Testyment",
+      "id": "492731788079267840"
     },
     "activity": "Vault Of Glass",
-    "messageID": "849175571929890856"
-  },
-  "4730": {
-    "id": "4730",
-    "inexperienced": [
-      {
-        "id": "406605764736712704",
-        "username": "Anonys"
-      }
-    ],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Anonys",
-        "id": "406605764736712704"
-      }
-    ],
-    "dueDate": 1622905200000,
-    "desc": "Incepator ( nu am facut raidul ) vreau sa il invat. nevoie de sherpa",
-    "creator": {
-      "username": "Raul ( Flyingaxe)",
-      "id": "447762349466583043"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "850491378256576513"
-  },
-  "9144": {
-    "id": "9144",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Ra's Al Ghul (K3ntXD)",
-        "id": "614544813530021920"
-      },
-      {
-        "username": "yenson",
-        "id": "443441680591486986"
-      },
-      {
-        "username": "Rabia",
-        "id": "181365970093211657"
-      },
-      {
-        "username": "JustinNotBieber",
-        "id": "265934692946018304"
-      }
-    ],
-    "participants": [
-      {
-        "username": "AlexanCosmin",
-        "id": "290933070842822666"
-      },
-      {
-        "username": "Tavi71",
-        "id": "399282381892354048"
-      }
-    ],
-    "dueDate": 1622889000000,
-    "desc": "<:unsettledtom:760844332697256016>  una mica",
-    "creator": {
-      "username": "AlexanCosmin",
-      "id": "290933070842822666"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "849913055818285076"
+    "messageID": "850839099685994517"
   }
 }
