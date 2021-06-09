@@ -1,91 +1,87 @@
 {
-  "1723": {
-    "id": "1723",
-    "inexperienced": [
-      {
-        "id": "579686628147331072",
-        "username": "unqnelu"
-      }
-    ],
+  "9137": {
+    "id": "9137",
+    "inexperienced": [],
     "alternatives": [
       {
-        "username": "✞  Claudiu ( ͡° ͜ʖ ͡°)",
-        "id": "291132638582800386"
+        "username": "ranger987(Florin)",
+        "id": "594254266248593408"
       }
     ],
     "participants": [
       {
-        "username": "Enki",
-        "id": "261887010082521089"
+        "username": "AlexanCosmin",
+        "id": "290933070842822666"
       },
       {
-        "username": "Zelos",
-        "id": "193974859124965376"
+        "username": "Heidiud",
+        "id": "326691963925430273"
       },
       {
-        "username": "CptBlood67",
-        "id": "339820263057260554"
+        "username": "Tavi71",
+        "id": "399282381892354048"
       },
       {
-        "username": "unqnelu",
-        "id": "579686628147331072"
+        "username": "Marian✞",
+        "id": "278668830736384001"
       },
       {
-        "username": "BlackWitcher",
-        "id": "317660139047878667"
+        "username": "Testyment",
+        "id": "492731788079267840"
       },
       {
-        "username": "Bidan",
-        "id": "491182585439846400"
+        "username": "RexCry07",
+        "id": "463780834114273281"
+      },
+      {
+        "username": "AgentPufarina",
+        "id": "229241749275541505"
       }
     ],
-    "dueDate": 1623222000000,
-    "desc": "maxim un incepator",
+    "dueDate": 1623349800000,
+    "desc": "9:30/10",
     "creator": {
-      "username": "Enki",
-      "id": "261887010082521089"
+      "username": "AlexanCosmin",
+      "id": "290933070842822666"
     },
     "activity": "Vault Of Glass",
-    "messageID": "851726113038532628"
+    "messageID": "852264689827708968"
   },
-  "6517": {
-    "id": "6517",
+  "9846": {
+    "id": "9846",
     "inexperienced": [],
     "alternatives": [],
     "participants": [
       {
-        "username": "Mariusnpr (Reflex76)",
-        "id": "547828588104122369"
+        "username": "Enki",
+        "id": "261887010082521089"
       },
       {
-        "username": "tzighy",
-        "id": "490514501360287764"
+        "username": "Psycho Muffin",
+        "id": "704816801661583522"
       },
       {
-        "username": "Haures",
-        "id": "391337571139190786"
-      },
-      {
-        "username": "stresu",
-        "id": "385161537184202752"
-      },
-      {
-        "username": "Enigma",
-        "id": "411999567769239552"
+        "username": "Pumba",
+        "id": "190518110749589506"
       }
     ],
-    "dueDate": 1623258000000,
-    "desc": "All hunters, all solar. Run pentru triumfuri...",
+    "dueDate": 1623520800000,
+    "desc": "Fără începători",
     "creator": {
-      "username": "Mariusnpr (Reflex76)",
-      "id": "547828588104122369"
+      "username": "Enki",
+      "id": "261887010082521089"
     },
-    "activity": "Vault Of Glass",
-    "messageID": "851712395721310219"
+    "activity": "Sesiune Raiduri",
+    "messageID": "852264244808384552"
   },
   "0052": {
     "id": "0052",
-    "inexperienced": [],
+    "inexperienced": [
+      {
+        "id": "847776860146630696",
+        "username": "RangerBog"
+      }
+    ],
     "alternatives": [
       {
         "username": "✞  Claudiu ( ͡° ͜ʖ ͡°)",
@@ -104,6 +100,14 @@
       {
         "username": "CptBlood67",
         "id": "339820263057260554"
+      },
+      {
+        "username": "dani12ro",
+        "id": "341640137962291200"
+      },
+      {
+        "username": "RangerBog",
+        "id": "847776860146630696"
       }
     ],
     "dueDate": 1623393000000,
