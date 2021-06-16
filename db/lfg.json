@@ -1,7 +1,12 @@
 {
   "1194": {
     "id": "1194",
-    "inexperienced": [],
+    "inexperienced": [
+      {
+        "id": "650087073449115648",
+        "username": "RobyNet"
+      }
+    ],
     "alternatives": [],
     "participants": [
       {
@@ -11,6 +16,22 @@
       {
         "username": "scorpio78",
         "id": "551324362364551178"
+      },
+      {
+        "username": "Ciribicorbo",
+        "id": "161622563355754496"
+      },
+      {
+        "username": "RobyNet",
+        "id": "650087073449115648"
+      },
+      {
+        "username": "Mihai.Hyper",
+        "id": "543733096164491265"
+      },
+      {
+        "username": "Warwarrior",
+        "id": "277854026614308865"
       }
     ],
     "dueDate": 1623949200000,
