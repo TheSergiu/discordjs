@@ -1,1 +1,37 @@
-{}
+{
+  "5702": {
+    "id": "5702",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Pumba",
+        "id": "190518110749589506"
+      },
+      {
+        "username": "Heidiud",
+        "id": "326691963925430273"
+      },
+      {
+        "username": "HyperBadger",
+        "id": "419525410578235394"
+      },
+      {
+        "username": "Gogu",
+        "id": "244152992075350027"
+      },
+      {
+        "username": "Hireoxx",
+        "id": "547156027360149514"
+      }
+    ],
+    "dueDate": 1624381200000,
+    "desc": "Challange Oracle (fara incepatori)",
+    "creator": {
+      "username": "Pumba",
+      "id": "190518110749589506"
+    },
+    "activity": "Vault Of Glass",
+    "messageID": "856653873200496641"
+  }
+}
