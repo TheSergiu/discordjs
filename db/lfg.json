@@ -1,43 +1,30 @@
 {
-  "8780": {
-    "id": "8780",
+  "5911": {
+    "id": "5911",
     "inexperienced": [
       {
         "id": "637369225769385985",
         "username": "! GarraVany ❦ᴿᶠ"
       }
     ],
-    "alternatives": [
-      {
-        "username": "DarkWillow",
-        "id": "577959283031801877"
-      },
-      {
-        "username": "CptBlood67",
-        "id": "339820263057260554"
-      }
-    ],
+    "alternatives": [],
     "participants": [
       {
-        "username": "StefanCelMare",
-        "id": "405896004735598592"
+        "username": "Liro",
+        "id": "666641059312304139"
       },
       {
         "username": "! GarraVany ❦ᴿᶠ",
         "id": "637369225769385985"
-      },
-      {
-        "username": "Pumba",
-        "id": "190518110749589506"
       }
     ],
-    "dueDate": 1624638600000,
-    "desc": "!! event creat pentru ! GarraVany ❦ᴿᶠ eu nu o sa particip !! preferapil 1 maxim 2 incepatori si e nevoie de cineva care sa ii explice !",
+    "dueDate": 1624725000000,
+    "desc": "fara incepatori",
     "creator": {
-      "username": "StefanCelMare",
-      "id": "405896004735598592"
+      "username": "Liro",
+      "id": "666641059312304139"
     },
     "activity": "Vault Of Glass",
-    "messageID": "857716657950162984"
+    "messageID": "858068044252839967"
   }
 }
