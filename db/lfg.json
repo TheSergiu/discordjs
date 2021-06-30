@@ -1,1 +1,39 @@
-{}
+{
+  "4870": {
+    "id": "4870",
+    "inexperienced": [
+      {
+        "id": "274936652336726016",
+        "username": "PrezentAici"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "AlexanCosmin",
+        "id": "290933070842822666"
+      }
+    ],
+    "participants": [
+      {
+        "username": "HyperBadger",
+        "id": "419525410578235394"
+      },
+      {
+        "username": "PrezentAici",
+        "id": "274936652336726016"
+      },
+      {
+        "username": "nikos41976",
+        "id": "680420651022155786"
+      }
+    ],
+    "dueDate": 1625164200000,
+    "desc": "Cu weekly challange",
+    "creator": {
+      "username": "HyperBadger",
+      "id": "419525410578235394"
+    },
+    "activity": "Vault Of Glass",
+    "messageID": "859819903858638868"
+  }
+}
