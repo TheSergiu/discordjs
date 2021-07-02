@@ -11,6 +11,14 @@
       {
         "username": "Anonys",
         "id": "406605764736712704"
+      },
+      {
+        "username": "Liro",
+        "id": "666641059312304139"
+      },
+      {
+        "username": "ranger987(Florin)",
+        "id": "594254266248593408"
       }
     ],
     "dueDate": 1625333400000,
@@ -21,67 +29,5 @@
     },
     "activity": "Deep Stone Crypt",
     "messageID": "860264990057168937"
-  },
-  "8876": {
-    "id": "8876",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "AxXxY",
-        "id": "268303925839396866"
-      },
-      {
-        "username": "Raul ( Flyingaxe)",
-        "id": "447762349466583043"
-      },
-      {
-        "username": "RolexBite",
-        "id": "397743753772793856"
-      },
-      {
-        "username": "Emyl",
-        "id": "212966366729207808"
-      },
-      {
-        "username": "Heidiud",
-        "id": "326691963925430273"
-      },
-      {
-        "username": "Haures",
-        "id": "391337571139190786"
-      }
-    ],
-    "dueDate": 1625243400000,
-    "desc": "Challange",
-    "creator": {
-      "username": "AxXxY",
-      "id": "268303925839396866"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "860075043513303060"
-  },
-  "8894": {
-    "id": "8894",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "tzighy",
-        "id": "490514501360287764"
-      },
-      {
-        "username": "RolexBite",
-        "id": "397743753772793856"
-      }
-    ],
-    "dueDate": 1625248800000,
-    "desc": "pt triumph-ul de clan night pt cei KH scris fara semne ortografice .",
-    "creator": {
-      "username": "tzighy",
-      "id": "490514501360287764"
-    },
-    "activity": "Garden of Salvation",
-    "messageID": "860215098723008552"
   }
 }
