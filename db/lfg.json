@@ -4,12 +4,12 @@
     "inexperienced": [],
     "alternatives": [
       {
-        "username": "rzL",
-        "id": "477846486403645454"
-      },
-      {
         "username": "Heidiud",
         "id": "326691963925430273"
+      },
+      {
+        "username": "JustinNotBieber",
+        "id": "265934692946018304"
       }
     ],
     "participants": [
@@ -65,24 +65,5 @@
     },
     "activity": "Vault Of Glass",
     "messageID": "862340608127008798"
-  },
-  "6267": {
-    "id": "6267",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "uhenp",
-        "id": "576077948168437760"
-      }
-    ],
-    "dueDate": 1625763600000,
-    "desc": "Sunt incepator",
-    "creator": {
-      "username": "uhenp",
-      "id": "576077948168437760"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "862363754679500810"
   }
 }
