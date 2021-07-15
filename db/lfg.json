@@ -7,7 +7,12 @@
         "username": "goosfraba"
       }
     ],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "Bijuu Mode",
+        "id": "310648442798080009"
+      }
+    ],
     "participants": [
       {
         "username": "zЯo",
@@ -16,6 +21,10 @@
       {
         "username": "goosfraba",
         "id": "159647243513626624"
+      },
+      {
+        "username": "ro_alexus",
+        "id": "629968700208054278"
       }
     ],
     "dueDate": 1626445800000,
