@@ -1,1 +1,25 @@
-{}
+{
+  "3364": {
+    "id": "3364",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Haures",
+        "id": "391337571139190786"
+      },
+      {
+        "username": "AxXxY",
+        "id": "268303925839396866"
+      }
+    ],
+    "dueDate": 1626616800000,
+    "desc": "Master - 1340 + cel putin 1 clear ==>> cautam oameni pentru competitia din data de 24",
+    "creator": {
+      "username": "Haures",
+      "id": "391337571139190786"
+    },
+    "activity": "Vault Of Glass",
+    "messageID": "865626773965111296"
+  }
+}
