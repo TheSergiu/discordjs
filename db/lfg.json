@@ -1,40 +1,4 @@
 {
-  "1704": {
-    "id": "1704",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Acvila",
-        "id": "607551934253105175"
-      }
-    ],
-    "participants": [
-      {
-        "username": "zЯo",
-        "id": "302539708842377216"
-      },
-      {
-        "username": "Quannah",
-        "id": "621740634935525376"
-      },
-      {
-        "username": "Bijuu Mode",
-        "id": "310648442798080009"
-      },
-      {
-        "username": "7ndrei",
-        "id": "337541784408424448"
-      }
-    ],
-    "dueDate": 1626879600000,
-    "desc": "Master+ challenge. Citiți cu atenție.",
-    "creator": {
-      "username": "zЯo",
-      "id": "302539708842377216"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "867059622698680330"
-  },
   "8002": {
     "id": "8002",
     "inexperienced": [],
