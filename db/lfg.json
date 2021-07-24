@@ -1,1 +1,38 @@
-{}
+{
+  "6943": {
+    "id": "6943",
+    "inexperienced": [
+      {
+        "id": "287287217020207114",
+        "username": "AudCulorii Vad Sunete"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "TheHorse",
+        "id": "641321276194947085"
+      },
+      {
+        "username": "Marian✞",
+        "id": "278668830736384001"
+      },
+      {
+        "username": "ilie ionita",
+        "id": "796521009821646858"
+      },
+      {
+        "username": "AudCulorii Vad Sunete",
+        "id": "287287217020207114"
+      }
+    ],
+    "dueDate": 1627236000000,
+    "desc": "Facem triumphs",
+    "creator": {
+      "username": "TheHorse",
+      "id": "641321276194947085"
+    },
+    "activity": "Vault Of Glass",
+    "messageID": "868523608530620476"
+  }
+}
