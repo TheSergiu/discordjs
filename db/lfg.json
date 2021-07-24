@@ -1,4 +1,23 @@
 {
+  "4027": {
+    "id": "4027",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "ro_alexus",
+        "id": "629968700208054278"
+      }
+    ],
+    "dueDate": 1627210800000,
+    "desc": "Master cu challenge (macar de facut challenge 🙂",
+    "creator": {
+      "username": "ro_alexus",
+      "id": "629968700208054278"
+    },
+    "activity": "Vault Of Glass",
+    "messageID": "868540780229304340"
+  },
   "8002": {
     "id": "8002",
     "inexperienced": [],
