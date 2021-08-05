@@ -1,1 +1,47 @@
-{}
+{
+  "6040": {
+    "id": "6040",
+    "inexperienced": [
+      {
+        "id": "723815826251055125",
+        "username": "Justinn"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "Christronius225200",
+        "id": "536239671219453973"
+      },
+      {
+        "username": "DOGE COIN",
+        "id": "438034897425399808"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Pumba",
+        "id": "190518110749589506"
+      },
+      {
+        "username": "HyperBadger",
+        "id": "419525410578235394"
+      },
+      {
+        "username": "TheHorse",
+        "id": "641321276194947085"
+      },
+      {
+        "username": "Justinn",
+        "id": "723815826251055125"
+      }
+    ],
+    "dueDate": 1628269200000,
+    "desc": "Maxim 2 incepatori",
+    "creator": {
+      "username": "Pumba",
+      "id": "190518110749589506"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "872837968224727080"
+  }
+}
