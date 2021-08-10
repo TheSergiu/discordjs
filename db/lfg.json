@@ -5,9 +5,22 @@
       {
         "id": "489214493503520778",
         "username": "Papu"
+      },
+      {
+        "id": "220621741137854464",
+        "username": "Robik"
       }
     ],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "CptBlood67",
+        "id": "339820263057260554"
+      },
+      {
+        "username": "Robik",
+        "id": "220621741137854464"
+      }
+    ],
     "participants": [
       {
         "username": "Pumba",
