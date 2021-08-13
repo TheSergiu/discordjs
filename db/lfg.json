@@ -1,32 +1,4 @@
 {
-  "3381": {
-    "id": "3381",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Bijuu Mode",
-        "id": "310648442798080009"
-      }
-    ],
-    "participants": [
-      {
-        "username": "ro_alexus",
-        "id": "629968700208054278"
-      },
-      {
-        "username": "Bubba",
-        "id": "279329790798987274"
-      }
-    ],
-    "dueDate": 1628874000000,
-    "desc": "VoG master (cu challenge daca se poate)",
-    "creator": {
-      "username": "ro_alexus",
-      "id": "629968700208054278"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "875329959957241886"
-  },
   "8002": {
     "id": "8002",
     "inexperienced": [],
