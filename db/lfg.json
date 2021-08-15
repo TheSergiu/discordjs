@@ -1,86 +1,20 @@
 {
-  "2632": {
-    "id": "2632",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "HyperBadger",
-        "id": "419525410578235394"
-      },
-      {
-        "username": "Heidiud",
-        "id": "326691963925430273"
-      },
-      {
-        "username": "AlexanCosmin",
-        "id": "290933070842822666"
-      }
-    ],
-    "dueDate": 1629028800000,
-    "desc": "Challanges run. Eu mai am nevoie de arc la khali si `forever fight`. Daca alticinva mai vrea si altceva vedem cum rezolvam. Preferabil fara incepatori.",
-    "creator": {
-      "username": "HyperBadger",
-      "id": "419525410578235394"
-    },
-    "activity": "Last Wish",
-    "messageID": "876148615977009162"
-  },
-  "9811": {
-    "id": "9811",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Liro",
-        "id": "666641059312304139"
-      },
-      {
-        "username": "crysis",
-        "id": "577081350713114674"
-      },
-      {
-        "username": "nikos41976",
-        "id": "680420651022155786"
-      },
-      {
-        "username": "Bob Smoke",
-        "id": "360758559706972161"
-      },
-      {
-        "username": "Robik",
-        "id": "220621741137854464"
-      },
-      {
-        "username": "uhenp",
-        "id": "576077948168437760"
-      }
-    ],
-    "dueDate": 1629046800000,
-    "desc": "3 vog-uri rapide 1 incepator maxim",
-    "creator": {
-      "username": "Liro",
-      "id": "666641059312304139"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "876164128127991869"
-  },
-  "0167": {
-    "id": "0167",
+  "6189": {
+    "id": "6189",
     "inexperienced": [
       {
-        "id": "349675571002867714",
-        "username": "adrianv4"
+        "id": "410110931578912781",
+        "username": "Ionut Dinu"
+      },
+      {
+        "id": "496053061962170380",
+        "username": "Andreea Stanciu"
       }
     ],
     "alternatives": [
       {
         "username": "uhenp",
         "id": "576077948168437760"
-      },
-      {
-        "username": "DOGE COIN",
-        "id": "438034897425399808"
       }
     ],
     "participants": [
@@ -89,21 +23,29 @@
         "id": "489214493503520778"
       },
       {
-        "username": "Wu Wei",
-        "id": "291565012361805824"
+        "username": "Ionut Dinu",
+        "id": "410110931578912781"
       },
       {
-        "username": "adrianv4",
-        "id": "349675571002867714"
+        "username": "Andreea Stanciu",
+        "id": "496053061962170380"
+      },
+      {
+        "username": "Pumba",
+        "id": "190518110749589506"
+      },
+      {
+        "username": "Heidiud",
+        "id": "326691963925430273"
       }
     ],
-    "dueDate": 1629028800000,
-    "desc": "Inca o sansa pt oci",
+    "dueDate": 1629478800000,
+    "desc": "Eventual si un DSC dupa daca sunteti dispusi",
     "creator": {
       "username": "Papu",
       "id": "489214493503520778"
     },
-    "activity": "Deep Stone Crypt",
-    "messageID": "876141770285654066"
+    "activity": "Vault Of Glass",
+    "messageID": "876548388169076796"
   }
 }
