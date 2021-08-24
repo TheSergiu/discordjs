@@ -1,27 +1,4 @@
 {
-  "5540": {
-    "id": "5540",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "._.dudu._.",
-        "id": "652570787387277323"
-      },
-      {
-        "username": "Bob Smoke",
-        "id": "360758559706972161"
-      }
-    ],
-    "dueDate": 1629831600000,
-    "desc": "un raid fara incepatori pt pinnacle",
-    "creator": {
-      "username": "._.dudu._.",
-      "id": "652570787387277323"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "879468152117944363"
-  },
   "0149": {
     "id": "0149",
     "inexperienced": [
