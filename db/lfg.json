@@ -5,9 +5,22 @@
       {
         "id": "261887010082521089",
         "username": "Enki"
+      },
+      {
+        "id": "339820263057260554",
+        "username": "CptBlood67"
       }
     ],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "ranger987(Florin)",
+        "id": "594254266248593408"
+      },
+      {
+        "username": "CptBlood67",
+        "id": "339820263057260554"
+      }
+    ],
     "participants": [
       {
         "username": "TheHorse",
@@ -28,6 +41,10 @@
       {
         "username": "uhenp",
         "id": "576077948168437760"
+      },
+      {
+        "username": "Mentalist",
+        "id": "656205662057136167"
       }
     ],
     "dueDate": 1630087200000,
