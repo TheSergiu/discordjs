@@ -1,58 +1,43 @@
 {
-  "7367": {
-    "id": "7367",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Papu",
-        "id": "489214493503520778"
-      },
-      {
-        "username": "uhenp",
-        "id": "576077948168437760"
-      },
-      {
-        "username": "Liro🕳",
-        "id": "666641059312304139"
-      }
-    ],
-    "dueDate": 1630342800000,
-    "desc": "Doar cp atheon",
-    "creator": {
-      "username": "Papu",
-      "id": "489214493503520778"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "881631895685832704"
-  },
-  "0063": {
-    "id": "0063",
+  "9593": {
+    "id": "9593",
     "inexperienced": [
       {
-        "id": "207661763477372928",
-        "username": "CodIta"
+        "id": "319186530499428373",
+        "username": "PanTeraS"
       }
     ],
     "alternatives": [
       {
-        "username": "CodIta",
-        "id": "207661763477372928"
+        "username": "TheHorse",
+        "id": "641321276194947085"
       }
     ],
     "participants": [
       {
         "username": "Pumba",
         "id": "190518110749589506"
+      },
+      {
+        "username": "._.dudu._.",
+        "id": "652570787387277323"
+      },
+      {
+        "username": "PanTeraS",
+        "id": "319186530499428373"
+      },
+      {
+        "username": "The__charmer",
+        "id": "266305540307681280"
       }
     ],
-    "dueDate": 1630342800000,
-    "desc": "Sherpa pentru cine nu stie raidul si vrea sa l invete, sunt bine veniti si fratii de pe console",
+    "dueDate": 1630429200000,
+    "desc": "Sherpa (2 incepatori maxim) + pinnacle",
     "creator": {
       "username": "Pumba",
       "id": "190518110749589506"
     },
     "activity": "Vault Of Glass",
-    "messageID": "881623243507789844"
+    "messageID": "881973069361582120"
   }
 }
