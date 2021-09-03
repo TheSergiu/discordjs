@@ -17,53 +17,5 @@
     },
     "activity": "Vault Of Glass",
     "messageID": "866751017331851284"
-  },
-  "0495": {
-    "id": "0495",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Banana Pie",
-        "id": "843498424283562016"
-      }
-    ],
-    "participants": [
-      {
-        "username": "ro_alexus",
-        "id": "629968700208054278"
-      },
-      {
-        "username": "Fυlfιηsεη▿🪐",
-        "id": "201312959719276544"
-      },
-      {
-        "username": "Zelos",
-        "id": "193974859124965376"
-      },
-      {
-        "username": "Andrescu12",
-        "id": "210465519524904961"
-      },
-      {
-        "username": "BlackRose",
-        "id": "321286668353142784"
-      },
-      {
-        "username": "zЯo",
-        "id": "302539708842377216"
-      },
-      {
-        "username": "Bijuu Mode",
-        "id": "310648442798080009"
-      }
-    ],
-    "dueDate": 1630688400000,
-    "desc": "1 run full (sau doua daca este chef)",
-    "creator": {
-      "username": "ro_alexus",
-      "id": "629968700208054278"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "882932419836145697"
   }
 }
