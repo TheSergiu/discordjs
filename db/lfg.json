@@ -1,41 +1,34 @@
 {
-  "7653": {
-    "id": "7653",
-    "inexperienced": [],
+  "7617": {
+    "id": "7617",
+    "inexperienced": [
+      {
+        "id": "652570787387277323",
+        "username": "._.dudu._."
+      }
+    ],
     "alternatives": [],
     "participants": [
       {
-        "username": "HyperBadger",
-        "id": "419525410578235394"
+        "username": "._.dudu._.",
+        "id": "652570787387277323"
       },
       {
-        "username": "CptBlood67",
-        "id": "339820263057260554"
-      },
-      {
-        "username": "JustinNotBieber",
-        "id": "265934692946018304"
+        "username": "Robik",
+        "id": "220621741137854464"
       },
       {
         "username": "uhenp",
         "id": "576077948168437760"
-      },
-      {
-        "username": "(david)",
-        "id": "313225411763109889"
-      },
-      {
-        "username": "Justinn",
-        "id": "723815826251055125"
       }
     ],
-    "dueDate": 1630753200000,
-    "desc": "Sherpa Run (Max 2 incepatori)",
+    "dueDate": 1630861200000,
+    "desc": "Am nevoie de ajutor la un dsc",
     "creator": {
-      "username": "HyperBadger",
-      "id": "419525410578235394"
+      "username": "._.dudu._.",
+      "id": "652570787387277323"
     },
-    "activity": "Vault Of Glass",
-    "messageID": "883330045131759687"
+    "activity": "Deep Stone Crypt",
+    "messageID": "883723019997036656"
   }
 }
