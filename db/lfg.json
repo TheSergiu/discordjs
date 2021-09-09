@@ -1,45 +1,4 @@
 {
-  "3045": {
-    "id": "3045",
-    "inexperienced": [
-      {
-        "id": "159647243513626624",
-        "username": "goosfraba"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "Banana Pie",
-        "id": "843498424283562016"
-      }
-    ],
-    "participants": [
-      {
-        "username": "KAKAROT",
-        "id": "234078374736297985"
-      },
-      {
-        "username": "Bijuu Mode",
-        "id": "310648442798080009"
-      },
-      {
-        "username": "⍟★BGS★⍟",
-        "id": "337243923565117450"
-      },
-      {
-        "username": "goosfraba",
-        "id": "159647243513626624"
-      }
-    ],
-    "dueDate": 1631206800000,
-    "desc": "Veniti cu bulan",
-    "creator": {
-      "username": "KAKAROT",
-      "id": "234078374736297985"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "885175570873335819"
-  },
   "8002": {
     "id": "8002",
     "inexperienced": [],
