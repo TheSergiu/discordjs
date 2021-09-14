@@ -1,40 +1,4 @@
 {
-  "6110": {
-    "id": "6110",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Fυlfιηsεη▿🪐",
-        "id": "201312959719276544"
-      },
-      {
-        "username": "Banana Pie",
-        "id": "843498424283562016"
-      }
-    ],
-    "participants": [
-      {
-        "username": "DKW",
-        "id": "503903235027763200"
-      },
-      {
-        "username": "Andrescu12",
-        "id": "210465519524904961"
-      },
-      {
-        "username": "AneLe",
-        "id": "445996738105311242"
-      }
-    ],
-    "dueDate": 1631638800000,
-    "desc": "fULL X 3",
-    "creator": {
-      "username": "DKW",
-      "id": "503903235027763200"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "887094746009452555"
-  },
   "8002": {
     "id": "8002",
     "inexperienced": [],
