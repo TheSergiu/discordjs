@@ -1,40 +1,31 @@
 {
-  "8254": {
-    "id": "8254",
-    "inexperienced": [
-      {
-        "id": "652570787387277323",
-        "username": "._.dudu._."
-      }
-    ],
+  "2148": {
+    "id": "2148",
+    "inexperienced": [],
     "alternatives": [
-      {
-        "username": "._.dudu._.",
-        "id": "652570787387277323"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Rabia",
-        "id": "181365970093211657"
-      },
-      {
-        "username": "Maikra",
-        "id": "303770806272393217"
-      },
       {
         "username": "OREZ CU LAPTE",
         "id": "438034897425399808"
       }
     ],
-    "dueDate": 1631984400000,
-    "desc": "Maraton de GoS (3 runs). Pentru Zealot's si Sacred Provenance",
+    "participants": [
+      {
+        "username": "Christronius225200",
+        "id": "536239671219453973"
+      },
+      {
+        "username": "Dani3l86",
+        "id": "643525097071706166"
+      }
+    ],
+    "dueDate": 1632067200000,
+    "desc": "riven pe 3 caractere si 1 qweenswalk",
     "creator": {
-      "username": "Rabia",
-      "id": "181365970093211657"
+      "username": "Christronius225200",
+      "id": "536239671219453973"
     },
-    "activity": "Garden of Salvation",
-    "messageID": "888497457279930378"
+    "activity": "Last Wish",
+    "messageID": "888778001876127794"
   },
   "0948": {
     "id": "0948",
@@ -44,7 +35,12 @@
         "username": "Brucie_Kibbutz90"
       }
     ],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "RexCry07",
+        "id": "463780834114273281"
+      }
+    ],
     "participants": [
       {
         "username": "TheHorse",
