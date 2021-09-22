@@ -17,24 +17,5 @@
     },
     "activity": "Vault Of Glass",
     "messageID": "866751017331851284"
-  },
-  "8018": {
-    "id": "8018",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Evan666",
-        "id": "819385077372289074"
-      }
-    ],
-    "dueDate": 1632330000000,
-    "desc": "Japonia",
-    "creator": {
-      "username": "Evan666",
-      "id": "819385077372289074"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "889978067060129792"
   }
 }
