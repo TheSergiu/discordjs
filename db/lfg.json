@@ -17,54 +17,5 @@
     },
     "activity": "Vault Of Glass",
     "messageID": "866751017331851284"
-  },
-  "8431": {
-    "id": "8431",
-    "inexperienced": [
-      {
-        "id": "606882431345229825",
-        "username": "Cake"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "⍟★BGS★⍟",
-        "id": "337243923565117450"
-      },
-      {
-        "username": "Thunder",
-        "id": "104935278891827200"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Zelos",
-        "id": "193974859124965376"
-      },
-      {
-        "username": "Cake",
-        "id": "606882431345229825"
-      },
-      {
-        "username": "DKW",
-        "id": "503903235027763200"
-      },
-      {
-        "username": "Evan666",
-        "id": "819385077372289074"
-      },
-      {
-        "username": "V_Radu",
-        "id": "280749770090479616"
-      }
-    ],
-    "dueDate": 1632589800000,
-    "desc": "Facem pt cake 1x full sa isi ia si acele colectabile acele cristale si 2x time more doar bosul- in afara de cake maxim inca 1 incepator",
-    "creator": {
-      "username": "Zelos",
-      "id": "193974859124965376"
-    },
-    "activity": "Last Wish",
-    "messageID": "890690370676068403"
   }
 }
