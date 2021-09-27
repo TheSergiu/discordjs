@@ -1,32 +1,4 @@
 {
-  "4884": {
-    "id": "4884",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Banana Pie",
-        "id": "843498424283562016"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Evan666",
-        "id": "819385077372289074"
-      },
-      {
-        "username": "Raida",
-        "id": "259002382896201729"
-      }
-    ],
-    "dueDate": 1632762540000,
-    "desc": "誰かが望むならフルレイド/それを必要とするフルレイド",
-    "creator": {
-      "username": "Evan666",
-      "id": "819385077372289074"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "891753811620790343"
-  },
   "8002": {
     "id": "8002",
     "inexperienced": [],
