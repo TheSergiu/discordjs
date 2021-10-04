@@ -2,7 +2,16 @@
   "3524": {
     "id": "3524",
     "inexperienced": [],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "Wu Wei",
+        "id": "291565012361805824"
+      },
+      {
+        "username": "uhenp",
+        "id": "576077948168437760"
+      }
+    ],
     "participants": [
       {
         "username": "MIKE",
