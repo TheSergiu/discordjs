@@ -1,36 +1,4 @@
 {
-  "4126": {
-    "id": "4126",
-    "inexperienced": [
-      {
-        "id": "310648442798080009",
-        "username": "Bijuu Mode"
-      }
-    ],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Tryez",
-        "id": "293848052513636353"
-      },
-      {
-        "username": "Bijuu Mode",
-        "id": "310648442798080009"
-      },
-      {
-        "username": "VladimirKatana",
-        "id": "277780988480716801"
-      }
-    ],
-    "dueDate": 1634302800000,
-    "desc": "Unu sau mai multe",
-    "creator": {
-      "username": "Tryez",
-      "id": "293848052513636353"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "898248858113540157"
-  },
   "8002": {
     "id": "8002",
     "inexperienced": [],
