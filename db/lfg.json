@@ -1,7 +1,12 @@
 {
   "9097": {
     "id": "9097",
-    "inexperienced": [],
+    "inexperienced": [
+      {
+        "id": "258364310361735168",
+        "username": "Zeus, the sound engineer."
+      }
+    ],
     "alternatives": [],
     "participants": [
       {
@@ -11,6 +16,22 @@
       {
         "username": "Ionut Dinu",
         "id": "410110931578912781"
+      },
+      {
+        "username": "uhenp",
+        "id": "576077948168437760"
+      },
+      {
+        "username": "GoGu",
+        "id": "247000041271590923"
+      },
+      {
+        "username": "Airline",
+        "id": "151764546414051329"
+      },
+      {
+        "username": "Zeus, the sound engineer.",
+        "id": "258364310361735168"
       }
     ],
     "dueDate": 1635271200000,
