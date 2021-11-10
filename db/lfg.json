@@ -1,35 +1,4 @@
 {
-  "3834": {
-    "id": "3834",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Tryez",
-        "id": "293848052513636353"
-      },
-      {
-        "username": "VladimirKatana",
-        "id": "277780988480716801"
-      },
-      {
-        "username": "Gabi (Timelost)",
-        "id": "300372953827377184"
-      },
-      {
-        "username": "Zelos",
-        "id": "193974859124965376"
-      }
-    ],
-    "dueDate": 1636567200000,
-    "desc": "Vog pentru catalist Vex",
-    "creator": {
-      "username": "Tryez",
-      "id": "293848052513636353"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "907712027445854268"
-  },
   "8002": {
     "id": "8002",
     "inexperienced": [],
