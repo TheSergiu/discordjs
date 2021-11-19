@@ -1,1 +1,42 @@
-{}
+{
+  "3942": {
+    "id": "3942",
+    "inexperienced": [
+      {
+        "id": "865238282195566634",
+        "username": "𝕊𝔸𝕄𝕌ℝ𝔸𝕀"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Ionut Dinu",
+        "id": "410110931578912781"
+      },
+      {
+        "username": "Blondu",
+        "id": "290103221957951488"
+      },
+      {
+        "username": "Dan Diaconescu",
+        "id": "489214493503520778"
+      },
+      {
+        "username": "𝕊𝔸𝕄𝕌ℝ𝔸𝕀",
+        "id": "865238282195566634"
+      },
+      {
+        "username": "uhenp",
+        "id": "576077948168437760"
+      }
+    ],
+    "dueDate": 1637510400000,
+    "desc": "full run",
+    "creator": {
+      "username": "Ionut Dinu",
+      "id": "410110931578912781"
+    },
+    "activity": "Last Wish",
+    "messageID": "911323909834551336"
+  }
+}
