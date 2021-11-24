@@ -1,47 +1,34 @@
 {
-  "2716": {
-    "id": "2716",
+  "3385": {
+    "id": "3385",
     "inexperienced": [
       {
-        "id": "214849859184754688",
-        "username": "Ringzor"
+        "id": "416492548790550540",
+        "username": "pitoiu"
       },
       {
-        "id": "317730003494240260",
-        "username": "Slab"
+        "id": "302513443179724800",
+        "username": "ciupacabral"
       }
     ],
-    "alternatives": [
-      {
-        "username": "Rabia",
-        "id": "181365970093211657"
-      }
-    ],
+    "alternatives": [],
     "participants": [
       {
-        "username": "Robik",
-        "id": "220621741137854464"
+        "username": "ciupacabral",
+        "id": "302513443179724800"
       },
       {
-        "username": "Ringzor",
-        "id": "214849859184754688"
-      },
-      {
-        "username": "Slab",
-        "id": "317730003494240260"
-      },
-      {
-        "username": "Dani3l86",
-        "id": "643525097071706166"
+        "username": "pitoiu",
+        "id": "416492548790550540"
       }
     ],
-    "dueDate": 1637773200000,
-    "desc": "Raid full+Atheon farm (maxim 2 incepatori)",
+    "dueDate": 1637865000000,
+    "desc": "Full raid 2 incepatori",
     "creator": {
-      "username": "Robik",
-      "id": "220621741137854464"
+      "username": "ciupacabral",
+      "id": "302513443179724800"
     },
     "activity": "Vault Of Glass",
-    "messageID": "912732916923105341"
+    "messageID": "913132993734918225"
   }
 }
