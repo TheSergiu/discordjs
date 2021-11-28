@@ -1,43 +1,4 @@
 {
-  "3377": {
-    "id": "3377",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "MysticHoneyBunny",
-        "id": "203233997893926913"
-      },
-      {
-        "username": "Quannah",
-        "id": "621740634935525376"
-      },
-      {
-        "username": "Tryez",
-        "id": "293848052513636353"
-      },
-      {
-        "username": "VladimirKatana",
-        "id": "277780988480716801"
-      },
-      {
-        "username": "Bijuu Mode",
-        "id": "310648442798080009"
-      },
-      {
-        "username": "Fυlfιηsεη▿🪐",
-        "id": "201312959719276544"
-      }
-    ],
-    "dueDate": 1638122400000,
-    "desc": null,
-    "creator": {
-      "username": "MysticHoneyBunny",
-      "id": "203233997893926913"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "914252865504153632"
-  },
   "8002": {
     "id": "8002",
     "inexperienced": [],
