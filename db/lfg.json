@@ -1,1 +1,54 @@
-{}
+{
+  "0663": {
+    "id": "0663",
+    "inexperienced": [],
+    "alternatives": [
+      {
+        "username": "Rabia",
+        "id": "181365970093211657"
+      },
+      {
+        "username": "Ionut Dinu",
+        "id": "410110931578912781"
+      },
+      {
+        "username": "PanTeraS",
+        "id": "319186530499428373"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Dan Diaconescu",
+        "id": "489214493503520778"
+      },
+      {
+        "username": "Pilutzu",
+        "id": "349235373903314944"
+      },
+      {
+        "username": "pitoiu",
+        "id": "416492548790550540"
+      },
+      {
+        "username": "ciupacabral",
+        "id": "302513443179724800"
+      },
+      {
+        "username": "Lucif3r",
+        "id": "315620097576271883"
+      },
+      {
+        "username": "A.D.E",
+        "id": "392715462334480384"
+      }
+    ],
+    "dueDate": 1639238400000,
+    "desc": "Sherpa VOG + DSC daca merge bine ; caut 2 incepatori dornici de Vex si Oci",
+    "creator": {
+      "username": "Dan Diaconescu",
+      "id": "489214493503520778"
+    },
+    "activity": "Sesiune Raiduri",
+    "messageID": "917371105025622016"
+  }
+}
