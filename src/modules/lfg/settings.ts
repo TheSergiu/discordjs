@@ -9,10 +9,10 @@ export namespace LFGSettings {
   export const LFG_CREATE_TIMEOUT = 3 * minutes;
   export const LFG_DELETE_MESSAGE_AFTER = 2 * hours;
 
-  export const BILLBOARD_CHANNEL_ID = '785847242660773918';
+  export const BILLBOARD_CHANNEL_ID = '916384195213950986';
 
-  export const CHANNEL_TO_NOTIFY_ID = '622751004051374080';
-  export const ROLE_TO_NOTIFY_ID = '621741215741902870';
+  export const CHANNEL_TO_NOTIFY_ID = '916384239283503175';
+  export const ROLE_TO_NOTIFY_ID = '916409316226003034';
 
 }
 
