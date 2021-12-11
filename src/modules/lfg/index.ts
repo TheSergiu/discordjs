@@ -28,7 +28,7 @@ export class LFGModule {
   private readonly entries: { [id: string]: LFGManagerData } = {};
 
   private readonly raidCreateCommand = new CmdHelper({
-    type: CommandType.SUB_COMMAND_GROUP,
+    // type: CommandType.SUB_COMMAND_GROUP,
     name: `raid`,
     description: 'Organizare raiduri',
     options: [

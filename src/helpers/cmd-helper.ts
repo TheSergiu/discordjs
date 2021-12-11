@@ -14,7 +14,7 @@ export enum CommandType {
 }
 
 export type CommandCreateType = {
-  type: CommandType
+  // type: CommandType
   name: string,
   description: string,
   options?: {
@@ -98,7 +98,6 @@ export class CmdHelper extends EventEmitter {
       const resp: CommandCreateResponse = await (client as any)
         .api
         .applications(client.user.id)
-        .guilds(guild.id)
         .commands
         .post({
           data: this.command
