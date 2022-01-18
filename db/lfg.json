@@ -1,59 +1,33 @@
 {
-  "9037": {
-    "id": "9037",
-    "inexperienced": [
-      {
-        "id": "329936438802251776",
-        "username": "Românică"
-      },
-      {
-        "id": "319740988014854145",
-        "username": "Vally"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "DEVIL",
-        "id": "423545763465920513"
-      },
-      {
-        "username": "CodIta",
-        "id": "207661763477372928"
-      }
-    ],
+  "6676": {
+    "id": "6676",
+    "inexperienced": [],
+    "alternatives": [],
     "participants": [
       {
-        "username": "Dcktator",
-        "id": "336259516364488705"
+        "username": "Robik",
+        "id": "220621741137854464"
       },
       {
-        "username": "KirinZeul",
-        "id": "514605721124339712"
+        "username": "validulceteseduce",
+        "id": "863357025990475796"
       },
       {
-        "username": "fluxdux2",
-        "id": "667295895339139072"
+        "username": "naspu",
+        "id": "811876144352854097"
       },
       {
-        "username": "Românică",
-        "id": "329936438802251776"
-      },
-      {
-        "username": "Vally",
-        "id": "319740988014854145"
-      },
-      {
-        "username": "kenzor",
-        "id": "321608468819869696"
+        "username": "badan",
+        "id": "652570787387277323"
       }
     ],
-    "dueDate": 1642527000000,
-    "desc": "Full run, x3 Atheon, maxim 2 incepatori",
+    "dueDate": 1642617000000,
+    "desc": "Am nevoie de ajutor la catalyst (fără începători)",
     "creator": {
-      "username": "Dcktator",
-      "id": "336259516364488705"
+      "username": "Robik",
+      "id": "220621741137854464"
     },
     "activity": "Vault Of Glass",
-    "messageID": "932579309468676097"
+    "messageID": "933011065543995472"
   }
 }
