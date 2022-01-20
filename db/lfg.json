@@ -1,1 +1,30 @@
-{}
+{
+  "5970": {
+    "id": "5970",
+    "inexperienced": [],
+    "alternatives": [
+      {
+        "username": "Rabia",
+        "id": "181365970093211657"
+      }
+    ],
+    "participants": [
+      {
+        "username": "kenzor",
+        "id": "321608468819869696"
+      },
+      {
+        "username": "Dcktator",
+        "id": "336259516364488705"
+      }
+    ],
+    "dueDate": 1642788000000,
+    "desc": "Master oracle challenge 1355+ fara incepatori",
+    "creator": {
+      "username": "kenzor",
+      "id": "321608468819869696"
+    },
+    "activity": "Vault Of Glass",
+    "messageID": "933726315784339486"
+  }
+}
