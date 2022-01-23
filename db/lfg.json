@@ -2,7 +2,12 @@
   "5114": {
     "id": "5114",
     "inexperienced": [],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "NothingInWorld",
+        "id": "818915093873557524"
+      }
+    ],
     "participants": [
       {
         "username": "Dcktator",
@@ -23,10 +28,6 @@
       {
         "username": "DerionX(Raul)",
         "id": "756566809703874579"
-      },
-      {
-        "username": "Dani3l86",
-        "id": "643525097071706166"
       }
     ],
     "dueDate": 1643045400000,
@@ -37,94 +38,5 @@
     },
     "activity": "Vault Of Glass",
     "messageID": "934209475924094997"
-  },
-  "9186": {
-    "id": "9186",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "uhenp",
-        "id": "576077948168437760"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Xtreme",
-        "id": "320705484229312513"
-      },
-      {
-        "username": "validulceteseduce",
-        "id": "863357025990475796"
-      },
-      {
-        "username": "OREZ CU LAPTE",
-        "id": "438034897425399808"
-      }
-    ],
-    "dueDate": 1642957200000,
-    "desc": "Am nevoie de ajutor pentru vex mythoclast catalyst - Fara incepatori",
-    "creator": {
-      "username": "Xtreme",
-      "id": "320705484229312513"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "934504388288974919"
-  },
-  "0441": {
-    "id": "0441",
-    "inexperienced": [
-      {
-        "id": "349235373903314944",
-        "username": "Pilutzu"
-      },
-      {
-        "id": "329936438802251776",
-        "username": "Românică"
-      },
-      {
-        "id": "160472069606342656",
-        "username": "IlieMarius"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "Românică",
-        "id": "329936438802251776"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Noxulescu",
-        "id": "509051148192448545"
-      },
-      {
-        "username": "Pilutzu",
-        "id": "349235373903314944"
-      },
-      {
-        "username": "Dani3l86",
-        "id": "643525097071706166"
-      },
-      {
-        "username": "AntSamurai",
-        "id": "401035160075763712"
-      },
-      {
-        "username": "NothingInWorld",
-        "id": "818915093873557524"
-      },
-      {
-        "username": "IlieMarius",
-        "id": "160472069606342656"
-      }
-    ],
-    "dueDate": 1642962600000,
-    "desc": "Raid pentru VEX , maxim 2 incapatori , si please un sherpa !",
-    "creator": {
-      "username": "Noxulescu",
-      "id": "509051148192448545"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "934484987288354916"
   }
 }
