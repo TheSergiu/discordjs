@@ -3,16 +3,16 @@
     "id": "2438",
     "inexperienced": [
       {
-        "id": "483220180743225374",
-        "username": "SUNROD"
-      },
-      {
         "id": "292698965420408833",
         "username": "Darcone"
       },
       {
         "id": "264069820633448448",
         "username": "The_Sergiu"
+      },
+      {
+        "id": "212875716633559040",
+        "username": "Blego"
       }
     ],
     "alternatives": [
@@ -35,16 +35,20 @@
         "id": "303605766047268864"
       },
       {
-        "username": "SUNROD",
-        "id": "483220180743225374"
-      },
-      {
         "username": "Darcone",
         "id": "292698965420408833"
       },
       {
         "username": "The_Sergiu",
         "id": "264069820633448448"
+      },
+      {
+        "username": "Blego",
+        "id": "212875716633559040"
+      },
+      {
+        "username": "Saito1996",
+        "id": "198033771335909377"
       }
     ],
     "dueDate": 1644076800000,
@@ -55,49 +59,5 @@
     },
     "activity": "Deep Stone Crypt",
     "messageID": "938857396976107610"
-  },
-  "9323": {
-    "id": "9323",
-    "inexperienced": [
-      {
-        "id": "483220180743225374",
-        "username": "SUNROD"
-      },
-      {
-        "id": "319740988014854145",
-        "username": "Vally"
-      }
-    ],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Xtreme",
-        "id": "320705484229312513"
-      },
-      {
-        "username": "SUNROD",
-        "id": "483220180743225374"
-      },
-      {
-        "username": "Românică",
-        "id": "329936438802251776"
-      },
-      {
-        "username": "Vally",
-        "id": "319740988014854145"
-      },
-      {
-        "username": "CodIta",
-        "id": "207661763477372928"
-      }
-    ],
-    "dueDate": 1643997600000,
-    "desc": "Spoils Farm Templar",
-    "creator": {
-      "username": "Xtreme",
-      "id": "320705484229312513"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "938900328206700614"
   }
 }
