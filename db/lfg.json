@@ -1,6 +1,6 @@
 {
-  "5362": {
-    "id": "5362",
+  "2908": {
+    "id": "2908",
     "inexperienced": [
       {
         "id": "319740988014854145",
@@ -9,90 +9,26 @@
       {
         "id": "329936438802251776",
         "username": "Românică"
-      },
-      {
-        "id": "212875716633559040",
-        "username": "Blego"
       }
     ],
     "alternatives": [],
     "participants": [
-      {
-        "username": "Vally",
-        "id": "319740988014854145"
-      },
       {
         "username": "Românică",
         "id": "329936438802251776"
       },
       {
-        "username": "IlieMarius",
-        "id": "160472069606342656"
-      },
-      {
-        "username": "Blego",
-        "id": "212875716633559040"
+        "username": "Vally",
+        "id": "319740988014854145"
       }
     ],
-    "dueDate": 1644170400000,
-    "desc": "Full run ,x3 Atheon 2 incepatori max (unu sunt eu)",
+    "dueDate": 1644258600000,
+    "desc": "3X Atheon pt mythoclast, avem cp, suntem deja 2 incepatori",
     "creator": {
-      "username": "Vally",
-      "id": "319740988014854145"
+      "username": "Românică",
+      "id": "329936438802251776"
     },
     "activity": "Vault Of Glass",
-    "messageID": "939615293578289173"
-  },
-  "0922": {
-    "id": "0922",
-    "inexperienced": [
-      {
-        "id": "262960107166498817",
-        "username": "Acron"
-      },
-      {
-        "id": "320705484229312513",
-        "username": "Xtreme"
-      },
-      {
-        "id": "326476173833928704",
-        "username": "TheComedian"
-      }
-    ],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "uhenp",
-        "id": "576077948168437760"
-      },
-      {
-        "username": "Acron",
-        "id": "262960107166498817"
-      },
-      {
-        "username": "Xtreme",
-        "id": "320705484229312513"
-      },
-      {
-        "username": "TheComedian",
-        "id": "326476173833928704"
-      },
-      {
-        "username": "naspu",
-        "id": "811876144352854097"
-      },
-      {
-        "username": "CodIta",
-        "id": "207661763477372928"
-      }
-    ],
-    "dueDate": 1644170400000,
-    "desc": "Maxim 4 începători",
-    "creator": {
-      "username": "uhenp",
-      "id": "576077948168437760"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "939601070802468915"
+    "messageID": "939999998500818944"
   }
 }
