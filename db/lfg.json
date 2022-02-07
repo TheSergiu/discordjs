@@ -1,34 +1,37 @@
 {
-  "2908": {
-    "id": "2908",
-    "inexperienced": [
-      {
-        "id": "319740988014854145",
-        "username": "Vally"
-      },
-      {
-        "id": "329936438802251776",
-        "username": "Românică"
-      }
-    ],
+  "1606": {
+    "id": "1606",
+    "inexperienced": [],
     "alternatives": [],
     "participants": [
       {
-        "username": "Românică",
-        "id": "329936438802251776"
+        "username": "Xtreme",
+        "id": "320705484229312513"
       },
       {
-        "username": "Vally",
-        "id": "319740988014854145"
+        "username": "TheComedian",
+        "id": "326476173833928704"
+      },
+      {
+        "username": "Saito1996",
+        "id": "198033771335909377"
+      },
+      {
+        "username": "CodIta",
+        "id": "207661763477372928"
+      },
+      {
+        "username": "Pilgrim",
+        "id": "694625479100989448"
       }
     ],
-    "dueDate": 1644258600000,
-    "desc": "3X Atheon pt mythoclast, avem cp, suntem deja 2 incepatori",
+    "dueDate": 1644341400000,
+    "desc": "Farm de spoils (sleeper cu catalyst sau galajorn cu catalyst)",
     "creator": {
-      "username": "Românică",
-      "id": "329936438802251776"
+      "username": "Xtreme",
+      "id": "320705484229312513"
     },
     "activity": "Vault Of Glass",
-    "messageID": "939999998500818944"
+    "messageID": "940361180906672129"
   }
 }
