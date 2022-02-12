@@ -1,47 +1,28 @@
 {
-  "8354": {
-    "id": "8354",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "naspu",
-        "id": "811876144352854097"
-      },
-      {
-        "username": "validulceteseduce",
-        "id": "863357025990475796"
-      },
-      {
-        "username": "Acron",
-        "id": "262960107166498817"
-      },
-      {
-        "username": "CodIta",
-        "id": "207661763477372928"
-      }
-    ],
-    "dueDate": 1644688800000,
-    "desc": "Full run, arc only, fara incepatori",
-    "creator": {
-      "username": "naspu",
-      "id": "811876144352854097"
-    },
-    "activity": "Last Wish",
-    "messageID": "941730330862321735"
-  },
   "9295": {
     "id": "9295",
     "inexperienced": [
       {
         "id": "160472069606342656",
         "username": "IlieMarius"
+      },
+      {
+        "id": "320705484229312513",
+        "username": "Xtreme"
       }
     ],
     "alternatives": [
       {
         "username": "AntSamurai",
         "id": "401035160075763712"
+      },
+      {
+        "username": "naspu",
+        "id": "811876144352854097"
+      },
+      {
+        "username": "diegomir7",
+        "id": "274510705078829067"
       }
     ],
     "participants": [
@@ -56,6 +37,10 @@
       {
         "username": "Dumnezeu Cel Negru",
         "id": "802197525179662337"
+      },
+      {
+        "username": "Xtreme",
+        "id": "320705484229312513"
       }
     ],
     "dueDate": 1644773400000,
