@@ -12,10 +12,10 @@ export enum LFGActivity {
 export type LFGManagerData = {
   id: string,
   messageID?: Snowflake
-  creator: { username: string, id: Snowflake }
-  participants: { username: string, id: Snowflake }[]
-  alternatives: { username: string, id: Snowflake }[]
-  inexperienced: { username: string, id: Snowflake }[]
+  creator: { username: string, id: Snowflake, nick: string}
+  participants: { username: string, id: Snowflake , nick: string}[]
+  alternatives: { username: string, id: Snowflake, nick: string}[]
+  inexperienced: { username: string, id: Snowflake, nick: string}[]
 
   dueDate: number,
   activity: LFGActivity,

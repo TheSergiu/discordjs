@@ -13,8 +13,10 @@ export namespace LFGSettings {
 
   export const CHANNEL_TO_NOTIFY_ID = '610559032943444132';
   export const ROLE_TO_NOTIFY_ID = '782730784099401749';
+  export const BANNED_ROLE = '942392516932698182';
 
 }
+
 
 export const LFGEmojis: { [id in LFGActivity]: EmojiData } = {
   [LFGActivity.vog]: EMOJIS.V,
