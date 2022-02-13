@@ -13,7 +13,7 @@ export namespace LFGSettings {
 
   export const CHANNEL_TO_NOTIFY_ID = '760757069937639424';
   export const ROLE_TO_NOTIFY_ID = '797393738456236032';
-  export const ROLE_TO_NOTIFY_ID = '942416950259232778';
+  export const BANNED_ROLE = '942416950259232778';
 
 }
 
