@@ -1,4 +1,4 @@
-import {Client, Message, Snowflake, TextChannel, User} from "discord.js";
+import {Client, Message, Snowflake, TeamMember, TextChannel, User} from "discord.js";
 import {EMOJIS, EMPTY_SPACE, timeFormatRegex} from "../../helpers/constants";
 import {OneReactionWaiter} from "../../helpers/ReactionManager";
 import {UserResponseManager} from "../../helpers/UserResponseManager";
@@ -28,7 +28,7 @@ export class LFGModule {
   private readonly entries: { [id: string]: LFGManagerData } = {};
 
   private readonly raidCreateCommand = new CmdHelper({
-    type: CommandType.SUB_COMMAND_GROUP,
+  //  type: CommandType.SUB_COMMAND_GROUP,
     name: `raid`,
     description: 'Organizare raiduri',
     options: [
@@ -136,11 +136,26 @@ export class LFGModule {
     assert(interaction.data.options.length === 1);
     const subcommand = interaction.data.options[0];
 
-    // const guild = await this.client.guilds.fetch(interaction.guild_id);
+     const guild = await this.client.guilds.fetch(interaction.guild_id);
     const channel: TextChannel = await this.client.channels.fetch(interaction.channel_id) as TextChannel;
     const user = await this.client.users.fetch(interaction.member.user.id);
-
-
+    const nicknameL:string = interaction.member.nick;
+    let is_banned = interaction.member.user.id;
+    let rolenameL = guild.roles.cache.get(LFGSettings.BANNED_ROLE);
+    let srch: boolean = false;
+    for(let i in interaction.member.roles){
+      if(interaction.member.roles[i].match(rolenameL.id) !== null){
+        srch = true;
+        break;
+      }
+    }
+    //console.log("rolename by id: %s",rolenameL.name);
+    //console.log("found: %s",srch);
+    //return;
+    if(srch){
+      await this.raidCreateCommand.respond(interaction,{content: 'Esti banat temporar de a participa la Raid-uri, contacteaza un admin pentru mai multe detalii'});
+      return;
+    }
     if (subcommand.name === 'create') {
       await this.raidCreateCommand.respond(interaction, {
         content: 'Se crează o organizare nouă'
@@ -156,10 +171,10 @@ export class LFGModule {
           id: myID,
           inexperienced: [],
           alternatives: [],
-          participants: [{ username: user.username, id: user.id }],
+          participants: [{ username: user.username, id: user.id ,nick: nicknameL}],
           dueDate: data.time.getTime(),
           desc: data.desc,
-          creator: { username: user.username, id: user.id },
+          creator: { username: user.username, id: user.id,nick: nicknameL },
           activity: data.activity
         };
         this.instances.set(
@@ -257,7 +272,7 @@ export class LFGModule {
   dispatch = async (message: Message) => {
     if (message.channel.type !== 'text') return;
     if (message.author.bot) return;
-
+    const nicknameL:string = message.member.displayName;
     const { content, author, channel } = message;
     if (content.indexOf('/raid') !== 0) return;
 
@@ -326,10 +341,10 @@ export class LFGModule {
           id: myID,
           inexperienced: [],
           alternatives: [],
-          participants: [{ username: author.username, id: author.id }],
+          participants: [{ username: author.username, id: author.id, nick: nicknameL }],
           dueDate: data.time.getTime(),
           desc: data.desc,
-          creator: { username: author.username, id: author.id },
+          creator: { username: author.username, id: author.id, nick: nicknameL },
           activity: data.activity
         };
         this.instances.set(

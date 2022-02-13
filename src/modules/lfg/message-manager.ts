@@ -1,4 +1,4 @@
-import {Client, Message, MessageEmbed, MessageReaction, Snowflake, TextChannel, User} from "discord.js";
+import {Client, Message, MessageEmbed, MessageReaction, Snowflake, TextChannel, User,Guild} from "discord.js";
 import {MessageReactionManager} from "../../helpers/ReactionManager";
 import {EMOJIS, EMPTY_SPACE} from "../../helpers/constants";
 import * as assert from "assert";
@@ -12,6 +12,7 @@ import Color = require("color");
 import ROLE_TO_NOTIFY_ID = LFGSettings.ROLE_TO_NOTIFY_ID;
 import scheduleMessageDeletion = CleanUp.scheduleMessageDeletion;
 import LFG_DELETE_MESSAGE_AFTER = LFGSettings.LFG_DELETE_MESSAGE_AFTER;
+import {client} from "../../helpers/client";
 
 export class LFGMessageManager {
   private readonly channel: TextChannel;
@@ -189,30 +190,41 @@ Rezerve: ${this.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
   }
 
   private reactionDispatch = async (reaction: MessageReaction, user: User, message: Message) => {
+      let playerNicks: string;
+      playerNicks=(reaction.message.guild.member(user.id).nickname);
+   
+      //console.log("user nick: %s",playerNicks);
+      let is_banned = reaction.message.guild.member(user.id).roles.cache.has(LFGSettings.BANNED_ROLE);
+     // console.log("user banned: %s",is_banned);
+      
     if (
       // if enroll in participants
       reaction.emoji.name === EMOJIS.white_check_mark.unicode
     ) {
-      this.addParticipant(user);
+      
+      if(is_banned)return;
+      this.addParticipant(user,playerNicks);
     }
     if (
       // if enroll in alternatives
       reaction.emoji.name === EMOJIS.question.unicode
     ) {
-      this.addAlternative(user);
+      if(is_banned)return;
+      this.addAlternative(user,playerNicks);
     }
 
     if (reaction.emoji.name === EMOJIS.new.unicode) {
+      if(is_banned)return;
       if (this.alreadyEnrolled(user.id)) {
-        this.toggleInexperienced(user);
+        this.toggleInexperienced(user,playerNicks);
       } else {
-        this.toggleInexperienced(user, true);
-        this.addParticipant(user);
+        this.toggleInexperienced(user,playerNicks, true);
+        this.addParticipant(user,playerNicks);
       }
     }
 
     if (reaction.emoji.name === EMOJIS.x.unicode) {
-      this.toggleInexperienced(user, false);
+      this.toggleInexperienced(user,playerNicks, false);
       this.removeParticipant(user.id);
     }
 
@@ -220,7 +232,7 @@ Rezerve: ${this.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
     this.saveDelegate(this.data);
   }
 
-  private addParticipant(user: User) {
+  private addParticipant(user: User, nick: string) {
     if (
       // not already in participants
       !this.data.participants.find(x => x.id === user.id)
@@ -228,11 +240,11 @@ Rezerve: ${this.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
       // remove from any other list
       this.removeParticipant(user.id);
       // add it
-      this.data.participants.push({username: user.username, id: user.id});
+      this.data.participants.push({username: user.username, id: user.id, nick:nick});
     }
   }
 
-  private addAlternative(user: User) {
+  private addAlternative(user: User, nick: string) {
     if (
       // and not already in alternatives
       !this.data.alternatives.find(x => x.id === user.id)
@@ -240,11 +252,11 @@ Rezerve: ${this.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
       // remove from any other list
       this.removeParticipant(user.id);
       // add it
-      this.data.alternatives.push({username: user.username, id: user.id});
+      this.data.alternatives.push({username: user.username, id: user.id,nick:nick});
     }
   }
 
-  private toggleInexperienced(user: User, bool?: boolean) {
+  private toggleInexperienced(user: User, nick: string, bool?: boolean) {
     const exists = !!this.data.inexperienced.find(x => x.id === user.id);
 
     if (typeof bool !== "boolean") {
@@ -255,7 +267,7 @@ Rezerve: ${this.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
       this.data.inexperienced = this.data.inexperienced.filter(x => x.id !== user.id);
     } else {
       if (!exists) {
-        this.data.inexperienced.push({id: user.id, username: user.username});
+        this.data.inexperienced.push({id: user.id, username: user.username,nick});
       }
     }
   }
@@ -297,14 +309,32 @@ Rezerve: ${this.alternatives.map(x => userID2Text(x.id)).join(', ') || '-'}
     assert(assets);
 
     const startMoment = moment(this.data.dueDate).tz('EET');
+  //  console.log("creator nick: %s",this.data.creator.nick);
+  //  console.log("participant nick: %s",this.data.participants[0].nick);
+    //console.log("participant1 nick: %s",this.data.participants[1].nick);
 
     const embed = new MessageEmbed();
     embed.setColor(this.isExpired ? Color('#' + assets.color).desaturate(0.7).hex().substr(1) : assets.color);
     embed.setTimestamp(this.data.dueDate);
-    embed.setFooter(
-      `Creat de ${this.data.creator.username}`,
-      LFGAssets[this.data.activity].icon
-    );
+    for(let i in this.data.participants){
+      if(this.data.participants[i].nick) this.data.participants[i].username = this.data.participants[i].nick;
+    }
+
+    for(let i in this.data.alternatives){
+      if(this.data.alternatives[i].nick) this.data.alternatives[i].username = this.data.alternatives[i].nick;
+    }
+
+    if(!this.data.creator.nick){
+      embed.setFooter(
+        `Creat de ${this.data.creator.username}`,
+        LFGAssets[this.data.activity].icon
+      );
+    }else{
+      embed.setFooter(
+        `Creat de ${this.data.creator.nick}`,
+        LFGAssets[this.data.activity].icon
+      );
+    }
     embed.setAuthor(assets.name, assets.icon);
     embed.setImage(this.isExpired ? assets.expiredThumbnail : assets.thumbnail);
     embed.addFields([
