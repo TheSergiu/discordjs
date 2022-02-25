@@ -1,1 +1,40 @@
-{}
+{
+  "4913": {
+    "id": "4913",
+    "inexperienced": [
+      {
+        "id": "198033771335909377",
+        "username": "Saito1996",
+        "nick": "Saito1996#4192"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "validulceteseduce#1386",
+        "id": "863357025990475796",
+        "nick": "validulceteseduce#1386"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Saito1996#4192",
+        "id": "198033771335909377",
+        "nick": "Saito1996#4192"
+      },
+      {
+        "username": "BetonDeFier#5021",
+        "id": "416955885571538954",
+        "nick": "BetonDeFier#5021"
+      }
+    ],
+    "dueDate": 1645898400000,
+    "desc": "Full run. Maxim doi incepatori. x3 final boss daca merge bine.",
+    "creator": {
+      "username": "Saito1996",
+      "id": "198033771335909377",
+      "nick": "Saito1996#4192"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "946779597540847656"
+  }
+}
