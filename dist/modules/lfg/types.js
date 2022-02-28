@@ -7,6 +7,7 @@ var LFGActivity;
     LFGActivity["garden"] = "Garden of Salvation";
     LFGActivity["lw"] = "Last Wish";
     LFGActivity["vog"] = "Vault Of Glass";
+    LFGActivity["votd"] = "Vow of the Disciple";
     LFGActivity["all"] = "Sesiune Raiduri";
 })(LFGActivity = exports.LFGActivity || (exports.LFGActivity = {}));
 //# sourceMappingURL=types.js.map

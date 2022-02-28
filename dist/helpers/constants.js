@@ -29,6 +29,11 @@ exports.EMOJIS = types_1.assertObjectRecordIntegrity()({
         text: '<:regional_indicator_v:846395351119691788>',
         unicode: '🇻'
     },
+    W: {
+        name: 'regional_indicator_w',
+        text: '<:regional_indicator_w:947784832564482048>',
+        unicode: '🇼'
+    },
     'white_check_mark': {
         name: 'white_check_mark',
         text: '<:white_check_mark:795679733462859836>',
