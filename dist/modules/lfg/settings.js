@@ -16,6 +16,7 @@ var LFGSettings;
     LFGSettings.BANNED_ROLE = '942392516932698182';
 })(LFGSettings = exports.LFGSettings || (exports.LFGSettings = {}));
 exports.LFGEmojis = {
+    [types_1.LFGActivity.votd]: constants_1.EMOJIS.W,
     [types_1.LFGActivity.vog]: constants_1.EMOJIS.V,
     [types_1.LFGActivity.lw]: constants_1.EMOJIS.L,
     [types_1.LFGActivity.garden]: constants_1.EMOJIS.G,
@@ -50,6 +51,13 @@ exports.LFGAssets = {
         icon: "https://cdn.discordapp.com/attachments/782729652526776380/787692092339126322/raid.png",
         thumbnail: 'https://media.discordapp.net/attachments/610559032943444132/846394710561914910/vault-of-glass_destiny_bungie.jpg',
         expiredThumbnail: 'https://media.discordapp.net/attachments/610559032943444132/844532583600881695/unknown.png?width=1388&height=850',
+    },
+    [types_1.LFGActivity.votd]: {
+        name: "Vow of the Disciple",
+        color: 'c2ebff',
+        icon: "https://cdn.discordapp.com/attachments/782729652526776380/787692092339126322/raid.png",
+        thumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/947789628864340008/vow.jpg',
+        expiredThumbnail: 'https://cdn.discordapp.com/attachments/610559032943444132/947789640293818378/vow_finished.jpg',
     },
     [types_1.LFGActivity.all]: {
         name: "Sesiune Raiduri",
