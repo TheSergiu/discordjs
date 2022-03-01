@@ -1,4 +1,5 @@
 {
   "prefix": "?",
-  "command_editors": ["Founders👑", "Senior Staff Manager","Comand_creator"]
+  "command_editors": ["Founders👑", "Senior Staff Manager","Comand_creator"],
+  "Banning_roles": ["Senior Staff Manager","Founders👑"]
 }
