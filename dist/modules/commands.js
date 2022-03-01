@@ -18,6 +18,7 @@ const COMMANDS_COMMAND = 'commands';
 const HELP_COMMAND = 'help';
 const BAN_COMMAND = 'raid-ban';
 const BAN_LIST = 'ban-list';
+const UNBAN_COMMAND = "raid-unban";
 const commandsDbPath = path.join(process.cwd(), 'db', 'commands.json');
 const BAN_file = path.join(process.cwd(), 'db', 'banned.json');
 class Commands {
@@ -84,6 +85,9 @@ class Commands {
             if (command === settings_1.withPrefix(BAN_COMMAND)) {
                 return this.BAN_user(commandMessage !== null && commandMessage !== void 0 ? commandMessage : '', message, member);
             }
+            if (command === settings_1.withPrefix(UNBAN_COMMAND)) {
+                return this.UNBAN_user(commandMessage !== null && commandMessage !== void 0 ? commandMessage : '', message, member);
+            }
             if (command === settings_1.withPrefix(BAN_LIST)) {
                 return this.listBAN(commandMessage !== null && commandMessage !== void 0 ? commandMessage : '', message, member);
             }
@@ -105,6 +109,35 @@ class Commands {
                     const role = guild.roles.cache.get(settings_2.LFGSettings.BANNED_ROLE); // here we are getting the role object using the id of that role.
                     const member = await guild.members.fetch(entry.id_banned_user); // here we are getting the member object using the id of that member. This is the member we will add the role to.
                     member.roles.remove(role); // here we just added the role to the member we got.
+                }
+                else {
+                    console.log('user still banned %s', entry);
+                }
+            }
+            this.save_bans();
+        };
+        this.UNBAN_user = async (text, message, member) => {
+            const user_local = message.mentions.users.first();
+            if (user_local)
+                console.log('user banat: %s - %s', user_local.username, user_local.id);
+            else
+                return message.channel.send('Error finding user');
+            for (const entry of this.BanList) {
+                if (entry.id_banned_user === user_local.id) {
+                    if (entry.id_banned_by === message.author.id) {
+                        console.log('user unbanned %s', entry);
+                        const idx = this.BanList.indexOf(entry);
+                        delete this.dbBan[entry.id_banned_user];
+                        this.BanList.splice(idx, 1);
+                        //todo:remove role
+                        const guild = this.client.guilds.cache.get(entry.guild_id); // copy the id of the server your bot is in and paste it in place of guild-ID.
+                        const role = guild.roles.cache.get(settings_2.LFGSettings.BANNED_ROLE); // here we are getting the role object using the id of that role.
+                        const member = await guild.members.fetch(entry.id_banned_user); // here we are getting the member object using the id of that member. This is the member we will add the role to.
+                        member.roles.remove(role); // here we just added the role to the member we got.
+                    }
+                    else {
+                        return message.channel.send(`Nu esti autorul BAN-ului, autorul este:  \`${entry.banned_by}\`, contacteaza autorul pt unban`);
+                    }
                 }
                 else {
                     console.log('user still banned %s', entry);
