@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.timeFormatRegex = exports.EMOJIS = exports.EMPTY_SPACE = void 0;
+exports.dataFormatRegex = exports.timeFormatRegex = exports.EMOJIS = exports.EMPTY_SPACE = void 0;
 const types_1 = require("./types");
 exports.EMPTY_SPACE = '\u200b';
 exports.EMOJIS = types_1.assertObjectRecordIntegrity()({
@@ -81,4 +81,5 @@ exports.EMOJIS = types_1.assertObjectRecordIntegrity()({
     }
 });
 exports.timeFormatRegex = /(\d{1,2}):(\d{2}) *(?:(\d{1,2})\/(\d{1,2}))?/i;
+exports.dataFormatRegex = /(\d{1,2})\/(\d{2})/i;
 //# sourceMappingURL=constants.js.map
