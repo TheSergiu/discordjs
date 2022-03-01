@@ -1,4 +1,5 @@
 {
   "prefix": "?",
-  "command_editors": ["Admin", "Founder's Wife","Server Tech","Creator"]
+  "command_editors": ["Clan Founder", "Clan Founder's Wife","Server Tech","Creator"],
+  "Banning_roles": ["Clan Founder","Server Tech"]
 }
