@@ -34,6 +34,11 @@ export const EMOJIS = assertObjectRecordIntegrity<EmojiData>()({
     text: '<:regional_indicator_v:846395351119691788>',
     unicode: '🇻'
   },
+  W: {
+    name: 'regional_indicator_w',
+    text: '<:regional_indicator_w:947784832564482048>',
+    unicode: '🇼'
+  },
   'white_check_mark': {
     name: 'white_check_mark',
     text: '<:white_check_mark:795679733462859836>',
@@ -83,3 +88,4 @@ export const EMOJIS = assertObjectRecordIntegrity<EmojiData>()({
 });
 
 export const timeFormatRegex = /(\d{1,2}):(\d{2}) *(?:(\d{1,2})\/(\d{1,2}))?/i;
+export const dataFormatRegex = /(\d{1,2})\/(\d{2})/i;
