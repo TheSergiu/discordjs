@@ -88,3 +88,4 @@ export const EMOJIS = assertObjectRecordIntegrity<EmojiData>()({
 });
 
 export const timeFormatRegex = /(\d{1,2}):(\d{2}) *(?:(\d{1,2})\/(\d{1,2}))?/i;
+export const dataFormatRegex = /(\d{1,2})\/(\d{2})/i;
