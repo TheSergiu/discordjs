@@ -58,7 +58,18 @@
   },
   "9761": {
     "id": "9761",
-    "inexperienced": [],
+    "inexperienced": [
+      {
+        "id": "259420534087876610",
+        "username": "neluindy",
+        "nick": "nelu#9877"
+      },
+      {
+        "id": "456460895170592769",
+        "username": "Eddy Andrei",
+        "nick": "AgentTNB#4646"
+      }
+    ],
     "alternatives": [],
     "participants": [
       {
@@ -70,6 +81,26 @@
         "username": "Mr.Smyle#0204",
         "id": "818915093873557524",
         "nick": "Mr.Smyle#0204"
+      },
+      {
+        "username": "nelu#9877",
+        "id": "259420534087876610",
+        "nick": "nelu#9877"
+      },
+      {
+        "username": "validulceteseduce#1386",
+        "id": "863357025990475796",
+        "nick": "validulceteseduce#1386"
+      },
+      {
+        "username": "AgentTNB#4646",
+        "id": "456460895170592769",
+        "nick": "AgentTNB#4646"
+      },
+      {
+        "username": "gogu#1514",
+        "id": "726537242323058710",
+        "nick": "gogu#1514"
       }
     ],
     "dueDate": 1646418600000,
