@@ -56,21 +56,22 @@
     "activity": "Vow of the Disciple",
     "messageID": "947873538440822876"
   },
-  "9761": {
-    "id": "9761",
+  "0566": {
+    "id": "0566",
     "inexperienced": [
       {
-        "id": "259420534087876610",
-        "username": "neluindy",
-        "nick": "nelu#9877"
-      },
-      {
-        "id": "456460895170592769",
-        "username": "Eddy Andrei",
-        "nick": "AgentTNB#4646"
+        "id": "818915093873557524",
+        "username": "NothingInWorld",
+        "nick": "Mr.Smyle#0204"
       }
     ],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "IlieMarius83#1577",
+        "id": "160472069606342656",
+        "nick": "IlieMarius83#1577"
+      }
+    ],
     "participants": [
       {
         "username": "Saito1996#4192",
@@ -81,36 +82,16 @@
         "username": "Mr.Smyle#0204",
         "id": "818915093873557524",
         "nick": "Mr.Smyle#0204"
-      },
-      {
-        "username": "nelu#9877",
-        "id": "259420534087876610",
-        "nick": "nelu#9877"
-      },
-      {
-        "username": "validulceteseduce#1386",
-        "id": "863357025990475796",
-        "nick": "validulceteseduce#1386"
-      },
-      {
-        "username": "AgentTNB#4646",
-        "id": "456460895170592769",
-        "nick": "AgentTNB#4646"
-      },
-      {
-        "username": "gogu#1514",
-        "id": "726537242323058710",
-        "nick": "gogu#1514"
       }
     ],
-    "dueDate": 1646418600000,
-    "desc": "Full run. Final boss x3. Maxim 2 incepatori.",
+    "dueDate": 1646593200000,
+    "desc": "Full run. Maxim doi incepatori.",
     "creator": {
       "username": "Saito1996",
       "id": "198033771335909377",
       "nick": "Saito1996#4192"
     },
-    "activity": "Vault Of Glass",
-    "messageID": "948637374290727044"
+    "activity": "Garden of Salvation",
+    "messageID": "949401429498548274"
   }
 }
