@@ -28,6 +28,11 @@
         "username": "Mr.Smyle#0204",
         "id": "818915093873557524",
         "nick": "Mr.Smyle#0204"
+      },
+      {
+        "username": "Dan Diaconescu#8727",
+        "id": "489214493503520778",
+        "nick": "Dan Diaconescu#8727"
       }
     ],
     "participants": [
@@ -129,6 +134,64 @@
     "activity": "Vow of the Disciple",
     "messageID": "950701099021651968"
   },
+  "5875": {
+    "id": "5875",
+    "inexperienced": [
+      {
+        "id": "319186530499428373",
+        "username": "PanTeraS",
+        "nick": "PanTeraS#7407"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "Euforie#9028",
+        "id": "311935696174710784",
+        "nick": "Euforie#9028"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Wu Wei#7405",
+        "id": "291565012361805824",
+        "nick": "Wu Wei#7405"
+      },
+      {
+        "username": "PanTeraS#7407",
+        "id": "319186530499428373",
+        "nick": "PanTeraS#7407"
+      },
+      {
+        "username": "Darconé#9029",
+        "id": "292698965420408833",
+        "nick": "Darconé#9029"
+      },
+      {
+        "username": "Twisted#9392",
+        "id": "320588524401328150",
+        "nick": "Twisted#9392"
+      },
+      {
+        "username": "uhenp#9814",
+        "id": "576077948168437760",
+        "nick": "uhenp#9814"
+      },
+      {
+        "username": "xTreme#8224",
+        "id": "320705484229312513",
+        "nick": "xTreme#8224"
+      }
+    ],
+    "dueDate": 1646928000000,
+    "desc": "sherpa run, sa dati doar un ochi peste un raid guide inainte sa incepem",
+    "creator": {
+      "username": "Wu Wei",
+      "id": "291565012361805824",
+      "nick": "Wu Wei#7405"
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "951059304495063050"
+  },
   "7335": {
     "id": "7335",
     "inexperienced": [],
@@ -154,5 +217,161 @@
     },
     "activity": "Vault Of Glass",
     "messageID": "950472805445672980"
+  },
+  "7506": {
+    "id": "7506",
+    "inexperienced": [
+      {
+        "id": "410110931578912781",
+        "username": "Ionut Dinu",
+        "nick": "Obituary Notice#5118"
+      },
+      {
+        "id": "319186530499428373",
+        "username": "PanTeraS",
+        "nick": "PanTeraS#7407"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Dan Diaconescu#8727",
+        "id": "489214493503520778",
+        "nick": "Dan Diaconescu#8727"
+      },
+      {
+        "username": "uhenp#9814",
+        "id": "576077948168437760",
+        "nick": "uhenp#9814"
+      },
+      {
+        "username": "Obituary Notice#5118",
+        "id": "410110931578912781",
+        "nick": "Obituary Notice#5118"
+      },
+      {
+        "username": "PanTeraS#7407",
+        "id": "319186530499428373",
+        "nick": "PanTeraS#7407"
+      },
+      {
+        "username": "Zeul Bahoi#8849",
+        "id": "343739499412455426",
+        "nick": "Zeul Bahoi#8849"
+      },
+      {
+        "username": "CurcubeuUmblator#1545",
+        "id": "349675571002867714",
+        "nick": "CurcubeuUmblator#1545"
+      }
+    ],
+    "dueDate": 1647018000000,
+    "desc": "+Vog inainte de vow, max 2 incepatori; Power leveling",
+    "creator": {
+      "username": "Dan Diaconescu",
+      "id": "489214493503520778",
+      "nick": "Dan Diaconescu#8727"
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "951159774098124840"
+  },
+  "8382": {
+    "id": "8382",
+    "inexperienced": [
+      {
+        "id": "416955885571538954",
+        "username": "BetonDeFier",
+        "nick": "BetonDeFier#5021"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Saito1996#4192",
+        "id": "198033771335909377",
+        "nick": "Saito1996#4192"
+      },
+      {
+        "username": "nelu#9877",
+        "id": "259420534087876610",
+        "nick": "nelu#9877"
+      },
+      {
+        "username": "Vosy#4804",
+        "id": "324958248094400512",
+        "nick": "Vosy#4804"
+      },
+      {
+        "username": "gogu#1514",
+        "id": "726537242323058710",
+        "nick": "gogu#1514"
+      },
+      {
+        "username": "BetonDeFier#5021",
+        "id": "416955885571538954",
+        "nick": "BetonDeFier#5021"
+      }
+    ],
+    "dueDate": 1646935200000,
+    "desc": "Full run. Final boss x3 daca merge bine. Maxim doi incepatori.",
+    "creator": {
+      "username": "Saito1996",
+      "id": "198033771335909377",
+      "nick": "Saito1996#4192"
+    },
+    "activity": "Vault Of Glass",
+    "messageID": "951212443693109288"
+  },
+  "0003": {
+    "id": "0003",
+    "inexperienced": [
+      {
+        "id": "270281220078698496",
+        "username": "senegat",
+        "nick": "Senegat#7412"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "validulceteseduce#1386",
+        "id": "863357025990475796",
+        "nick": "validulceteseduce#1386"
+      },
+      {
+        "username": "Guardian1013#3114",
+        "id": "321355111026786304",
+        "nick": "Guardian1013#3114"
+      },
+      {
+        "username": "Ant_Samurai#1391",
+        "id": "401035160075763712",
+        "nick": "Ant_Samurai#1391"
+      },
+      {
+        "username": "rzL#2010",
+        "id": "477846486403645454",
+        "nick": "rzL#2010"
+      },
+      {
+        "username": "Darking#1290",
+        "id": "480731985967448075",
+        "nick": "Darking#1290"
+      },
+      {
+        "username": "Senegat#7412",
+        "id": "270281220078698496",
+        "nick": "Senegat#7412"
+      }
+    ],
+    "dueDate": 1646924400000,
+    "desc": ".",
+    "creator": {
+      "username": "validulceteseduce",
+      "id": "863357025990475796",
+      "nick": "validulceteseduce#1386"
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "951194974446321735"
   }
 }
