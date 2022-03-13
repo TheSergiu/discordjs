@@ -1,32 +1,21 @@
 {
-  "2555": {
-    "id": "2555",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Mr.Smyle#0204",
-        "id": "818915093873557524",
-        "nick": "Mr.Smyle#0204"
-      }
-    ],
-    "dueDate": 1647201600000,
-    "desc": "Full raid pe run ! Max 1 incepator . Daca ar fi cnv care ma poate ajuta si cu Catalystul pt Vex ar fi super!",
-    "creator": {
-      "username": "NothingInWorld",
-      "id": "818915093873557524",
-      "nick": "Mr.Smyle#0204"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "951926455858790490"
-  },
-  "5249": {
-    "id": "5249",
+  "4525": {
+    "id": "4525",
     "inexperienced": [
       {
-        "id": "666641059312304139",
-        "username": "Liro",
-        "nick": "Liro#3386"
+        "id": "951939355650437140",
+        "username": "Darack",
+        "nick": "Darack#2292"
+      },
+      {
+        "id": "233311717139021824",
+        "username": "vladMTL",
+        "nick": "Vlad#5493"
+      },
+      {
+        "id": "818915093873557524",
+        "username": "NothingInWorld",
+        "nick": "Mr.Smyle#0204"
       },
       {
         "id": "212875716633559040",
@@ -36,21 +25,46 @@
     ],
     "alternatives": [
       {
-        "username": "Dan Diaconescu#8727",
-        "id": "489214493503520778",
-        "nick": "Dan Diaconescu#8727"
+        "username": "xTreme#8224",
+        "id": "320705484229312513",
+        "nick": "xTreme#8224"
+      },
+      {
+        "username": "Penumbra#3058",
+        "id": "705390519097884692",
+        "nick": "Penumbra#3058"
       }
     ],
     "participants": [
       {
-        "username": "Liro#3386",
-        "id": "666641059312304139",
-        "nick": "Liro#3386"
+        "username": "Rabia#9122",
+        "id": "181365970093211657",
+        "nick": "Rabia#9122"
       },
       {
-        "username": "Wu Wei#7405",
-        "id": "291565012361805824",
-        "nick": "Wu Wei#7405"
+        "username": "Comedie#7854",
+        "id": "513804558913372202",
+        "nick": "Comedie#7854"
+      },
+      {
+        "username": "Darack#2292",
+        "id": "951939355650437140",
+        "nick": "Darack#2292"
+      },
+      {
+        "username": "RolexBite#4428",
+        "id": "397743753772793856",
+        "nick": "RolexBite#4428"
+      },
+      {
+        "username": "Vlad#5493",
+        "id": "233311717139021824",
+        "nick": "Vlad#5493"
+      },
+      {
+        "username": "Mr.Smyle#0204",
+        "id": "818915093873557524",
+        "nick": "Mr.Smyle#0204"
       },
       {
         "username": "Blego#6651",
@@ -58,15 +72,15 @@
         "nick": "Blego#6651"
       }
     ],
-    "dueDate": 1647189000000,
-    "desc": "Incepator nevoie serpa, nu accept incepatori, vreau sa decurga cat mai repede si sa inteleg cat mai multe",
+    "dueDate": 1647367200000,
+    "desc": null,
     "creator": {
-      "username": "Liro",
-      "id": "666641059312304139",
-      "nick": "Liro#3386"
+      "username": "Rabia",
+      "id": "181365970093211657",
+      "nick": "Rabia#9122"
     },
     "activity": "Vow of the Disciple",
-    "messageID": "952101158284058664"
+    "messageID": "952572267211161621"
   },
   "0480": {
     "id": "0480",
@@ -78,11 +92,6 @@
       }
     ],
     "alternatives": [
-      {
-        "username": "ReMTeaH",
-        "id": "527863507270631445",
-        "nick": null
-      },
       {
         "username": "PanTeraS#7407",
         "id": "319186530499428373",
