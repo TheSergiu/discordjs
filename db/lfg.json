@@ -26,6 +26,16 @@
         "nick": "PanTeraS#7407"
       },
       {
+        "username": "Twisted#9392",
+        "id": "320588524401328150",
+        "nick": "Twisted#9392"
+      },
+      {
+        "username": "Hans Günsche#9239",
+        "id": "875290416696655873",
+        "nick": "Hans Günsche#9239"
+      },
+      {
         "username": "Codlta#2870",
         "id": "207661763477372928",
         "nick": "Codlta#2870"
@@ -40,31 +50,5 @@
     },
     "activity": "Vow of the Disciple",
     "messageID": "954832967325343744"
-  },
-  "0950": {
-    "id": "0950",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Saito1996#4192",
-        "id": "198033771335909377",
-        "nick": "Saito1996#4192"
-      },
-      {
-        "username": "BetonDeFier#5021",
-        "id": "416955885571538954",
-        "nick": "BetonDeFier#5021"
-      }
-    ],
-    "dueDate": 1647797400000,
-    "desc": "Maxim doi incepatori. Full run. x3 boss final daca merge bine.",
-    "creator": {
-      "username": "Saito1996",
-      "id": "198033771335909377",
-      "nick": "Saito1996#4192"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "954860559860387901"
   }
 }
