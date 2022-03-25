@@ -1,18 +1,1 @@
-{
-  "694081106726748201": {
-    "guild_id": "710809754057834496",
-    "id_banned_by": "264069820633448448",
-    "id_banned_user": "694081106726748201",
-    "dueDate": "Sat Mar 26 2022",
-    "banned_by": "The_Sergiu",
-    "banned_user": "DavidTR"
-  },
-  "666641059312304139": {
-    "guild_id": "710809754057834496",
-    "id_banned_by": "264069820633448448",
-    "id_banned_user": "666641059312304139",
-    "dueDate": "Fri Mar 25 2022",
-    "banned_by": "The_Sergiu",
-    "banned_user": "Liro"
-  }
-}
+{}
