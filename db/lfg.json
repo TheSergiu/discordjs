@@ -1,1 +1,70 @@
-{}
+{
+  "1765": {
+    "id": "1765",
+    "inexperienced": [
+      {
+        "id": "302539708842377216",
+        "username": "zЯo",
+        "nick": null
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "Andrei |",
+        "id": "337541784408424448",
+        "nick": null
+      },
+      {
+        "username": "Quannah",
+        "id": "621740634935525376",
+        "nick": null
+      }
+    ],
+    "participants": [
+      {
+        "username": "Gabi (Timelost)",
+        "id": "300372953827377184",
+        "nick": null
+      },
+      {
+        "username": "KAKAROT",
+        "id": "234078374736297985",
+        "nick": null
+      },
+      {
+        "username": "DKW",
+        "id": "503903235027763200",
+        "nick": null
+      },
+      {
+        "username": "Bijuu Mode",
+        "id": "310648442798080009",
+        "nick": null
+      },
+      {
+        "username": "RazvanOGs",
+        "id": "244818278193561600",
+        "nick": null
+      },
+      {
+        "username": "Horica",
+        "id": "244170187903991819",
+        "nick": null
+      },
+      {
+        "username": "zЯo",
+        "id": "302539708842377216",
+        "nick": null
+      }
+    ],
+    "dueDate": 1648573200000,
+    "desc": "KWTD full cu challenge",
+    "creator": {
+      "username": "Gabi (Timelost)",
+      "id": "300372953827377184",
+      "nick": null
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "958051508656701481"
+  }
+}
