@@ -1,176 +1,35 @@
 {
-  "6172": {
-    "id": "6172",
+  "6263": {
+    "id": "6263",
     "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Rabia#9122",
-        "id": "181365970093211657",
-        "nick": "Rabia#9122"
-      }
-    ],
+    "alternatives": [],
     "participants": [
       {
-        "username": "Zeul Bahoi#8849",
-        "id": "343739499412455426",
-        "nick": "Zeul Bahoi#8849"
-      },
-      {
-        "username": "Sasukus#0779",
-        "id": "488347402273554433",
-        "nick": "Sasukus#0779"
+        "username": "Saito1996#4192",
+        "id": "198033771335909377",
+        "nick": "Saito1996#4192"
       }
     ],
-    "dueDate": 1648573200000,
-    "desc": "raid la 20:00 sa mearga ok",
+    "dueDate": 1648659600000,
+    "desc": "Full run. Boss final x3. Maxim un incepator.",
     "creator": {
-      "username": "ZeulBahoi",
-      "id": "343739499412455426",
-      "nick": "Zeul Bahoi#8849"
+      "username": "Saito1996",
+      "id": "198033771335909377",
+      "nick": "Saito1996#4192"
     },
-    "activity": "Vow of the Disciple",
-    "messageID": "958075924581089321"
+    "activity": "Vault Of Glass",
+    "messageID": "958480574652227664"
   },
-  "7028": {
-    "id": "7028",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Rabia#9122",
-        "id": "181365970093211657",
-        "nick": "Rabia#9122"
-      }
-    ],
-    "participants": [
-      {
-        "username": "DanielosUchiha",
-        "id": "258268734194450443",
-        "nick": null
-      },
-      {
-        "username": "Aly D. StormRage#3496",
-        "id": "354294269982277634",
-        "nick": "Aly D. StormRage#3496"
-      },
-      {
-        "username": "Euforie#9028",
-        "id": "311935696174710784",
-        "nick": "Euforie#9028"
-      },
-      {
-        "username": "validulceteseduce#1386",
-        "id": "863357025990475796",
-        "nick": "validulceteseduce#1386"
-      },
-      {
-        "username": "DerionX#8954",
-        "id": "756566809703874579",
-        "nick": "DerionX#8954"
-      },
-      {
-        "username": "Reflex76#5699",
-        "id": "547828588104122369",
-        "nick": "Reflex76#5699"
-      }
-    ],
-    "dueDate": 1648573200000,
-    "desc": "Full run cu challenge la al 2 encounter",
-    "creator": {
-      "username": "DanielosUchiha",
-      "id": "258268734194450443",
-      "nick": null
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "958038245499875348"
-  },
-  "7171": {
-    "id": "7171",
+  "9565": {
+    "id": "9565",
     "inexperienced": [
       {
-        "id": "614544813530021920",
-        "username": "Ra's Al Ghul (K3ntXD)",
-        "nick": "K3ntXD(Ra's al Ghul)"
-      },
-      {
-        "id": "680420651022155786",
-        "username": "nikos41976 id 48",
-        "nick": "nikos7200 #4662"
+        "id": "279274610191499265",
+        "username": "Addy",
+        "nick": "AMLegendary#5545"
       }
     ],
-    "alternatives": [
-      {
-        "username": "Rabia#9122",
-        "id": "181365970093211657",
-        "nick": "Rabia#9122"
-      },
-      {
-        "username": "K3ntXD(Ra's al Ghul)",
-        "id": "614544813530021920",
-        "nick": "K3ntXD(Ra's al Ghul)"
-      }
-    ],
-    "participants": [
-      {
-        "username": "AxXxY",
-        "id": "268303925839396866",
-        "nick": null
-      },
-      {
-        "username": "IlieMarius83#1577",
-        "id": "160472069606342656",
-        "nick": "IlieMarius83#1577"
-      },
-      {
-        "username": "Wu Wei#7405",
-        "id": "291565012361805824",
-        "nick": "Wu Wei#7405"
-      },
-      {
-        "username": "Dwe_Khal#0289",
-        "id": "446033716347928576",
-        "nick": "Dwe_Khal#0289"
-      },
-      {
-        "username": "rzL#2010",
-        "id": "477846486403645454",
-        "nick": "rzL#2010"
-      },
-      {
-        "username": "nikos7200 #4662",
-        "id": "680420651022155786",
-        "nick": "nikos7200 #4662"
-      }
-    ],
-    "dueDate": 1648574100000,
-    "desc": "full run cu challange. maxim un incepator",
-    "creator": {
-      "username": "AxXxY",
-      "id": "268303925839396866",
-      "nick": null
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "958091112155840572"
-  },
-  "8786": {
-    "id": "8786",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Codlta#2870",
-        "id": "207661763477372928",
-        "nick": "Codlta#2870"
-      },
-      {
-        "username": "Rabia#9122",
-        "id": "181365970093211657",
-        "nick": "Rabia#9122"
-      },
-      {
-        "username": "Marauder#7606",
-        "id": "533772965880528902",
-        "nick": "Marauder#7606"
-      }
-    ],
+    "alternatives": [],
     "participants": [
       {
         "username": "Mike#6973",
@@ -178,44 +37,34 @@
         "nick": "Mike#6973"
       },
       {
-        "username": "xTreme#8224",
-        "id": "320705484229312513",
-        "nick": "xTreme#8224"
-      },
-      {
-        "username": "Twisted#9392",
-        "id": "320588524401328150",
-        "nick": "Twisted#9392"
-      },
-      {
-        "username": "Ant_Samurai#1391",
-        "id": "401035160075763712",
-        "nick": "Ant_Samurai#1391"
-      },
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
-      },
-      {
-        "username": "uhenp#9814",
-        "id": "576077948168437760",
-        "nick": "uhenp#9814"
+        "username": "Codlta#2870",
+        "id": "207661763477372928",
+        "nick": "Codlta#2870"
       },
       {
         "username": "Wu Wei#7405",
         "id": "291565012361805824",
         "nick": "Wu Wei#7405"
+      },
+      {
+        "username": "Morpheus#1523",
+        "id": "428266898736676874",
+        "nick": "Morpheus#1523"
+      },
+      {
+        "username": "AMLegendary#5545",
+        "id": "279274610191499265",
+        "nick": "AMLegendary#5545"
       }
     ],
-    "dueDate": 1648575000000,
-    "desc": "vow fara incepatori + challenge encounter 2",
+    "dueDate": 1648661400000,
+    "desc": "DIVINITY run ; IMPORTANT : sa intre 2 persoane care AU nevoie de div ( selectat ca NEW ) si 4 playeri care au experienta cu divinity runnuri. RAIDUL SE TINE DOAR DACA SE STRANG 2 CARE SUNT LA ULTIMUL PAS PENTRU A OBTINE DIVINITY . Mesaj la Mike#6973 daca aveti nevoie de div si nu va convine ora, reprogramam.",
     "creator": {
       "username": "MIKE",
       "id": "303605766047268864",
       "nick": "Mike#6973"
     },
-    "activity": "Vow of the Disciple",
-    "messageID": "957970610892439602"
+    "activity": "Garden of Salvation",
+    "messageID": "958466583079047219"
   }
 }
