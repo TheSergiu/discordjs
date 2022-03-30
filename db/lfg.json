@@ -1,70 +1,34 @@
 {
-  "4907": {
-    "id": "4907",
-    "inexperienced": [],
-    "alternatives": [
+  "6032": {
+    "id": "6032",
+    "inexperienced": [
       {
-        "username": "Horica",
-        "id": "244170187903991819",
+        "id": "244818278193561600",
+        "username": "RazvanOGs",
+        "nick": null
+      },
+      {
+        "id": "254245641453043712",
+        "username": "Liquid",
         "nick": null
       }
     ],
-    "participants": [
-      {
-        "username": "Veno",
-        "id": "308951343567994881",
-        "nick": null
-      },
-      {
-        "username": "BlackRose",
-        "id": "321286668353142784",
-        "nick": null
-      },
+    "alternatives": [
       {
         "username": "RazvanOGs",
         "id": "244818278193561600",
         "nick": null
       },
       {
-        "username": "zЯo",
-        "id": "302539708842377216",
-        "nick": null
-      },
-      {
-        "username": "Quannah",
-        "id": "621740634935525376",
-        "nick": null
-      },
-      {
-        "username": "Fυlfιηsεη▿🪐",
-        "id": "201312959719276544",
-        "nick": null
-      }
-    ],
-    "dueDate": 1648656000000,
-    "desc": "Full+Challange",
-    "creator": {
-      "username": "Veno",
-      "id": "308951343567994881",
-      "nick": null
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "958451344799309864"
-  },
-  "7847": {
-    "id": "7847",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Fυlfιηsεη▿🪐",
-        "id": "201312959719276544",
+        "username": "Liquid",
+        "id": "254245641453043712",
         "nick": null
       }
     ],
     "participants": [
       {
-        "username": "Gabi (Timelost)",
-        "id": "300372953827377184",
+        "username": "DKW",
+        "id": "503903235027763200",
         "nick": null
       },
       {
@@ -73,29 +37,19 @@
         "nick": null
       },
       {
-        "username": "Horica",
-        "id": "244170187903991819",
-        "nick": null
-      },
-      {
-        "username": "Andrescu12",
-        "id": "210465519524904961",
-        "nick": null
-      },
-      {
-        "username": "Zelos",
-        "id": "193974859124965376",
+        "username": "⍟★BGS★⍟",
+        "id": "337243923565117450",
         "nick": null
       }
     ],
-    "dueDate": 1648652400000,
-    "desc": "2 run-uri complete (challenge-ul e optional, decat daca doreste lumea)",
+    "dueDate": 1648746000000,
+    "desc": "Full + Challenge",
     "creator": {
-      "username": "Gabi (Timelost)",
-      "id": "300372953827377184",
+      "username": "DKW",
+      "id": "503903235027763200",
       "nick": null
     },
     "activity": "Vow of the Disciple",
-    "messageID": "958453569084874833"
+    "messageID": "958806094577270857"
   }
 }
