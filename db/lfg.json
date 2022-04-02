@@ -1,56 +1,4 @@
 {
-  "6906": {
-    "id": "6906",
-    "inexperienced": [
-      {
-        "id": "650966348788400140",
-        "username": "f0rsaken",
-        "nick": "f0rsakenSSJ#3392"
-      }
-    ],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Saito1996#4192",
-        "id": "198033771335909377",
-        "nick": "Saito1996#4192"
-      },
-      {
-        "username": "validulceteseduce#1386",
-        "id": "863357025990475796",
-        "nick": "validulceteseduce#1386"
-      },
-      {
-        "username": "f0rsakenSSJ#3392",
-        "id": "650966348788400140",
-        "nick": "f0rsakenSSJ#3392"
-      },
-      {
-        "username": "Codlta#2870",
-        "id": "207661763477372928",
-        "nick": "Codlta#2870"
-      },
-      {
-        "username": "blaccrystal#0277",
-        "id": "766558531305996328",
-        "nick": "blaccrystal#0277"
-      },
-      {
-        "username": "Muramassa#3989",
-        "id": "154260288374308865",
-        "nick": "Muramassa#3989"
-      }
-    ],
-    "dueDate": 1648917000000,
-    "desc": "Full run. Boss final x3. Maxim un incepator.",
-    "creator": {
-      "username": "Saito1996",
-      "id": "198033771335909377",
-      "nick": "Saito1996#4192"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "959526835014758441"
-  },
   "7725": {
     "id": "7725",
     "inexperienced": [
@@ -65,7 +13,13 @@
         "nick": "RunOrD1e#9941"
       }
     ],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "Noxulescu#6001",
+        "id": "509051148192448545",
+        "nick": "Noxulescu#6001"
+      }
+    ],
     "participants": [
       {
         "username": "Wu Wei#7405",
@@ -96,6 +50,11 @@
         "username": "blaccrystal#0277",
         "id": "766558531305996328",
         "nick": "blaccrystal#0277"
+      },
+      {
+        "username": "qpGabj#9763",
+        "id": "262909739967447040",
+        "nick": "qpGabj#9763"
       }
     ],
     "dueDate": 1649003400000,
