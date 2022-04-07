@@ -1,96 +1,14 @@
 {
-  "1041": {
-    "id": "1041",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Penumbra#3058",
-        "id": "705390519097884692",
-        "nick": "Penumbra#3058"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Dwe_Khal#0289",
-        "id": "446033716347928576",
-        "nick": "Dwe_Khal#0289"
-      },
-      {
-        "username": "Codlta#2870",
-        "id": "207661763477372928",
-        "nick": "Codlta#2870"
-      },
-      {
-        "username": "xTreme#8224",
-        "id": "320705484229312513",
-        "nick": "xTreme#8224"
-      },
-      {
-        "username": "Wu Wei#7405",
-        "id": "291565012361805824",
-        "nick": "Wu Wei#7405"
-      },
-      {
-        "username": "Euforie#9028",
-        "id": "311935696174710784",
-        "nick": "Euforie#9028"
-      },
-      {
-        "username": "ChicaBOMB#4451",
-        "id": "323151944048836609",
-        "nick": "ChicaBOMB#4451"
-      }
-    ],
-    "dueDate": 1649361600000,
-    "desc": "cu challenge, fara incepatori",
-    "creator": {
-      "username": "Dwe_Khal",
-      "id": "446033716347928576",
-      "nick": "Dwe_Khal#0289"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "961257198128885820"
-  },
   "1088": {
     "id": "1088",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
+    "inexperienced": [
       {
-        "username": "Psycho Muffin#5957",
-        "id": "704816801661583522",
-        "nick": "Psycho Muffin#5957"
-      },
-      {
-        "username": "Codlta#2870",
-        "id": "207661763477372928",
-        "nick": "Codlta#2870"
-      },
-      {
-        "username": "uhenp#9814",
-        "id": "576077948168437760",
-        "nick": "uhenp#9814"
+        "id": "726537242323058710",
+        "username": "gogu",
+        "nick": "gogu#1514"
       }
     ],
-    "dueDate": 1649438100000,
-    "desc": "full run + challenge encounter 3, MAXIM 1 incepator",
-    "creator": {
-      "username": "Psycho Muffin",
-      "id": "704816801661583522",
-      "nick": "Psycho Muffin#5957"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "961222347510153216"
-  },
-  "3293": {
-    "id": "3293",
-    "inexperienced": [],
     "alternatives": [
-      {
-        "username": "WhyShootWhenPunchDoTrick#1300",
-        "id": "419621207025909772",
-        "nick": "WhyShootWhenPunchDoTrick#1300"
-      },
       {
         "username": "PanTeraS#7407",
         "id": "319186530499428373",
@@ -104,19 +22,9 @@
     ],
     "participants": [
       {
-        "username": "AxXxY",
-        "id": "268303925839396866",
-        "nick": null
-      },
-      {
-        "username": "IlieMarius83#1577",
-        "id": "160472069606342656",
-        "nick": "IlieMarius83#1577"
-      },
-      {
-        "username": "Mike#6973",
-        "id": "303605766047268864",
-        "nick": "Mike#6973"
+        "username": "Psycho Muffin#5957",
+        "id": "704816801661583522",
+        "nick": "Psycho Muffin#5957"
       },
       {
         "username": "uhenp#9814",
@@ -124,25 +32,30 @@
         "nick": "uhenp#9814"
       },
       {
-        "username": "Codlta#2870",
-        "id": "207661763477372928",
-        "nick": "Codlta#2870"
+        "username": "gogu#1514",
+        "id": "726537242323058710",
+        "nick": "gogu#1514"
       },
       {
-        "username": "Wu Wei#7405",
-        "id": "291565012361805824",
-        "nick": "Wu Wei#7405"
+        "username": "GrassuTatae3#9748",
+        "id": "282841695974981633",
+        "nick": "GrassuTatae3#9748"
+      },
+      {
+        "username": "IlieMarius83#1577",
+        "id": "160472069606342656",
+        "nick": "IlieMarius83#1577"
       }
     ],
-    "dueDate": 1649350800000,
-    "desc": "challange la templar pe master, power 1575+ preferabil 1580+ arme de dps si experienta in raidul normal. daca ne miscam bine facem full run ca sa cumparam pistolul timelost de la boss",
+    "dueDate": 1649438100000,
+    "desc": "full run + challenge encounter 3, MAXIM 1 incepator",
     "creator": {
-      "username": "AxXxY",
-      "id": "268303925839396866",
-      "nick": null
+      "username": "Psycho Muffin",
+      "id": "704816801661583522",
+      "nick": "Psycho Muffin#5957"
     },
-    "activity": "Vault Of Glass",
-    "messageID": "960117637235494982"
+    "activity": "Vow of the Disciple",
+    "messageID": "961222347510153216"
   },
   "9070": {
     "id": "9070",
@@ -168,6 +81,16 @@
         "username": "Penumbra#3058",
         "id": "705390519097884692",
         "nick": "Penumbra#3058"
+      },
+      {
+        "username": "StormWolf#4970",
+        "id": "151442817623916544",
+        "nick": "StormWolf#4970"
+      },
+      {
+        "username": "Liro#3386",
+        "id": "666641059312304139",
+        "nick": "Liro#3386"
       }
     ],
     "participants": [
