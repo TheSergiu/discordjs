@@ -1,1 +1,64 @@
-{}
+{
+  "3098": {
+    "id": "3098",
+    "inexperienced": [
+      {
+        "id": "337243923565117450",
+        "username": "⍟★BGS★⍟",
+        "nick": null
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "DKW",
+        "id": "503903235027763200",
+        "nick": null
+      },
+      {
+        "username": "Gabi (Timelost)",
+        "id": "300372953827377184",
+        "nick": null
+      },
+      {
+        "username": "zЯo",
+        "id": "302539708842377216",
+        "nick": null
+      },
+      {
+        "username": "Andrescu12",
+        "id": "210465519524904961",
+        "nick": null
+      },
+      {
+        "username": "Horica",
+        "id": "244170187903991819",
+        "nick": null
+      },
+      {
+        "username": "RazvanOGs",
+        "id": "244818278193561600",
+        "nick": null
+      },
+      {
+        "username": "⍟★BGS★⍟",
+        "id": "337243923565117450",
+        "nick": null
+      },
+      {
+        "username": "KAKAROT",
+        "id": "234078374736297985",
+        "nick": null
+      }
+    ],
+    "dueDate": 1649782800000,
+    "desc": "Full + Challenge doar day one team",
+    "creator": {
+      "username": "DKW",
+      "id": "503903235027763200",
+      "nick": null
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "963054089585967174"
+  }
+}
