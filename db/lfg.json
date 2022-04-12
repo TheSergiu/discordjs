@@ -1,14 +1,14 @@
 {
-  "3098": {
-    "id": "3098",
-    "inexperienced": [
+  "4052": {
+    "id": "4052",
+    "inexperienced": [],
+    "alternatives": [
       {
-        "id": "337243923565117450",
-        "username": "⍟★BGS★⍟",
+        "username": "Andrescu12",
+        "id": "210465519524904961",
         "nick": null
       }
     ],
-    "alternatives": [],
     "participants": [
       {
         "username": "DKW",
@@ -26,39 +26,29 @@
         "nick": null
       },
       {
-        "username": "Andrescu12",
-        "id": "210465519524904961",
+        "username": "Bijuu Mode",
+        "id": "310648442798080009",
         "nick": null
       },
       {
-        "username": "Horica",
-        "id": "244170187903991819",
+        "username": "BlackRose",
+        "id": "321286668353142784",
         "nick": null
       },
       {
-        "username": "RazvanOGs",
-        "id": "244818278193561600",
-        "nick": null
-      },
-      {
-        "username": "⍟★BGS★⍟",
-        "id": "337243923565117450",
-        "nick": null
-      },
-      {
-        "username": "KAKAROT",
-        "id": "234078374736297985",
+        "username": "Veno",
+        "id": "308951343567994881",
         "nick": null
       }
     ],
-    "dueDate": 1649782800000,
-    "desc": "Full + Challenge doar day one team",
+    "dueDate": 1649869200000,
+    "desc": "full + challenge KWTD ( sa stie ce are de facut ca nu imi mai bat capul )",
     "creator": {
       "username": "DKW",
       "id": "503903235027763200",
       "nick": null
     },
     "activity": "Vow of the Disciple",
-    "messageID": "963054089585967174"
+    "messageID": "963506092871122964"
   }
 }
