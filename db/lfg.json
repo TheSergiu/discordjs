@@ -18,6 +18,11 @@
         "username": "Reflex76#5699",
         "id": "547828588104122369",
         "nick": "Reflex76#5699"
+      },
+      {
+        "username": "StormWolf#4970",
+        "id": "151442817623916544",
+        "nick": "StormWolf#4970"
       }
     ],
     "participants": [
@@ -51,46 +56,5 @@
     },
     "activity": "Garden of Salvation",
     "messageID": "963704071561310248"
-  },
-  "0135": {
-    "id": "0135",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Saito1996#4192",
-        "id": "198033771335909377",
-        "nick": "Saito1996#4192"
-      },
-      {
-        "username": "blaccrystal#0277",
-        "id": "766558531305996328",
-        "nick": "blaccrystal#0277"
-      },
-      {
-        "username": "validulceteseduce#1386",
-        "id": "863357025990475796",
-        "nick": "validulceteseduce#1386"
-      },
-      {
-        "username": "f0rsakenSSJ#3392",
-        "id": "650966348788400140",
-        "nick": "f0rsakenSSJ#3392"
-      },
-      {
-        "username": "StormWolf#4970",
-        "id": "151442817623916544",
-        "nick": "StormWolf#4970"
-      }
-    ],
-    "dueDate": 1649952000000,
-    "desc": "Full run. Final boss x3. Maxim un incepator.",
-    "creator": {
-      "username": "Saito1996",
-      "id": "198033771335909377",
-      "nick": "Saito1996#4192"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "963857800331673681"
   }
 }
