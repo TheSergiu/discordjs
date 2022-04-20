@@ -1,86 +1,14 @@
 {
-  "2894": {
-    "id": "2894",
-    "inexperienced": [
-      {
-        "id": "502105082113032194",
-        "username": "bluewolf",
-        "nick": "80gdanb#6424"
-      },
-      {
-        "id": "680420651022155786",
-        "username": "nikos41976",
-        "nick": "nikos7200 #4662"
-      },
-      {
-        "id": "368835228070051841",
-        "username": "Adr!an",
-        "nick": "SkillUser#7502"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
-      },
-      {
-        "username": "nikos7200 #4662",
-        "id": "680420651022155786",
-        "nick": "nikos7200 #4662"
-      },
-      {
-        "username": "SkillUser#7502",
-        "id": "368835228070051841",
-        "nick": "SkillUser#7502"
-      }
-    ],
-    "participants": [
-      {
-        "username": "m4vvro#2909",
-        "id": "315543480271241216",
-        "nick": "m4vvro#2909"
-      },
-      {
-        "username": "Wu Wei#7405",
-        "id": "291565012361805824",
-        "nick": "Wu Wei#7405"
-      },
-      {
-        "username": "80gdanb#6424",
-        "id": "502105082113032194",
-        "nick": "80gdanb#6424"
-      },
-      {
-        "username": "grasu_xxxl#8885",
-        "id": "216860919324606464",
-        "nick": "grasu_xxxl#8885"
-      },
-      {
-        "username": "AliBaba si cei 40 de zloti#0647",
-        "id": "754790034812567645",
-        "nick": "AliBaba si cei 40 de zloti#0647"
-      },
-      {
-        "username": "Raziel#3958",
-        "id": "450339325281042452",
-        "nick": "Raziel#3958"
-      }
-    ],
-    "dueDate": 1650474000000,
-    "desc": "maxim 1 incepator",
-    "creator": {
-      "username": "m4vvro",
-      "id": "315543480271241216",
-      "nick": "m4vvro#2909"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "965948005033340989"
-  },
   "3099": {
     "id": "3099",
     "inexperienced": [],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "rzL#2010",
+        "id": "477846486403645454",
+        "nick": "rzL#2010"
+      }
+    ],
     "participants": [
       {
         "username": "Wu Wei#7405",
@@ -117,26 +45,5 @@
     },
     "activity": "Vow of the Disciple",
     "messageID": "965670752101748736"
-  },
-  "9501": {
-    "id": "9501",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Testyment#5321",
-        "id": "492731788079267840",
-        "nick": "Testyment#5321"
-      }
-    ],
-    "dueDate": 1650474000000,
-    "desc": "Fast run + challange | fara incepatori",
-    "creator": {
-      "username": "× Testyment 👽ᶜᵒˣ",
-      "id": "492731788079267840",
-      "nick": "Testyment#5321"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "966023032013479958"
   }
 }
