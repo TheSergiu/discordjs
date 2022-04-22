@@ -1,58 +1,6 @@
 {
-  "3099": {
-    "id": "3099",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "rzL#2010",
-        "id": "477846486403645454",
-        "nick": "rzL#2010"
-      },
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Wu Wei#7405",
-        "id": "291565012361805824",
-        "nick": "Wu Wei#7405"
-      },
-      {
-        "username": "ChicaBOMB#4451",
-        "id": "323151944048836609",
-        "nick": "ChicaBOMB#4451"
-      },
-      {
-        "username": "Rabia#9122",
-        "id": "181365970093211657",
-        "nick": "Rabia#9122"
-      },
-      {
-        "username": "m4vvro#2909",
-        "id": "315543480271241216",
-        "nick": "m4vvro#2909"
-      },
-      {
-        "username": "IlieMarius83#1577",
-        "id": "160472069606342656",
-        "nick": "IlieMarius83#1577"
-      }
-    ],
-    "dueDate": 1650644100000,
-    "desc": "Flawless run pentru triumph pentru cine nu il are si vrea, doar oameni care stiu raidul bine",
-    "creator": {
-      "username": "Wu Wei",
-      "id": "291565012361805824",
-      "nick": "Wu Wei#7405"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "965670752101748736"
-  },
-  "0338": {
-    "id": "0338",
+  "0097": {
+    "id": "0097",
     "inexperienced": [
       {
         "id": "818915093873557524",
@@ -60,13 +8,7 @@
         "nick": "Mr.Smyle#0204"
       }
     ],
-    "alternatives": [
-      {
-        "username": "LordBlackFrost90#5714",
-        "id": "447138687285723146",
-        "nick": "LordBlackFrost90#5714"
-      }
-    ],
+    "alternatives": [],
     "participants": [
       {
         "username": "Saito1996#4192",
@@ -79,24 +21,24 @@
         "nick": "blaccrystal#0277"
       },
       {
+        "username": "OREZ CU LAPTE#2524",
+        "id": "438034897425399808",
+        "nick": "OREZ CU LAPTE#2524"
+      },
+      {
         "username": "Mr.Smyle#0204",
         "id": "818915093873557524",
         "nick": "Mr.Smyle#0204"
-      },
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
       }
     ],
-    "dueDate": 1650643200000,
-    "desc": "Full run. Maxim un incepator.",
+    "dueDate": 1650733200000,
+    "desc": "Full run. Maxim un incepator. Ii dam un VOG de incalzire inainte.",
     "creator": {
       "username": "Saito1996",
       "id": "198033771335909377",
       "nick": "Saito1996#4192"
     },
-    "activity": "Vow of the Disciple",
-    "messageID": "966468966270767164"
+    "activity": "Deep Stone Crypt",
+    "messageID": "967175996258271232"
   }
 }
