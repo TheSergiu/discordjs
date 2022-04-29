@@ -1,76 +1,34 @@
 {
-  "2057": {
-    "id": "2057",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Penumbra#3058",
-        "id": "705390519097884692",
-        "nick": "Penumbra#3058"
-      }
-    ],
-    "participants": [
-      {
-        "username": "StormWolf#4970",
-        "id": "151442817623916544",
-        "nick": "StormWolf#4970"
-      },
-      {
-        "username": "Wu Wei#7405",
-        "id": "291565012361805824",
-        "nick": "Wu Wei#7405"
-      },
-      {
-        "username": "Euforie#9028",
-        "id": "311935696174710784",
-        "nick": "Euforie#9028"
-      },
-      {
-        "username": "Testyment#5321",
-        "id": "492731788079267840",
-        "nick": "Testyment#5321"
-      },
-      {
-        "username": "m4vvro#2909",
-        "id": "315543480271241216",
-        "nick": "m4vvro#2909"
-      },
-      {
-        "username": "Ciribicorbo#2879",
-        "id": "161622563355754496",
-        "nick": "Ciribicorbo#2879"
-      }
-    ],
-    "dueDate": 1651253400000,
-    "desc": "Master run + Challenge  . Fara incepatori",
-    "creator": {
-      "username": "Stormwolfx🐺",
-      "id": "151442817623916544",
-      "nick": "StormWolf#4970"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "968752829944700928"
-  },
-  "6913": {
-    "id": "6913",
+  "2441": {
+    "id": "2441",
     "inexperienced": [],
     "alternatives": [],
     "participants": [
       {
-        "username": "Saito1996#4192",
-        "id": "198033771335909377",
-        "nick": "Saito1996#4192"
+        "username": "Dwe_Khal#0289",
+        "id": "446033716347928576",
+        "nick": "Dwe_Khal#0289"
+      },
+      {
+        "username": "xTreme#8224",
+        "id": "320705484229312513",
+        "nick": "xTreme#8224"
+      },
+      {
+        "username": "Mike#6973",
+        "id": "303605766047268864",
+        "nick": "Mike#6973"
       }
     ],
-    "dueDate": 1651251600000,
-    "desc": "Full run. Maxim un incepator.",
+    "dueDate": 1651428000000,
+    "desc": "Se iese la bere/coaste in Bucuresti, Duminica seara la R.I.B.S. pe Centru Vechi. Jucam toti, nu avem nevoie de rezerve. Sa aveti buildul facut. Informatii aditionale pe PM.",
     "creator": {
-      "username": "Saito1996",
-      "id": "198033771335909377",
-      "nick": "Saito1996#4192"
+      "username": "Dwe_Khal",
+      "id": "446033716347928576",
+      "nick": "Dwe_Khal#0289"
     },
-    "activity": "Deep Stone Crypt",
-    "messageID": "969355738885525674"
+    "activity": "Sesiune Raiduri",
+    "messageID": "969561292937506816"
   },
   "7311": {
     "id": "7311",
@@ -96,6 +54,11 @@
         "username": "Penumbra#3058",
         "id": "705390519097884692",
         "nick": "Penumbra#3058"
+      },
+      {
+        "username": "PanTeraS#7407",
+        "id": "319186530499428373",
+        "nick": "PanTeraS#7407"
       }
     ],
     "participants": [
@@ -113,6 +76,11 @@
         "username": "Horhelius",
         "id": "486442151400439826",
         "nick": null
+      },
+      {
+        "username": "Dan Diaconescu#8727",
+        "id": "489214493503520778",
+        "nick": "Dan Diaconescu#8727"
       }
     ],
     "dueDate": 1651424400000,
@@ -180,6 +148,11 @@
         "username": "SirStriKer#7157",
         "id": "375334674186371085",
         "nick": "SirStriKer#7157"
+      },
+      {
+        "username": "Dan Diaconescu#8727",
+        "id": "489214493503520778",
+        "nick": "Dan Diaconescu#8727"
       }
     ],
     "dueDate": 1651327200000,
