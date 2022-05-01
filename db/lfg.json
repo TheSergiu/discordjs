@@ -1,112 +1,64 @@
 {
-  "2441": {
-    "id": "2441",
+  "2806": {
+    "id": "2806",
     "inexperienced": [],
     "alternatives": [
       {
-        "username": "StefanCelMare92#1836",
-        "id": "405896004735598592",
-        "nick": "StefanCelMare92#1836"
+        "username": "Rabia#9122",
+        "id": "181365970093211657",
+        "nick": "Rabia#9122"
+      },
+      {
+        "username": "StormWolf#4970",
+        "id": "151442817623916544",
+        "nick": "StormWolf#4970"
       }
     ],
     "participants": [
       {
-        "username": "Dwe_Khal#0289",
-        "id": "446033716347928576",
-        "nick": "Dwe_Khal#0289"
+        "username": "K1nguu_#0468",
+        "id": "659455157578235904",
+        "nick": "K1nguu_#0468"
       },
       {
-        "username": "xTreme#8224",
-        "id": "320705484229312513",
-        "nick": "xTreme#8224"
+        "username": "ROC#6030",
+        "id": "951200509367312455",
+        "nick": "ROC#6030"
       },
-      {
-        "username": "Mike#6973",
-        "id": "303605766047268864",
-        "nick": "Mike#6973"
-      }
-    ],
-    "dueDate": 1651428000000,
-    "desc": "Se iese la bere/coaste in Bucuresti, Duminica seara la R.I.B.S. pe Centru Vechi. Jucam toti, nu avem nevoie de rezerve. Sa aveti buildul facut. Informatii aditionale pe PM.",
-    "creator": {
-      "username": "Dwe_Khal",
-      "id": "446033716347928576",
-      "nick": "Dwe_Khal#0289"
-    },
-    "activity": "Sesiune Raiduri",
-    "messageID": "969561292937506816"
-  },
-  "7311": {
-    "id": "7311",
-    "inexperienced": [
-      {
-        "id": "719552909955563531",
-        "username": "mentat5",
-        "nick": "mentat5#3716"
-      },
-      {
-        "id": "486442151400439826",
-        "username": "Horhelius",
-        "nick": null
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "uhenp#9814",
-        "id": "576077948168437760",
-        "nick": "uhenp#9814"
-      },
-      {
-        "username": "Penumbra#3058",
-        "id": "705390519097884692",
-        "nick": "Penumbra#3058"
-      },
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
-      },
-      {
-        "username": "Dan Diaconescu#8727",
-        "id": "489214493503520778",
-        "nick": "Dan Diaconescu#8727"
-      }
-    ],
-    "participants": [
       {
         "username": "Wu Wei#7405",
         "id": "291565012361805824",
         "nick": "Wu Wei#7405"
       },
       {
-        "username": "mentat5#3716",
-        "id": "719552909955563531",
-        "nick": "mentat5#3716"
+        "username": "Dwe_Khal#0289",
+        "id": "446033716347928576",
+        "nick": "Dwe_Khal#0289"
       },
       {
-        "username": "Horhelius",
-        "id": "486442151400439826",
-        "nick": null
-      },
-      {
-        "username": "ursucarpatin89#4846",
-        "id": "964270247664320602",
-        "nick": "ursucarpatin89#4846"
+        "username": "Abuzed#6898",
+        "id": "210785942049521674",
+        "nick": "Abuzed#6898"
       },
       {
         "username": "m4vvro#2909",
         "id": "315543480271241216",
         "nick": "m4vvro#2909"
+      },
+      {
+        "username": "ursucarpatin89#4846",
+        "id": "964270247664320602",
+        "nick": "ursucarpatin89#4846"
       }
     ],
-    "dueDate": 1651424400000,
-    "desc": "Sherpa Run (maxim 2 incepatori)",
+    "dueDate": 1651512600000,
+    "desc": "caretaker cp cu challenge master",
     "creator": {
-      "username": "Wu Wei",
-      "id": "291565012361805824",
-      "nick": "Wu Wei#7405"
+      "username": "Kingg",
+      "id": "659455157578235904",
+      "nick": "K1nguu_#0468"
     },
     "activity": "Vow of the Disciple",
-    "messageID": "968914700358279198"
+    "messageID": "970319353000103987"
   }
 }
