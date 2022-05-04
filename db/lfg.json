@@ -1,1 +1,60 @@
-{}
+{
+  "1997": {
+    "id": "1997",
+    "inexperienced": [
+      {
+        "id": "244818278193561600",
+        "username": "RazvanOGs",
+        "nick": null
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "RazvanOGs",
+        "id": "244818278193561600",
+        "nick": null
+      }
+    ],
+    "participants": [
+      {
+        "username": "Zelos",
+        "id": "193974859124965376",
+        "nick": null
+      },
+      {
+        "username": "Veno",
+        "id": "308951343567994881",
+        "nick": null
+      },
+      {
+        "username": "MrT",
+        "id": "683020839473381381",
+        "nick": null
+      },
+      {
+        "username": "Liquid",
+        "id": "254245641453043712",
+        "nick": null
+      },
+      {
+        "username": "sHoGGo",
+        "id": "465266395051982848",
+        "nick": null
+      },
+      {
+        "username": "Tinycus",
+        "id": "618170674795511849",
+        "nick": null
+      }
+    ],
+    "dueDate": 1651771800000,
+    "desc": "Raidul este pentru data de 5 mai !",
+    "creator": {
+      "username": "Zelos",
+      "id": "193974859124965376",
+      "nick": null
+    },
+    "activity": "Vault Of Glass",
+    "messageID": "971416183683305542"
+  }
+}
