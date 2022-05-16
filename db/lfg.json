@@ -1,13 +1,30 @@
 {
-  "0167": {
-    "id": "0167",
-    "inexperienced": [],
-    "alternatives": [],
+  "1459": {
+    "id": "1459",
+    "inexperienced": [
+      {
+        "id": "551324362364551178",
+        "username": "scorpio78",
+        "nick": "Scorpio78#0199"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "PanTeraS#7407",
+        "id": "319186530499428373",
+        "nick": "PanTeraS#7407"
+      }
+    ],
     "participants": [
       {
-        "username": "Saito1996#4192",
-        "id": "198033771335909377",
-        "nick": "Saito1996#4192"
+        "username": "Mike#6973",
+        "id": "303605766047268864",
+        "nick": "Mike#6973"
+      },
+      {
+        "username": "uhenp#9814",
+        "id": "576077948168437760",
+        "nick": "uhenp#9814"
       },
       {
         "username": "blaccrystal#0277",
@@ -15,19 +32,29 @@
         "nick": "blaccrystal#0277"
       },
       {
-        "username": "OREZ CU LAPTE#2524",
-        "id": "438034897425399808",
-        "nick": "OREZ CU LAPTE#2524"
+        "username": "Scorpio78#0199",
+        "id": "551324362364551178",
+        "nick": "Scorpio78#0199"
+      },
+      {
+        "username": "Saito1996#4192",
+        "id": "198033771335909377",
+        "nick": "Saito1996#4192"
+      },
+      {
+        "username": "CRISTIAN1ELITE#7493",
+        "id": "307063502982610944",
+        "nick": "CRISTIAN1ELITE#7493"
       }
     ],
-    "dueDate": 1652720400000,
-    "desc": "Full run. Boss final x3. Maxim un incepator.",
+    "dueDate": 1652806800000,
+    "desc": "Raid cu 1 incepator ( raidul se tine doar daca se inscrie 1 persoana cu 0 clearuri in vow)",
     "creator": {
-      "username": "Saito1996",
-      "id": "198033771335909377",
-      "nick": "Saito1996#4192"
+      "username": "MIKE",
+      "id": "303605766047268864",
+      "nick": "Mike#6973"
     },
-    "activity": "Deep Stone Crypt",
-    "messageID": "975355438725992449"
+    "activity": "Vow of the Disciple",
+    "messageID": "975754490579935292"
   }
 }
