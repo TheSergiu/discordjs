@@ -1,30 +1,13 @@
 {
-  "1459": {
-    "id": "1459",
-    "inexperienced": [
-      {
-        "id": "551324362364551178",
-        "username": "scorpio78",
-        "nick": "Scorpio78#0199"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
-      }
-    ],
+  "2414": {
+    "id": "2414",
+    "inexperienced": [],
+    "alternatives": [],
     "participants": [
       {
-        "username": "Mike#6973",
-        "id": "303605766047268864",
-        "nick": "Mike#6973"
-      },
-      {
-        "username": "uhenp#9814",
-        "id": "576077948168437760",
-        "nick": "uhenp#9814"
+        "username": "Liro#3386",
+        "id": "666641059312304139",
+        "nick": "Liro#3386"
       },
       {
         "username": "blaccrystal#0277",
@@ -32,29 +15,108 @@
         "nick": "blaccrystal#0277"
       },
       {
-        "username": "Scorpio78#0199",
-        "id": "551324362364551178",
-        "nick": "Scorpio78#0199"
+        "username": "Ciribicorbo#2879",
+        "id": "161622563355754496",
+        "nick": "Ciribicorbo#2879"
       },
+      {
+        "username": "Mr.Smyle#0204",
+        "id": "818915093873557524",
+        "nick": "Mr.Smyle#0204"
+      }
+    ],
+    "dueDate": 1653145200000,
+    "desc": "1 clear vod si vog cu 3 bossi",
+    "creator": {
+      "username": "Liro",
+      "id": "666641059312304139",
+      "nick": "Liro#3386"
+    },
+    "activity": "Sesiune Raiduri",
+    "messageID": "976167147023769660"
+  },
+  "5865": {
+    "id": "5865",
+    "inexperienced": [
+      {
+        "id": "477846486403645454",
+        "username": "rzL",
+        "nick": "rzL#2010"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
       {
         "username": "Saito1996#4192",
         "id": "198033771335909377",
         "nick": "Saito1996#4192"
       },
       {
-        "username": "CRISTIAN1ELITE#7493",
-        "id": "307063502982610944",
-        "nick": "CRISTIAN1ELITE#7493"
+        "username": "blaccrystal#0277",
+        "id": "766558531305996328",
+        "nick": "blaccrystal#0277"
+      },
+      {
+        "username": "Ciribicorbo#2879",
+        "id": "161622563355754496",
+        "nick": "Ciribicorbo#2879"
+      },
+      {
+        "username": "rzL#2010",
+        "id": "477846486403645454",
+        "nick": "rzL#2010"
+      },
+      {
+        "username": "Mr.Smyle#0204",
+        "id": "818915093873557524",
+        "nick": "Mr.Smyle#0204"
       }
     ],
-    "dueDate": 1652806800000,
-    "desc": "Raid cu 1 incepator ( raidul se tine doar daca se inscrie 1 persoana cu 0 clearuri in vow)",
+    "dueDate": 1652893200000,
+    "desc": "Full run. Maxim un incepator.",
     "creator": {
-      "username": "MIKE",
-      "id": "303605766047268864",
-      "nick": "Mike#6973"
+      "username": "Saito1996",
+      "id": "198033771335909377",
+      "nick": "Saito1996#4192"
     },
     "activity": "Vow of the Disciple",
-    "messageID": "975754490579935292"
+    "messageID": "976167729130254447"
+  },
+  "6649": {
+    "id": "6649",
+    "inexperienced": [],
+    "alternatives": [
+      {
+        "username": "OREZ CU LAPTE#2524",
+        "id": "438034897425399808",
+        "nick": "OREZ CU LAPTE#2524"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Bounty#2429",
+        "id": "241981070352842752",
+        "nick": "Bounty#2429"
+      },
+      {
+        "username": "RoBros_Radu#0371",
+        "id": "328568114834833409",
+        "nick": "RoBros_Radu#0371"
+      },
+      {
+        "username": "SaberGhost#2191",
+        "id": "604205238702047233",
+        "nick": "SaberGhost#2191"
+      }
+    ],
+    "dueDate": 1652889600000,
+    "desc": "Divinity Run",
+    "creator": {
+      "username": "bounty88",
+      "id": "241981070352842752",
+      "nick": "Bounty#2429"
+    },
+    "activity": "Garden of Salvation",
+    "messageID": "976091637056946186"
   }
 }
