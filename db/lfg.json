@@ -1,46 +1,14 @@
 {
-  "2052": {
-    "id": "2052",
-    "inexperienced": [
-      {
-        "id": "818915093873557524",
-        "username": "NothingInWorld",
-        "nick": "Mr.Smyle#0204"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "Mr.Smyle#0204",
-        "id": "818915093873557524",
-        "nick": "Mr.Smyle#0204"
-      },
-      {
-        "username": "uhenp#9814",
-        "id": "576077948168437760",
-        "nick": "uhenp#9814"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Saito1996#4192",
-        "id": "198033771335909377",
-        "nick": "Saito1996#4192"
-      }
-    ],
-    "dueDate": 1653067800000,
-    "desc": "Full run. Maxim un incepator.",
-    "creator": {
-      "username": "Saito1996",
-      "id": "198033771335909377",
-      "nick": "Saito1996#4192"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "976900114645942322"
-  },
   "2414": {
     "id": "2414",
     "inexperienced": [],
-    "alternatives": [],
+    "alternatives": [
+      {
+        "username": "OREZ CU LAPTE#2524",
+        "id": "438034897425399808",
+        "nick": "OREZ CU LAPTE#2524"
+      }
+    ],
     "participants": [
       {
         "username": "Liro#3386",
