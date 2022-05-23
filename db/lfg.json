@@ -1,1 +1,50 @@
-{}
+{
+  "7278": {
+    "id": "7278",
+    "inexperienced": [
+      {
+        "id": "551324362364551178",
+        "username": "scorpio78",
+        "nick": "Scorpio78#0199"
+      },
+      {
+        "id": "115891876497850374",
+        "username": "speeder🦉",
+        "nick": "speeder#6654"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "OREZ CU LAPTE#2524",
+        "id": "438034897425399808",
+        "nick": "OREZ CU LAPTE#2524"
+      }
+    ],
+    "participants": [
+      {
+        "username": "DanielosUchiha",
+        "id": "258268734194450443",
+        "nick": null
+      },
+      {
+        "username": "Scorpio78#0199",
+        "id": "551324362364551178",
+        "nick": "Scorpio78#0199"
+      },
+      {
+        "username": "speeder#6654",
+        "id": "115891876497850374",
+        "nick": "speeder#6654"
+      }
+    ],
+    "dueDate": 1653496200000,
+    "desc": "Raid cu un incepator",
+    "creator": {
+      "username": "DanielosUchiha",
+      "id": "258268734194450443",
+      "nick": null
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "978363957461016637"
+  }
+}
