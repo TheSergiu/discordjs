@@ -1,7 +1,13 @@
 {
   "7500": {
     "id": "7500",
-    "inexperienced": [],
+    "inexperienced": [
+      {
+        "id": "159647243513626624",
+        "username": "goosfraba",
+        "nick": null
+      }
+    ],
     "alternatives": [
       {
         "username": "⍟★BGS★⍟",
@@ -11,6 +17,11 @@
       {
         "username": "MrT",
         "id": "683020839473381381",
+        "nick": null
+      },
+      {
+        "username": "Andrescu12",
+        "id": "210465519524904961",
         "nick": null
       }
     ],
@@ -36,13 +47,13 @@
         "nick": null
       },
       {
-        "username": "Andrescu12",
-        "id": "210465519524904961",
+        "username": "RazvanOGs",
+        "id": "244818278193561600",
         "nick": null
       },
       {
-        "username": "RazvanOGs",
-        "id": "244818278193561600",
+        "username": "goosfraba",
+        "id": "159647243513626624",
         "nick": null
       }
     ],
