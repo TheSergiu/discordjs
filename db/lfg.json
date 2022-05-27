@@ -1,66 +1,8 @@
 {
-  "4788": {
-    "id": "4788",
-    "inexperienced": [
-      {
-        "id": "270281220078698496",
-        "username": "Bman",
-        "nick": "Bman#7412"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "OREZ CU LAPTE#2524",
-        "id": "438034897425399808",
-        "nick": "OREZ CU LAPTE#2524"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Saito1996#4192",
-        "id": "198033771335909377",
-        "nick": "Saito1996#4192"
-      },
-      {
-        "username": "Bman#7412",
-        "id": "270281220078698496",
-        "nick": "Bman#7412"
-      },
-      {
-        "username": "Liro#3386",
-        "id": "666641059312304139",
-        "nick": "Liro#3386"
-      },
-      {
-        "username": "DavidTR#2338",
-        "id": "694081106726748201",
-        "nick": "DavidTR#2338"
-      },
-      {
-        "username": "Dan Diaconescu#8727",
-        "id": "489214493503520778",
-        "nick": "Dan Diaconescu#8727"
-      }
-    ],
-    "dueDate": 1653672600000,
-    "desc": "Full run. Fara incepatori.",
-    "creator": {
-      "username": "Saito1996",
-      "id": "198033771335909377",
-      "nick": "Saito1996#4192"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "979309518460682240"
-  },
   "7864": {
     "id": "7864",
     "inexperienced": [],
     "alternatives": [
-      {
-        "username": "Penumbra#3058",
-        "id": "705390519097884692",
-        "nick": "Penumbra#3058"
-      },
       {
         "username": "Dan Diaconescu#8727",
         "id": "489214493503520778",
@@ -93,5 +35,26 @@
     },
     "activity": "Last Wish",
     "messageID": "979042684087975986"
+  },
+  "7942": {
+    "id": "7942",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "rzL#2010",
+        "id": "477846486403645454",
+        "nick": "rzL#2010"
+      }
+    ],
+    "dueDate": 1653748200000,
+    "desc": "schnell schnell poate si-un riven ceva dupa",
+    "creator": {
+      "username": "rzL",
+      "id": "477846486403645454",
+      "nick": "rzL#2010"
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "979856851078369340"
   }
 }
