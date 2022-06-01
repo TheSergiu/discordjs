@@ -2,13 +2,7 @@
   "1205": {
     "id": "1205",
     "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Mr.Smyle#0204",
-        "id": "818915093873557524",
-        "nick": "Mr.Smyle#0204"
-      }
-    ],
+    "alternatives": [],
     "participants": [
       {
         "username": "Saito1996#4192",
@@ -29,6 +23,16 @@
         "username": "blaccrystal#0277",
         "id": "766558531305996328",
         "nick": "blaccrystal#0277"
+      },
+      {
+        "username": "Boxsize1",
+        "id": "518515091671613471",
+        "nick": "Boxsize1"
+      },
+      {
+        "username": "King#5747",
+        "id": "659455157578235904",
+        "nick": "King#5747"
       }
     ],
     "dueDate": 1654189200000,
@@ -40,86 +44,6 @@
     },
     "activity": "Garden of Salvation",
     "messageID": "981106496836341790"
-  },
-  "7955": {
-    "id": "7955",
-    "inexperienced": [
-      {
-        "id": "600397878870933541",
-        "username": "vosy",
-        "nick": "Vosy#4804"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "uhenp#9814",
-        "id": "576077948168437760",
-        "nick": "uhenp#9814"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Vosy#4804",
-        "id": "600397878870933541",
-        "nick": "Vosy#4804"
-      }
-    ],
-    "dueDate": 1654095600000,
-    "desc": "incepator cu un clear si am nevoei de sherpa",
-    "creator": {
-      "username": "vosy",
-      "id": "600397878870933541",
-      "nick": "Vosy#4804"
-    },
-    "activity": "Garden of Salvation",
-    "messageID": "981256796184408084"
-  },
-  "8569": {
-    "id": "8569",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "blaccrystal#0277",
-        "id": "766558531305996328",
-        "nick": "blaccrystal#0277"
-      },
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Saito1996#4192",
-        "id": "198033771335909377",
-        "nick": "Saito1996#4192"
-      },
-      {
-        "username": "Mr.Smyle#0204",
-        "id": "818915093873557524",
-        "nick": "Mr.Smyle#0204"
-      },
-      {
-        "username": "Daddy Panda#9723",
-        "id": "352405227732860939",
-        "nick": "Daddy Panda#9723"
-      },
-      {
-        "username": "Ant_Samurai#1391",
-        "id": "401035160075763712",
-        "nick": "Ant_Samurai#1391"
-      }
-    ],
-    "dueDate": 1654102800000,
-    "desc": "Full run cu challange. Fara incepatori.",
-    "creator": {
-      "username": "Saito1996",
-      "id": "198033771335909377",
-      "nick": "Saito1996#4192"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "981105802288959558"
   },
   "8659": {
     "id": "8659",
@@ -151,6 +75,16 @@
         "username": "blaccrystal#0277",
         "id": "766558531305996328",
         "nick": "blaccrystal#0277"
+      },
+      {
+        "username": "badan#5502",
+        "id": "652570787387277323",
+        "nick": "badan#5502"
+      },
+      {
+        "username": "Fossil#8988",
+        "id": "220621741137854464",
+        "nick": "Fossil#8988"
       }
     ],
     "dueDate": 1654275600000,
