@@ -1,1 +1,55 @@
-{}
+{
+  "3953": {
+    "id": "3953",
+    "inexperienced": [
+      {
+        "id": "262286862926872576",
+        "username": "Kinjo",
+        "nick": null
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "Gabi (Timelost)",
+        "id": "300372953827377184",
+        "nick": null
+      }
+    ],
+    "participants": [
+      {
+        "username": "DKW",
+        "id": "503903235027763200",
+        "nick": null
+      },
+      {
+        "username": "BlackRose",
+        "id": "321286668353142784",
+        "nick": null
+      },
+      {
+        "username": "Veno",
+        "id": "308951343567994881",
+        "nick": null
+      },
+      {
+        "username": "MrT",
+        "id": "683020839473381381",
+        "nick": null
+      },
+      {
+        "username": "Kinjo",
+        "id": "262286862926872576",
+        "nick": null
+      }
+    ],
+    "dueDate": 1654434000000,
+    "desc": "full + TR",
+    "creator": {
+      "username": "DKW",
+      "id": "503903235027763200",
+      "nick": null
+    },
+    "activity": "Garden of Salvation",
+    "messageID": "982689232961278013"
+  }
+}
