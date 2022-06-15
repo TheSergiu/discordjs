@@ -1,22 +1,12 @@
 {
-  "4883": {
-    "id": "4883",
+  "0573": {
+    "id": "0573",
     "inexperienced": [],
     "alternatives": [],
     "participants": [
       {
-        "username": "VladimirKatana",
-        "id": "277780988480716801",
-        "nick": null
-      },
-      {
         "username": "Tryez",
         "id": "293848052513636353",
-        "nick": null
-      },
-      {
-        "username": "Veno",
-        "id": "308951343567994881",
         "nick": null
       },
       {
@@ -25,19 +15,19 @@
         "nick": null
       },
       {
-        "username": "Andrescu12",
-        "id": "210465519524904961",
+        "username": "VladimirKatana",
+        "id": "277780988480716801",
         "nick": null
       }
     ],
-    "dueDate": 1655312400000,
-    "desc": "Full run+x3 boss runs",
+    "dueDate": 1655398800000,
+    "desc": "2 runuri la boss",
     "creator": {
-      "username": "VladimirKatana",
-      "id": "277780988480716801",
+      "username": "Tryez",
+      "id": "293848052513636353",
       "nick": null
     },
-    "activity": "Vault Of Glass",
-    "messageID": "986340360785653831"
+    "activity": "Vow of the Disciple",
+    "messageID": "986703985471791126"
   }
 }
