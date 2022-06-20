@@ -1,45 +1,4 @@
 {
-  "4702": {
-    "id": "4702",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "blaccrystal#0277",
-        "id": "766558531305996328",
-        "nick": "blaccrystal#0277"
-      },
-      {
-        "username": "ZERO2#4105",
-        "id": "226386601230467074",
-        "nick": "ZERO2#4105"
-      },
-      {
-        "username": "ChicaBOMB#4451",
-        "id": "323151944048836609",
-        "nick": "ChicaBOMB#4451"
-      },
-      {
-        "username": "Daddy Panda#9723",
-        "id": "352405227732860939",
-        "nick": "Daddy Panda#9723"
-      },
-      {
-        "username": "uhenp#9814",
-        "id": "576077948168437760",
-        "nick": "uhenp#9814"
-      }
-    ],
-    "dueDate": 1655740800000,
-    "desc": "Farm la boss pentru spoils și șansă să pice vexul. Maxim un începător",
-    "creator": {
-      "username": "blaccrystal",
-      "id": "766558531305996328",
-      "nick": "blaccrystal#0277"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "988062874561806336"
-  },
   "7700": {
     "id": "7700",
     "inexperienced": [
@@ -47,6 +6,11 @@
         "id": "414800088423202817",
         "username": "💎𝓢𝓝4𝓒𝓚𝓨💎",
         "nick": "SN4CKY#9120"
+      },
+      {
+        "id": "666641059312304139",
+        "username": "Liro",
+        "nick": "Liro#3386"
       }
     ],
     "alternatives": [],
@@ -80,6 +44,11 @@
         "username": "PanTeraS#7407",
         "id": "319186530499428373",
         "nick": "PanTeraS#7407"
+      },
+      {
+        "username": "Liro#3386",
+        "id": "666641059312304139",
+        "nick": "Liro#3386"
       }
     ],
     "dueDate": 1655834400000,
