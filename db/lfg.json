@@ -1,1 +1,28 @@
-{}
+{
+  "3467": {
+    "id": "3467",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "uhenp#9814",
+        "id": "576077948168437760",
+        "nick": "uhenp#9814"
+      },
+      {
+        "username": "PanTeraS#7407",
+        "id": "319186530499428373",
+        "nick": "PanTeraS#7407"
+      }
+    ],
+    "dueDate": 1657042200000,
+    "desc": "Pinnacles / EOT farm / 2 începători maxim.",
+    "creator": {
+      "username": "uhenp",
+      "id": "576077948168437760",
+      "nick": "uhenp#9814"
+    },
+    "activity": "Deep Stone Crypt",
+    "messageID": "993559238033023138"
+  }
+}
