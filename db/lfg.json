@@ -13,6 +13,16 @@
         "username": "Bounty#2429",
         "id": "241981070352842752",
         "nick": "Bounty#2429"
+      },
+      {
+        "username": "Rabia#9122",
+        "id": "181365970093211657",
+        "nick": "Rabia#9122"
+      },
+      {
+        "username": "PanTeraS#7407",
+        "id": "319186530499428373",
+        "nick": "PanTeraS#7407"
       }
     ],
     "participants": [
@@ -40,6 +50,21 @@
         "username": "☆EdyMihai3☆®#1862",
         "id": "217607659300454402",
         "nick": "☆EdyMihai3☆®#1862"
+      },
+      {
+        "username": "ELalinEL#7928",
+        "id": "451481415020838932",
+        "nick": "ELalinEL#7928"
+      },
+      {
+        "username": "urusache#3802",
+        "id": "459291277167427594",
+        "nick": "urusache#3802"
+      },
+      {
+        "username": "reeper[y2k]#9879",
+        "id": "658046006692151306",
+        "nick": "reeper[y2k]#9879"
       }
     ],
     "dueDate": 1657645200000,
@@ -51,5 +76,47 @@
     },
     "activity": "Vow of the Disciple",
     "messageID": "995787582132719646"
+  },
+  "9522": {
+    "id": "9522",
+    "inexperienced": [],
+    "alternatives": [
+      {
+        "username": "Rabia#9122",
+        "id": "181365970093211657",
+        "nick": "Rabia#9122"
+      },
+      {
+        "username": "PanTeraS#7407",
+        "id": "319186530499428373",
+        "nick": "PanTeraS#7407"
+      }
+    ],
+    "participants": [
+      {
+        "username": "ZooM#6437",
+        "id": "396415843266854913",
+        "nick": "ZooM#6437"
+      },
+      {
+        "username": "RoBros_Radu#0371",
+        "id": "328568114834833409",
+        "nick": "RoBros_Radu#0371"
+      },
+      {
+        "username": "Enki | destiny2.ro",
+        "id": "261887010082521089",
+        "nick": null
+      }
+    ],
+    "dueDate": 1657652400000,
+    "desc": "Raid-ul l-am făcut numai 1 data, de preferat persoane care l-au mai făcut",
+    "creator": {
+      "username": "ZooM",
+      "id": "396415843266854913",
+      "nick": "ZooM#6437"
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "996135646194315324"
   }
 }
