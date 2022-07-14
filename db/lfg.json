@@ -8,13 +8,7 @@
         "nick": "ZERO2#4105"
       }
     ],
-    "alternatives": [
-      {
-        "username": "ZERO2#4105",
-        "id": "226386601230467074",
-        "nick": "ZERO2#4105"
-      }
-    ],
+    "alternatives": [],
     "participants": [
       {
         "username": "ZooM#6437",
@@ -25,6 +19,26 @@
         "username": "Mr.Smyle#0204",
         "id": "818915093873557524",
         "nick": "Mr.Smyle#0204"
+      },
+      {
+        "username": "uhenp#9814",
+        "id": "576077948168437760",
+        "nick": "uhenp#9814"
+      },
+      {
+        "username": "Psycho Muffin#5957",
+        "id": "704816801661583522",
+        "nick": "Psycho Muffin#5957"
+      },
+      {
+        "username": "ZERO2#4105",
+        "id": "226386601230467074",
+        "nick": "ZERO2#4105"
+      },
+      {
+        "username": "Enki | destiny2.ro",
+        "id": "261887010082521089",
+        "nick": null
       }
     ],
     "dueDate": 1657990800000,
@@ -36,57 +50,5 @@
     },
     "activity": "Vault Of Glass",
     "messageID": "996774732269617245"
-  },
-  "5360": {
-    "id": "5360",
-    "inexperienced": [
-      {
-        "id": "172311714128330752",
-        "username": "dcdaima",
-        "nick": "dcdaima#9428"
-      }
-    ],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "GravityFloxx#3456",
-        "id": "203967776149209089",
-        "nick": "GravityFloxx#3456"
-      },
-      {
-        "username": "RoBros_Radu#0371",
-        "id": "328568114834833409",
-        "nick": "RoBros_Radu#0371"
-      },
-      {
-        "username": "Enki | destiny2.ro",
-        "id": "261887010082521089",
-        "nick": null
-      },
-      {
-        "username": "Ghost#0470",
-        "id": "313012291371270146",
-        "nick": "Ghost#0470"
-      },
-      {
-        "username": "ZERO2#4105",
-        "id": "226386601230467074",
-        "nick": "ZERO2#4105"
-      },
-      {
-        "username": "dcdaima#9428",
-        "id": "172311714128330752",
-        "nick": "dcdaima#9428"
-      }
-    ],
-    "dueDate": 1657814400000,
-    "desc": "Full Run plus farm CP Atheon. Primesti Vex ajuti, nu pleci dupa ce l-ai luat!",
-    "creator": {
-      "username": "-GravityFloxx-",
-      "id": "203967776149209089",
-      "nick": "GravityFloxx#3456"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "996845134480162888"
   }
 }
