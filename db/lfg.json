@@ -1,46 +1,4 @@
 {
-  "1338": {
-    "id": "1338",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "UpperOpossum896#0492",
-        "id": "465912160154025988",
-        "nick": "UpperOpossum896#0492"
-      }
-    ],
-    "participants": [
-      {
-        "username": "IlieMarius83#1577",
-        "id": "160472069606342656",
-        "nick": "IlieMarius83#1577"
-      },
-      {
-        "username": "RoBros_Radu#0371",
-        "id": "328568114834833409",
-        "nick": "RoBros_Radu#0371"
-      },
-      {
-        "username": "Bounty#2429",
-        "id": "241981070352842752",
-        "nick": "Bounty#2429"
-      },
-      {
-        "username": "Wu Wei#7405",
-        "id": "291565012361805824",
-        "nick": "Wu Wei#7405"
-      }
-    ],
-    "dueDate": 1658163600000,
-    "desc": "Numai primul challenge pe master! Exclus incepatori.",
-    "creator": {
-      "username": "IlieMarius",
-      "id": "160472069606342656",
-      "nick": "IlieMarius83#1577"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "997624396590104587"
-  },
   "2014": {
     "id": "2014",
     "inexperienced": [],
@@ -51,11 +9,6 @@
         "nick": "Bounty#2429"
       },
       {
-        "username": "Mr.Smyle#0204",
-        "id": "818915093873557524",
-        "nick": "Mr.Smyle#0204"
-      },
-      {
         "username": "OREZ CU LAPTE#2524",
         "id": "438034897425399808",
         "nick": "OREZ CU LAPTE#2524"
@@ -64,11 +17,6 @@
         "username": "☆EdyMihai3☆®#1862",
         "id": "217607659300454402",
         "nick": "☆EdyMihai3☆®#1862"
-      },
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
       }
     ],
     "participants": [
