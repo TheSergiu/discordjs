@@ -55,47 +55,5 @@
     },
     "activity": "Sesiune Raiduri",
     "messageID": "997991961136996383"
-  },
-  "6555": {
-    "id": "6555",
-    "inexperienced": [
-      {
-        "id": "329936438802251776",
-        "username": "Românică",
-        "nick": "Planu#2341"
-      }
-    ],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Bounty#2429",
-        "id": "241981070352842752",
-        "nick": "Bounty#2429"
-      },
-      {
-        "username": "Planu#2341",
-        "id": "329936438802251776",
-        "nick": "Planu#2341"
-      },
-      {
-        "username": "Enki | destiny2.ro",
-        "id": "261887010082521089",
-        "nick": null
-      },
-      {
-        "username": "Dan Diaconescu#8727",
-        "id": "489214493503520778",
-        "nick": "Dan Diaconescu#8727"
-      }
-    ],
-    "dueDate": 1658336400000,
-    "desc": "Weekly Pinnacle Run",
-    "creator": {
-      "username": "bounty88",
-      "id": "241981070352842752",
-      "nick": "Bounty#2429"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "999015311326060707"
   }
 }
