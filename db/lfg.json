@@ -1,41 +1,4 @@
 {
-  "6280": {
-    "id": "6280",
-    "inexperienced": [
-      {
-        "id": "329936438802251776",
-        "username": "Românică",
-        "nick": "Planu#2341"
-      },
-      {
-        "id": "319740988014854145",
-        "username": "Vally",
-        "nick": "Vally#8191"
-      }
-    ],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "Planu#2341",
-        "id": "329936438802251776",
-        "nick": "Planu#2341"
-      },
-      {
-        "username": "Vally#8191",
-        "id": "319740988014854145",
-        "nick": "Vally#8191"
-      }
-    ],
-    "dueDate": 1659031200000,
-    "desc": "Suntem 2 incepatori, 3 clear-uri, raid pt pinnacle si red border, nevoie de oameni care stiu raid-ul sau poate chiar sherpa(stim cum functioneaza encounter-urile in general)",
-    "creator": {
-      "username": "Românică",
-      "id": "329936438802251776",
-      "nick": "Planu#2341"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "1001964476721016973"
-  },
   "0407": {
     "id": "0407",
     "inexperienced": [
@@ -43,6 +6,16 @@
         "id": "807306196394180618",
         "username": "bigoletto",
         "nick": "bogdiM87#4584"
+      },
+      {
+        "id": "319186530499428373",
+        "username": "PanTeraS",
+        "nick": "PanTeraS#7407"
+      },
+      {
+        "id": "459291277167427594",
+        "username": "Andrew3k",
+        "nick": "urusache#3802"
       }
     ],
     "alternatives": [
@@ -55,6 +28,16 @@
         "username": "AxXxY#5689",
         "id": "268303925839396866",
         "nick": "AxXxY#5689"
+      },
+      {
+        "username": "PanTeraS#7407",
+        "id": "319186530499428373",
+        "nick": "PanTeraS#7407"
+      },
+      {
+        "username": "urusache#3802",
+        "id": "459291277167427594",
+        "nick": "urusache#3802"
       }
     ],
     "participants": [
@@ -67,6 +50,21 @@
         "username": "bogdiM87#4584",
         "id": "807306196394180618",
         "nick": "bogdiM87#4584"
+      },
+      {
+        "username": "Tala420#6469",
+        "id": "740857014439247902",
+        "nick": "Tala420#6469"
+      },
+      {
+        "username": "Cooky#2010",
+        "id": "249290472189591554",
+        "nick": "Cooky#2010"
+      },
+      {
+        "username": "Warwarrior#3634",
+        "id": "277854026614308865",
+        "nick": "Warwarrior#3634"
       }
     ],
     "dueDate": 1659283200000,
