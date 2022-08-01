@@ -1,4 +1,210 @@
 {
+  "1022": {
+    "id": "1022",
+    "inexperienced": [
+      {
+        "id": "667295895339139072",
+        "username": "fluxdux2",
+        "nick": "SelectDenis09#1084"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "PanTeraS#7407",
+        "id": "319186530499428373",
+        "nick": "PanTeraS#7407"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Enki | destiny2.ro",
+        "id": "261887010082521089",
+        "nick": null
+      },
+      {
+        "username": "SelectDenis09#1084",
+        "id": "667295895339139072",
+        "nick": "SelectDenis09#1084"
+      },
+      {
+        "username": "GravityFloxx#3456",
+        "id": "203967776149209089",
+        "nick": "GravityFloxx#3456"
+      }
+    ],
+    "dueDate": 1659425400000,
+    "desc": "Raid de dimineata, maxim un incepator!!!",
+    "creator": {
+      "username": "Enki | destiny2.ro",
+      "id": "261887010082521089",
+      "nick": null
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "1003619580637368390"
+  },
+  "2868": {
+    "id": "2868",
+    "inexperienced": [
+      {
+        "id": "226386601230467074",
+        "username": "ZERO2",
+        "nick": "ZERO2#4105"
+      },
+      {
+        "id": "600397878870933541",
+        "username": "vosy",
+        "nick": "Vosy#4804"
+      }
+    ],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "IlieMarius83#1577",
+        "id": "160472069606342656",
+        "nick": "IlieMarius83#1577"
+      },
+      {
+        "username": "The_Sergiu",
+        "id": "264069820633448448",
+        "nick": null
+      },
+      {
+        "username": "dcdaima#9428",
+        "id": "172311714128330752",
+        "nick": "dcdaima#9428"
+      },
+      {
+        "username": "ZERO2#4105",
+        "id": "226386601230467074",
+        "nick": "ZERO2#4105"
+      },
+      {
+        "username": "Vosy#4804",
+        "id": "600397878870933541",
+        "nick": "Vosy#4804"
+      },
+      {
+        "username": "Mr.Smyle#0204",
+        "id": "818915093873557524",
+        "nick": "Mr.Smyle#0204"
+      }
+    ],
+    "dueDate": 1659461400000,
+    "desc": "Div run. Maxim 2 incepatori. <@264069820633448448> <@226386601230467074>",
+    "creator": {
+      "username": "IlieMarius",
+      "id": "160472069606342656",
+      "nick": "IlieMarius83#1577"
+    },
+    "activity": "Garden of Salvation",
+    "messageID": "1003702917494227014"
+  },
+  "4974": {
+    "id": "4974",
+    "inexperienced": [
+      {
+        "id": "292751070738776067",
+        "username": "Speenator",
+        "nick": "Speenator#3283"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "uhenp#9814",
+        "id": "576077948168437760",
+        "nick": "uhenp#9814"
+      }
+    ],
+    "participants": [
+      {
+        "username": "urusache#3802",
+        "id": "459291277167427594",
+        "nick": "urusache#3802"
+      },
+      {
+        "username": "Bounty#2429",
+        "id": "241981070352842752",
+        "nick": "Bounty#2429"
+      },
+      {
+        "username": "Speenator#3283",
+        "id": "292751070738776067",
+        "nick": "Speenator#3283"
+      },
+      {
+        "username": "Planu#2341",
+        "id": "329936438802251776",
+        "nick": "Planu#2341"
+      },
+      {
+        "username": "KirinZeul#4170",
+        "id": "514605721124339712",
+        "nick": "KirinZeul#4170"
+      }
+    ],
+    "dueDate": 1659459600000,
+    "desc": "Pinnacle run (1 incepator)",
+    "creator": {
+      "username": "Andrew3k",
+      "id": "459291277167427594",
+      "nick": "urusache#3802"
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "1003668281166663760"
+  },
+  "6935": {
+    "id": "6935",
+    "inexperienced": [
+      {
+        "id": "360758559706972161",
+        "username": "Bob Smoke",
+        "nick": "Bob Smoke#0667"
+      },
+      {
+        "id": "220621741137854464",
+        "username": "Robik",
+        "nick": "Fossil#8988"
+      }
+    ],
+    "alternatives": [
+      {
+        "username": "IlieMarius83#1577",
+        "id": "160472069606342656",
+        "nick": "IlieMarius83#1577"
+      }
+    ],
+    "participants": [
+      {
+        "username": "Dan Diaconescu#8727",
+        "id": "489214493503520778",
+        "nick": "Dan Diaconescu#8727"
+      },
+      {
+        "username": "Bob Smoke#0667",
+        "id": "360758559706972161",
+        "nick": "Bob Smoke#0667"
+      },
+      {
+        "username": "Fossil#8988",
+        "id": "220621741137854464",
+        "nick": "Fossil#8988"
+      },
+      {
+        "username": "uhenp#9814",
+        "id": "576077948168437760",
+        "nick": "uhenp#9814"
+      }
+    ],
+    "dueDate": 1659787200000,
+    "desc": "SHERPA run pentru <@360758559706972161> <@220621741137854464> , nevoie de cunoscatori",
+    "creator": {
+      "username": "Dan Diaconescu",
+      "id": "489214493503520778",
+      "nick": "Dan Diaconescu#8727"
+    },
+    "activity": "Vow of the Disciple",
+    "messageID": "1003721340995502090"
+  },
   "7572": {
     "id": "7572",
     "inexperienced": [],
@@ -62,7 +268,7 @@
       }
     ],
     "dueDate": 1661533200000,
-    "desc": "DAY ONE 99% caderea regelui / 1% furia masinariei. Minim rank Normal Raider",
+    "desc": "DAY ONE 99% caderea regelui / 1% furia masinariei. Minim rank Normal Raider EDIT: Rezerv dreptul de a alege participanti din lista pe baza performantelor / divizam lista de participanti in x echipe diferite",
     "creator": {
       "username": "Dan Diaconescu",
       "id": "489214493503520778",
