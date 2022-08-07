@@ -29,6 +29,11 @@
         "username": "blaccrystal#0277",
         "id": "766558531305996328",
         "nick": "blaccrystal#0277"
+      },
+      {
+        "username": "Liro#3386",
+        "id": "666641059312304139",
+        "nick": "Liro#3386"
       }
     ],
     "dueDate": 1660039200000,
@@ -48,6 +53,11 @@
         "id": "329936438802251776",
         "username": "Românică",
         "nick": "Planu#2341"
+      },
+      {
+        "id": "807306196394180618",
+        "username": "bigoletto",
+        "nick": "bogdiM87#4584"
       }
     ],
     "alternatives": [
@@ -87,9 +97,14 @@
         "username": "RoBros_Radu#0371",
         "id": "328568114834833409",
         "nick": "RoBros_Radu#0371"
+      },
+      {
+        "username": "bogdiM87#4584",
+        "id": "807306196394180618",
+        "nick": "bogdiM87#4584"
       }
     ],
-    "dueDate": 1659976200000,
+    "dueDate": 1659981600000,
     "desc": "Vow master boss cp cu chalagne. Luam și un începător",
     "creator": {
       "username": "blaccrystal",
@@ -137,6 +152,11 @@
         "username": "UpperOpossum896#0492",
         "id": "465912160154025988",
         "nick": "UpperOpossum896#0492"
+      },
+      {
+        "username": "OREZ CU LAPTE#2524",
+        "id": "438034897425399808",
+        "nick": "OREZ CU LAPTE#2524"
       }
     ],
     "participants": [
@@ -185,99 +205,5 @@
     },
     "activity": "Sesiune Raiduri",
     "messageID": "1002480020738019338"
-  },
-  "8008": {
-    "id": "8008",
-    "inexperienced": [
-      {
-        "id": "292751070738776067",
-        "username": "Speenator",
-        "nick": "Speenator#3283"
-      },
-      {
-        "id": "624930548426473482",
-        "username": "GreenPacifier",
-        "nick": "GreenPacifier#3959"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "GreenPacifier#3959",
-        "id": "624930548426473482",
-        "nick": "GreenPacifier#3959"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Mr.Smyle#0204",
-        "id": "818915093873557524",
-        "nick": "Mr.Smyle#0204"
-      },
-      {
-        "username": "Speenator#3283",
-        "id": "292751070738776067",
-        "nick": "Speenator#3283"
-      }
-    ],
-    "dueDate": 1659891600000,
-    "desc": "Putin Farm pt Eyes of Tomorow. Max 1 incepator. Cp la Boss. Ajutati un om amarat sa si i a exotica :*",
-    "creator": {
-      "username": "NothingInWorld",
-      "id": "818915093873557524",
-      "nick": "Mr.Smyle#0204"
-    },
-    "activity": "Deep Stone Crypt",
-    "messageID": "1005466557377433661"
-  },
-  "8590": {
-    "id": "8590",
-    "inexperienced": [],
-    "alternatives": [],
-    "participants": [
-      {
-        "username": "IlieMarius83#1577",
-        "id": "160472069606342656",
-        "nick": "IlieMarius83#1577"
-      },
-      {
-        "username": "AxXxY#5689",
-        "id": "268303925839396866",
-        "nick": "AxXxY#5689"
-      },
-      {
-        "username": "Bounty#2429",
-        "id": "241981070352842752",
-        "nick": "Bounty#2429"
-      },
-      {
-        "username": "RoBros_Radu#0371",
-        "id": "328568114834833409",
-        "nick": "RoBros_Radu#0371"
-      },
-      {
-        "username": "Warwarrior#3634",
-        "id": "277854026614308865",
-        "nick": "Warwarrior#3634"
-      },
-      {
-        "username": "UpperOpossum896#0492",
-        "id": "465912160154025988",
-        "nick": "UpperOpossum896#0492"
-      },
-      {
-        "username": "Cooky#2010",
-        "id": "249290472189591554",
-        "nick": "Cooky#2010"
-      }
-    ],
-    "dueDate": 1659893400000,
-    "desc": "Master Challenge Encounter 4",
-    "creator": {
-      "username": "IlieMarius",
-      "id": "160472069606342656",
-      "nick": "IlieMarius83#1577"
-    },
-    "activity": "Vow of the Disciple",
-    "messageID": "1004804655173349426"
   }
 }
