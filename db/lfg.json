@@ -1,1 +1,74 @@
-{}
+{
+  "4537": {
+    "id": "4537",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "One Drunk Man",
+        "id": "484742881756577793",
+        "nick": null
+      },
+      {
+        "username": "Fulfinsen, pirate hunter",
+        "id": "201312959719276544",
+        "nick": "Fulfinsen, pirate hunter"
+      }
+    ],
+    "dueDate": 1661533200000,
+    "desc": "King's Fall day one pt cn este interesat si nu face parte din echipa clanului",
+    "creator": {
+      "username": "One Drunk Man",
+      "id": "484742881756577793",
+      "nick": null
+    },
+    "activity": "Sesiune Raiduri",
+    "messageID": "1012392276019916801"
+  },
+  "0242": {
+    "id": "0242",
+    "inexperienced": [],
+    "alternatives": [],
+    "participants": [
+      {
+        "username": "Fulfinsen, pirate hunter",
+        "id": "201312959719276544",
+        "nick": "Fulfinsen, pirate hunter"
+      },
+      {
+        "username": "zЯo",
+        "id": "302539708842377216",
+        "nick": null
+      },
+      {
+        "username": "MrT",
+        "id": "683020839473381381",
+        "nick": null
+      },
+      {
+        "username": "Zelos",
+        "id": "193974859124965376",
+        "nick": null
+      },
+      {
+        "username": "Veno",
+        "id": "308951343567994881",
+        "nick": null
+      },
+      {
+        "username": "Bijuu Mode",
+        "id": "310648442798080009",
+        "nick": null
+      }
+    ],
+    "dueDate": 1661619600000,
+    "desc": "King's Fall dupa ce trece contest mode",
+    "creator": {
+      "username": "Fυlfιηsεη▿🪐",
+      "id": "201312959719276544",
+      "nick": "Fulfinsen, pirate hunter"
+    },
+    "activity": "Sesiune Raiduri",
+    "messageID": "1012334535368769576"
+  }
+}
