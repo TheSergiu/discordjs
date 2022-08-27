@@ -1,27 +1,22 @@
 {
-  "0242": {
-    "id": "0242",
+  "6314": {
+    "id": "6314",
     "inexperienced": [],
     "alternatives": [],
     "participants": [
       {
-        "username": "Fulfinsen, pirate hunter",
-        "id": "201312959719276544",
-        "nick": "Fulfinsen, pirate hunter"
+        "username": "Bijuu Mode",
+        "id": "310648442798080009",
+        "nick": null
+      },
+      {
+        "username": "BlackRose",
+        "id": "321286668353142784",
+        "nick": null
       },
       {
         "username": "zЯo",
         "id": "302539708842377216",
-        "nick": null
-      },
-      {
-        "username": "MrT",
-        "id": "683020839473381381",
-        "nick": null
-      },
-      {
-        "username": "Zelos",
-        "id": "193974859124965376",
         "nick": null
       },
       {
@@ -30,19 +25,19 @@
         "nick": null
       },
       {
-        "username": "Bijuu Mode",
-        "id": "310648442798080009",
+        "username": "goosfraba",
+        "id": "159647243513626624",
         "nick": null
       }
     ],
-    "dueDate": 1661619600000,
-    "desc": "King's Fall dupa ce trece contest mode",
+    "dueDate": 1661677200000,
+    "desc": "KING'S FALL",
     "creator": {
-      "username": "Fυlfιηsεη▿🪐",
-      "id": "201312959719276544",
-      "nick": "Fulfinsen, pirate hunter"
+      "username": "Bijuu Mode",
+      "id": "310648442798080009",
+      "nick": null
     },
     "activity": "Sesiune Raiduri",
-    "messageID": "1012334535368769576"
+    "messageID": "1013178787325825144"
   }
 }
