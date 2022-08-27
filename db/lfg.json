@@ -16,8 +16,8 @@
         "nick": "christronius21"
       }
     ],
-    "dueDate": 1661619600000,
-    "desc": "n am mai fct raidu pana acum!    si daca e posibil inca 2 bosi pt sansa la exotica",
+    "dueDate": 1661706000000,
+    "desc": "Sunt nou la raidu asta so plz teach me",
     "creator": {
       "username": "Christronius225200",
       "id": "536239671219453973",
@@ -26,93 +26,140 @@
     "activity": "Vow of the Disciple",
     "messageID": "1012632143370932264"
   },
-  "2894": {
-    "id": "2894",
+  "1369": {
+    "id": "1369",
     "inexperienced": [],
     "alternatives": [],
     "participants": [
       {
-        "username": "Saito1996#4192",
-        "id": "198033771335909377",
-        "nick": "Saito1996#4192"
+        "username": "Liro#3386",
+        "id": "666641059312304139",
+        "nick": "Liro#3386"
       },
       {
-        "username": "Bounty#2429",
-        "id": "241981070352842752",
-        "nick": "Bounty#2429"
+        "username": "Psycho Muffin#5957",
+        "id": "704816801661583522",
+        "nick": "Psycho Muffin#5957"
       },
       {
-        "username": "Radu#0371",
-        "id": "328568114834833409",
-        "nick": "Radu#0371"
+        "username": "bogdiM87#4584",
+        "id": "807306196394180618",
+        "nick": "bogdiM87#4584"
       },
       {
-        "username": "Planu#2341",
-        "id": "329936438802251776",
-        "nick": "Planu#2341"
+        "username": "Emi#8597",
+        "id": "273722496212008960",
+        "nick": "Emi#8597"
       }
     ],
-    "dueDate": 1661619600000,
-    "desc": "Kings Fall - doar oameni cu experienta in raiduri.",
+    "dueDate": 1661706000000,
+    "desc": "cp la encounterul 3",
     "creator": {
-      "username": "Saito1996",
-      "id": "198033771335909377",
-      "nick": "Saito1996#4192"
+      "username": "Liro",
+      "id": "666641059312304139",
+      "nick": "Liro#3386"
     },
     "activity": "Sesiune Raiduri",
-    "messageID": "1012799748564058172"
+    "messageID": "1013194983458734090"
   },
-  "5326": {
-    "id": "5326",
+  "4696": {
+    "id": "4696",
     "inexperienced": [
       {
-        "id": "360758559706972161",
-        "username": "Bob Smoke",
-        "nick": "Bob Smoke#0667"
+        "id": "437651646940708865",
+        "username": "stefangab95",
+        "nick": "StefanGab95"
       },
       {
-        "id": "652570787387277323",
-        "username": "badan",
-        "nick": "badan#5502"
+        "id": "182754493635493889",
+        "username": "Blackstar",
+        "nick": "BlackStar#4696"
       }
     ],
     "alternatives": [
       {
-        "username": "Wu Wei#7405",
-        "id": "291565012361805824",
-        "nick": "Wu Wei#7405"
+        "username": "rzL#2010",
+        "id": "477846486403645454",
+        "nick": "rzL#2010"
+      }
+    ],
+    "participants": [
+      {
+        "username": "StefanGab95",
+        "id": "437651646940708865",
+        "nick": "StefanGab95"
       },
+      {
+        "username": "VitaMina#5976",
+        "id": "505113292155650052",
+        "nick": "VitaMina#5976"
+      },
+      {
+        "username": "BlackStar#4696",
+        "id": "182754493635493889",
+        "nick": "BlackStar#4696"
+      }
+    ],
+    "dueDate": 1661691600000,
+    "desc": "Kings Fall",
+    "creator": {
+      "username": "stefangab95",
+      "id": "437651646940708865",
+      "nick": "StefanGab95"
+    },
+    "activity": "Sesiune Raiduri",
+    "messageID": "1013181357393973338"
+  },
+  "6980": {
+    "id": "6980",
+    "inexperienced": [],
+    "alternatives": [
       {
         "username": "blaccrystal#0277",
         "id": "766558531305996328",
         "nick": "blaccrystal#0277"
       },
       {
-        "username": "badan#5502",
-        "id": "652570787387277323",
-        "nick": "badan#5502"
+        "username": "Vally#8191",
+        "id": "319740988014854145",
+        "nick": "Vally#8191"
       }
     ],
     "participants": [
       {
-        "username": "Bob Smoke#0667",
-        "id": "360758559706972161",
-        "nick": "Bob Smoke#0667"
+        "username": "Bounty#2429",
+        "id": "241981070352842752",
+        "nick": "Bounty#2429"
       },
       {
-        "username": "AndC#8376",
-        "id": "282932242299224064",
-        "nick": "AndC#8376"
+        "username": "Sasukus#0779",
+        "id": "488347402273554433",
+        "nick": "Sasukus#0779"
+      },
+      {
+        "username": "SaberGhost#2191",
+        "id": "604205238702047233",
+        "nick": "SaberGhost#2191"
+      },
+      {
+        "username": "badan#5502",
+        "id": "652570787387277323",
+        "nick": "badan#5502"
+      },
+      {
+        "username": "Radu#0371",
+        "id": "328568114834833409",
+        "nick": "Radu#0371"
       }
     ],
-    "dueDate": 1661612400000,
-    "desc": "sherpa run pentru divinty, nu am mai facut niciodata raidul",
+    "dueDate": 1661702400000,
+    "desc": "King's Fall",
     "creator": {
-      "username": "Bob Smoke",
-      "id": "360758559706972161",
-      "nick": "Bob Smoke#0667"
+      "username": "bounty88",
+      "id": "241981070352842752",
+      "nick": "Bounty#2429"
     },
-    "activity": "Garden of Salvation",
-    "messageID": "1012340307184074852"
+    "activity": "Sesiune Raiduri",
+    "messageID": "1013189226621309009"
   }
 }
