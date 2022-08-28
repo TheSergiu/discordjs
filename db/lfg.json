@@ -1,19 +1,9 @@
 {
-  "6314": {
-    "id": "6314",
+  "1305": {
+    "id": "1305",
     "inexperienced": [],
     "alternatives": [],
     "participants": [
-      {
-        "username": "Bijuu Mode",
-        "id": "310648442798080009",
-        "nick": null
-      },
-      {
-        "username": "BlackRose",
-        "id": "321286668353142784",
-        "nick": null
-      },
       {
         "username": "zЯo",
         "id": "302539708842377216",
@@ -25,19 +15,24 @@
         "nick": null
       },
       {
-        "username": "goosfraba",
-        "id": "159647243513626624",
+        "username": "Gabi (Timelost)",
+        "id": "300372953827377184",
+        "nick": null
+      },
+      {
+        "username": "DKW",
+        "id": "503903235027763200",
         "nick": null
       }
     ],
-    "dueDate": 1661677200000,
-    "desc": "KING'S FALL",
+    "dueDate": 1661794200000,
+    "desc": "Kink's fall. Maxim un începător.",
     "creator": {
-      "username": "Bijuu Mode",
-      "id": "310648442798080009",
+      "username": "zЯo",
+      "id": "302539708842377216",
       "nick": null
     },
     "activity": "Sesiune Raiduri",
-    "messageID": "1013178787325825144"
+    "messageID": "1013563264598294608"
   }
 }
