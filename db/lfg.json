@@ -1,38 +1,33 @@
 {
-  "1305": {
-    "id": "1305",
+  "5591": {
+    "id": "5591",
     "inexperienced": [],
     "alternatives": [],
     "participants": [
       {
-        "username": "zЯo",
-        "id": "302539708842377216",
-        "nick": null
-      },
-      {
-        "username": "Veno",
-        "id": "308951343567994881",
-        "nick": null
-      },
-      {
-        "username": "Gabi (Timelost)",
-        "id": "300372953827377184",
-        "nick": null
-      },
-      {
         "username": "DKW",
         "id": "503903235027763200",
         "nick": null
+      },
+      {
+        "username": "RazvanOGs",
+        "id": "244818278193561600",
+        "nick": null
+      },
+      {
+        "username": "Fulfinsen, pirate hunter xD",
+        "id": "201312959719276544",
+        "nick": "Fulfinsen, pirate hunter xD"
       }
     ],
-    "dueDate": 1661794200000,
-    "desc": "Kink's fall. Maxim un începător.",
+    "dueDate": 1661880600000,
+    "desc": "Taken King full void",
     "creator": {
-      "username": "zЯo",
-      "id": "302539708842377216",
+      "username": "DKW",
+      "id": "503903235027763200",
       "nick": null
     },
     "activity": "Sesiune Raiduri",
-    "messageID": "1013563264598294608"
+    "messageID": "1013920471726698526"
   }
 }
