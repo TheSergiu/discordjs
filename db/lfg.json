@@ -1,33 +1,43 @@
 {
-  "5591": {
-    "id": "5591",
+  "3054": {
+    "id": "3054",
     "inexperienced": [],
     "alternatives": [],
     "participants": [
       {
+        "username": "AxXxY",
+        "id": "268303925839396866",
+        "nick": null
+      },
+      {
+        "username": "Bijuu Mode",
+        "id": "310648442798080009",
+        "nick": null
+      },
+      {
+        "username": "SH1PP1",
+        "id": "272797020841050113",
+        "nick": null
+      },
+      {
+        "username": "MrT",
+        "id": "683020839473381381",
+        "nick": null
+      },
+      {
         "username": "DKW",
         "id": "503903235027763200",
         "nick": null
-      },
-      {
-        "username": "RazvanOGs",
-        "id": "244818278193561600",
-        "nick": null
-      },
-      {
-        "username": "Fulfinsen, pirate hunter xD",
-        "id": "201312959719276544",
-        "nick": "Fulfinsen, pirate hunter xD"
       }
     ],
-    "dueDate": 1661880600000,
-    "desc": "Taken King full void",
+    "dueDate": 1661966100000,
+    "desc": "Triumph-uri la toate encounterele + aceiasi clasa (preferabil warlock dar merge si creionar),",
     "creator": {
-      "username": "DKW",
-      "id": "503903235027763200",
+      "username": "AxXxY",
+      "id": "268303925839396866",
       "nick": null
     },
     "activity": "Sesiune Raiduri",
-    "messageID": "1013920471726698526"
+    "messageID": "1014089034349428747"
   }
 }
