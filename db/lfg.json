@@ -1,95 +1,4 @@
 {
-  "2284": {
-    "id": "2284",
-    "inexperienced": [
-      {
-        "id": "319740988014854145",
-        "username": "Vally",
-        "nick": "Vally#8191"
-      },
-      {
-        "id": "329936438802251776",
-        "username": "Planu",
-        "nick": "Planu#2341"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Planu#2341",
-        "id": "329936438802251776",
-        "nick": "Planu#2341"
-      },
-      {
-        "username": "Vally#8191",
-        "id": "319740988014854145",
-        "nick": "Vally#8191"
-      }
-    ],
-    "dueDate": 1662051600000,
-    "desc": "King's fall. Sa aveti o idee de mecanici, dar nu ar strica un sherpa + 3x Oryx. Nu am apucat sa-l fac c-am fost plecat, dar stiu cum functioneaza raid-ul.",
-    "creator": {
-      "username": "Planu",
-      "id": "329936438802251776",
-      "nick": "Planu#2341"
-    },
-    "activity": "Sesiune Raiduri",
-    "messageID": "1014625239319183392"
-  },
-  "2346": {
-    "id": "2346",
-    "inexperienced": [
-      {
-        "id": "209792995170582529",
-        "username": "DiCapra",
-        "nick": "DiCapra#9695"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "IlieMarius83#1577",
-        "id": "160472069606342656",
-        "nick": "IlieMarius83#1577"
-      }
-    ],
-    "participants": [
-      {
-        "username": "DiCapra#9695",
-        "id": "209792995170582529",
-        "nick": "DiCapra#9695"
-      },
-      {
-        "username": "blaccrystal#0277",
-        "id": "766558531305996328",
-        "nick": "blaccrystal#0277"
-      },
-      {
-        "username": "Liro#3386",
-        "id": "666641059312304139",
-        "nick": "Liro#3386"
-      },
-      {
-        "username": "Claudiu#8214",
-        "id": "291132638582800386",
-        "nick": "Claudiu#8214"
-      }
-    ],
-    "dueDate": 1662051600000,
-    "desc": "Sherpa run, am nevoie de ajutor sa farmez Fatebringer",
-    "creator": {
-      "username": "DiCapra",
-      "id": "209792995170582529",
-      "nick": "DiCapra#9695"
-    },
-    "activity": "Vault Of Glass",
-    "messageID": "1014593009087692851"
-  },
   "3612": {
     "id": "3612",
     "inexperienced": [],
@@ -104,6 +13,16 @@
         "username": "blaccrystal#0277",
         "id": "766558531305996328",
         "nick": "blaccrystal#0277"
+      },
+      {
+        "username": "Wu Wei#7405",
+        "id": "291565012361805824",
+        "nick": "Wu Wei#7405"
+      },
+      {
+        "username": "OREZ CU LAPTE#2524",
+        "id": "438034897425399808",
+        "nick": "OREZ CU LAPTE#2524"
       }
     ],
     "dueDate": 1662217200000,
@@ -116,168 +35,51 @@
     "activity": "Sesiune Raiduri",
     "messageID": "1014386365393276978"
   },
-  "4033": {
-    "id": "4033",
-    "inexperienced": [
-      {
-        "id": "319186530499428373",
-        "username": "PanTeraS",
-        "nick": "PanTeraS#7407"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "CRISTIAN1ELITE#7493",
-        "id": "307063502982610944",
-        "nick": "CRISTIAN1ELITE#7493"
-      }
-    ],
+  "7827": {
+    "id": "7827",
+    "inexperienced": [],
+    "alternatives": [],
     "participants": [
-      {
-        "username": "StormWolf#4970",
-        "id": "151442817623916544",
-        "nick": "StormWolf#4970"
-      },
-      {
-        "username": "Ad3monic#0805",
-        "id": "107257691012907008",
-        "nick": "Ad3monic#0805"
-      },
-      {
-        "username": "Ibaky#4289",
-        "id": "267985936179134464",
-        "nick": "Ibaky#4289"
-      },
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
-      },
       {
         "username": "Bob Smoke#0667",
         "id": "360758559706972161",
         "nick": "Bob Smoke#0667"
+      },
+      {
+        "username": "Planu#2341",
+        "id": "329936438802251776",
+        "nick": "Planu#2341"
+      },
+      {
+        "username": "Vally#8191",
+        "id": "319740988014854145",
+        "nick": "Vally#8191"
+      },
+      {
+        "username": "m4vvro#2909",
+        "id": "315543480271241216",
+        "nick": "m4vvro#2909"
+      },
+      {
+        "username": "badan#5502",
+        "id": "652570787387277323",
+        "nick": "badan#5502"
+      },
+      {
+        "username": "SelectDenis09#1084",
+        "id": "667295895339139072",
+        "nick": "SelectDenis09#1084"
       }
     ],
-    "dueDate": 1662053400000,
-    "desc": "King's Fall run + red border",
+    "dueDate": 1662127200000,
+    "desc": "king's fall rapid",
     "creator": {
-      "username": "Stormwolfx🐺",
-      "id": "151442817623916544",
-      "nick": "StormWolf#4970"
+      "username": "Bob Smoke",
+      "id": "360758559706972161",
+      "nick": "Bob Smoke#0667"
     },
     "activity": "Sesiune Raiduri",
-    "messageID": "1014261898063118367"
-  },
-  "8672": {
-    "id": "8672",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "blaccrystal#0277",
-        "id": "766558531305996328",
-        "nick": "blaccrystal#0277"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Saito1996#4192",
-        "id": "198033771335909377",
-        "nick": "Saito1996#4192"
-      },
-      {
-        "username": "Daddy Panda#9723",
-        "id": "352405227732860939",
-        "nick": "Daddy Panda#9723"
-      },
-      {
-        "username": "Kripto#7751",
-        "id": "689188780200296582",
-        "nick": "Kripto#7751"
-      },
-      {
-        "username": "superman_razvan#9507",
-        "id": "577081350713114674",
-        "nick": "superman_razvan#9507"
-      }
-    ],
-    "dueDate": 1662048000000,
-    "desc": "Kings fall. Fara incepatori.",
-    "creator": {
-      "username": "Saito1996",
-      "id": "198033771335909377",
-      "nick": "Saito1996#4192"
-    },
-    "activity": "Sesiune Raiduri",
-    "messageID": "1014599718497681519"
-  },
-  "8973": {
-    "id": "8973",
-    "inexperienced": [
-      {
-        "id": "319186530499428373",
-        "username": "PanTeraS",
-        "nick": "PanTeraS#7407"
-      },
-      {
-        "id": "292751070738776067",
-        "username": "Speenator",
-        "nick": "Speenator#3283"
-      }
-    ],
-    "alternatives": [
-      {
-        "username": "Claudiu#8214",
-        "id": "291132638582800386",
-        "nick": "Claudiu#8214"
-      }
-    ],
-    "participants": [
-      {
-        "username": "blaccrystal#0277",
-        "id": "766558531305996328",
-        "nick": "blaccrystal#0277"
-      },
-      {
-        "username": "PanTeraS#7407",
-        "id": "319186530499428373",
-        "nick": "PanTeraS#7407"
-      },
-      {
-        "username": "Speenator#3283",
-        "id": "292751070738776067",
-        "nick": "Speenator#3283"
-      },
-      {
-        "username": "Liro#3386",
-        "id": "666641059312304139",
-        "nick": "Liro#3386"
-      },
-      {
-        "username": "Cosbee#5943",
-        "id": "450683226948632576",
-        "nick": "Cosbee#5943"
-      },
-      {
-        "username": "nikos7200 #4662",
-        "id": "680420651022155786",
-        "nick": "nikos7200 #4662"
-      },
-      {
-        "username": "reeper[y2k]#9879",
-        "id": "658046006692151306",
-        "nick": "reeper[y2k]#9879"
-      }
-    ],
-    "dueDate": 1662044400000,
-    "desc": "Sherpa run Kingsfall pentru cei care inca nu au avut ocazia sa îl facă. Maxim 2 începători",
-    "creator": {
-      "username": "blaccrystal",
-      "id": "766558531305996328",
-      "nick": "blaccrystal#0277"
-    },
-    "activity": "Sesiune Raiduri",
-    "messageID": "1014458929054486650"
+    "messageID": "1014916814754566235"
   },
   "9651": {
     "id": "9651",
@@ -291,11 +93,6 @@
         "id": "385776918303080448",
         "username": "K3nobi",
         "nick": "K3nobi#1115"
-      },
-      {
-        "id": "168712959592366081",
-        "username": "op",
-        "nick": "kidney failure#2767"
       }
     ],
     "alternatives": [
@@ -305,9 +102,9 @@
         "nick": "technosling23#2474"
       },
       {
-        "username": "IlieMarius83#1577",
-        "id": "160472069606342656",
-        "nick": "IlieMarius83#1577"
+        "username": "PanTeraS#7407",
+        "id": "319186530499428373",
+        "nick": "PanTeraS#7407"
       }
     ],
     "participants": [
@@ -330,11 +127,6 @@
         "username": "blaccrystal#0277",
         "id": "766558531305996328",
         "nick": "blaccrystal#0277"
-      },
-      {
-        "username": "kidney failure#2767",
-        "id": "168712959592366081",
-        "nick": "kidney failure#2767"
       }
     ],
     "dueDate": 1662138000000,
@@ -346,52 +138,5 @@
     },
     "activity": "Vow of the Disciple",
     "messageID": "1014599482450640976"
-  },
-  "0225": {
-    "id": "0225",
-    "inexperienced": [],
-    "alternatives": [
-      {
-        "username": "Ghost#0470",
-        "id": "313012291371270146",
-        "nick": "Ghost#0470"
-      }
-    ],
-    "participants": [
-      {
-        "username": "Radu#0371",
-        "id": "328568114834833409",
-        "nick": "Radu#0371"
-      },
-      {
-        "username": "Bounty#2429",
-        "id": "241981070352842752",
-        "nick": "Bounty#2429"
-      },
-      {
-        "username": "SaberGhost#2191",
-        "id": "604205238702047233",
-        "nick": "SaberGhost#2191"
-      },
-      {
-        "username": "Psycho Muffin#5957",
-        "id": "704816801661583522",
-        "nick": "Psycho Muffin#5957"
-      },
-      {
-        "username": "blaccrystal#0277",
-        "id": "766558531305996328",
-        "nick": "blaccrystal#0277"
-      }
-    ],
-    "dueDate": 1662051600000,
-    "desc": "Fara incepatori!",
-    "creator": {
-      "username": "raduflorin18",
-      "id": "328568114834833409",
-      "nick": "Radu#0371"
-    },
-    "activity": "Sesiune Raiduri",
-    "messageID": "1014611601418096680"
   }
 }
